@@ -3,19 +3,23 @@ export const About = () => {
     <div className="flex flex-col p-3 text-center md:p-10">
       <div className="p-3 text-3xl font-bold">Rólunk</div>
       <div className="text-xl xl:px-20">
-        My name is Gábor and I am the owner of aBorbély, a barbershop in the
-        small village of Telki, PE. My business has been open since 2019 and I
-        take immense pride in the services I provide. I specialize in providing
-        a range of haircuts, from simple trims to creative new styles, for both
-        men and women.At aBorbély, I strive to provide a friendly and
-        comfortable atmosphere for my clients. My goal is to ensure that all of
-        my customers leave feeling confident and satisfied with their new look.
-        I use the highest quality products and tools to ensure a great result
-        every time. I also offer a variety of additional services such as facial
-        waxing and beard trimming. I am well-known in the community for my
-        excellent customer service and attention to detail. I take pride in
-        making sure that each and every one of my customers leaves feeling
-        satisfied.
+        A VOLVID Service Zártkörűen Működő Részvénytársaság (Volvid Zrt.)
+        örömmel mutatkozik be Önöknek. Cégünk egy 100%-ban magyar tulajdonú
+        vállalkozás, melyet 2017 februárjától kezdve sikerrel működtetünk. Fő
+        tevékenységünk az anyagvizsgálat, melyben kiemelkedően szakosodtunk a
+        roncsolásmentes anyagvizsgálat területén. Minőségi műszaki vizsgálatokat
+        és elemzéseket végzünk, hogy ügyfeleink számára megbízható eredményeket
+        nyújtsunk. Cégünk büszkélkedhet a tulajdonosok sok éves tapasztalatával,
+        mind bel- mind külföldön. Ez biztosítja, hogy magas szintű szaktudással
+        és profizmussal álljunk rendelkezésre ügyfeleinknek. Jelenleg két
+        állandó laboratóriummal rendelkezünk Magyarországon. Az egyik
+        laboratóriumunk a MOL Nyrt. Dunai Finomítójában található
+        Százhalombattán, míg a másik Miskolcon található. Ezeken a helyszíneken
+        garantáljuk a hatékony és pontos anyagvizsgálati szolgáltatásokat. Ezen
+        kívül büszkék vagyunk németországi és ausztriai telephelyeinkre is,
+        melyeket 2017-ben alakítottunk ki. Ezen telephelyeken is kiváló minőségű
+        anyagvizsgálati szolgáltatásokkal állunk rendelkezésre partnereink
+        számára.
       </div>
     </div>
   );

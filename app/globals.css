@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  border: 1px red solid;
-} */
 * {
-  --primary: #D3A27B;
+  border: 1px red solid;
+}
+* {
+  --primary: #F6B41C;
+  --secondary: #053387;
+}
+
+.gridd {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 10px;
 }
 
 .testimonial {
