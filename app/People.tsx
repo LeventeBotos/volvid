@@ -1,7 +1,7 @@
 export const People = () => {
   return (
     <div>
-      <p>Vezetőink</p>
+      <p className="text-center text-3xl font-bold">Vezetőink</p>
       <div className="m-5 grid auto-cols-auto gap-4">
         <div className=" bg-[#121212] p-3">
           <p>Kovács Gyula</p>

@@ -9,14 +9,20 @@ import { Qualities } from "./Qualities";
 export default function Home() {
   return (
     <main className="">
-      <div className="h-28" />
+      <div className="h-20 md:h-28" />
       <S1 />
+      <br />
       <Qualities />
+      <br />
       {/* <Testamonials /> */}
       <Services />
+      <br />
       <People />
+      <br />
       <About />
+      <br />
       <Location />
+      <br />
     </main>
   );
 }
