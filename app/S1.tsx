@@ -1,6 +1,9 @@
 export const S1 = () => {
   return (
-    <section className="flex h-96 flex-col items-center justify-evenly p-5 text-center">
+    <section
+      id="hero"
+      className="flex h-96 flex-col items-center justify-evenly p-5 text-center"
+    >
       <p className="text-6xl font-semibold">Volvid</p>
       <div className="text-xl">Minőség. Tapasztalat. Megbízhatóság.</div>
       <div>

@@ -33,7 +33,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-a, a:visited, a:link {
+a:visited :not(.whitee) {
   color: #1d1d1d;
   text-decoration: none;
 }
@@ -96,6 +96,10 @@ button span {
 
 button:hover span {
  background: none;
+}
+
+.whitee, whitee:visited, whitee:link {
+  color:white;
 }
 
 button:active {
