@@ -3,19 +3,19 @@ import { FaCheck } from "react-icons/fa";
 export const Qualities = () => {
   return (
     <div className="h-min-96 flex flex-row flex-wrap content-around items-stretch justify-center gap-10">
-      <div className="flex w-full items-center p-3 text-center md:w-1/2 lg:w-1/3">
+      <div className="flex w-full items-center p-3 text-center md:w-1/3 ">
         <FaCheck className="self-center text-4xl text-primary" />
         <p className=" p-2">Magas színvonalú szakértelem és precizitás</p>
       </div>
-      <div className="flex w-full items-center p-3 text-center md:w-1/2 lg:w-1/3">
+      <div className="flex w-full items-center p-3 text-center md:w-1/3">
         <FaCheck className="self-center text-4xl text-primary" />
         <p className=" p-2">Hatékony megoldások gyors ütemben</p>
       </div>
-      <div className="flex w-full items-center p-3 text-center md:w-1/2 lg:w-1/3">
+      <div className="flex w-full items-center p-3 text-center md:w-1/3">
         <FaCheck className="self-center text-4xl text-primary" />
         <p className=" p-2">Hozzáértés és rugalmasság egy helyen</p>
       </div>
-      <div className="flex w-full items-center p-3 text-center md:w-1/2 lg:w-1/3">
+      <div className="flex w-full items-center p-3 text-center md:w-1/3">
         <FaCheck className="self-center text-4xl text-primary" />
         <p className=" p-2">Professzionális szolgáltatás, bármikor és bárhol</p>
       </div>

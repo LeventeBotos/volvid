@@ -18,6 +18,8 @@
   padding: 10px;
 }
 
+
+
 .testimonial {
   display: none;
 }
@@ -97,30 +99,27 @@ button:active {
 
 .card {
   /* width: 66vw; */
-  /* height: 254px; */
   border-radius: 30px;
-  /* background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
+  /* box-shadow: 15px 15px 30px #bebebe,
              -15px -15px 30px #ffffff; */
-  /* background: #1f1f1f; */
-  background: #121212;
+  /* background: #121212; */
   /* padding: 20px; */
   margin: 10px;
  transition: 0.2s ease-in-out;
-  /* box-shadow: 15px 15px 30px #414141,
-             -15px -15px 30px #0000; */
-  /* box-shadow: 5px 5px 30px #00DDEB */
-  border: 1px solid var(--primary);
+  /* box-shadow: 15px 15px 30px var(--secondary); */
+             /* -15px -15px 30px var(--secondary);  */
+   /* box-shadow: 5px 5px 30px #00DDEB */
+  border: 3px solid #1d1d1d;
+  -webkit-box-shadow: 10px 10px 22px -7px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 22px -7px rgba(0,0,0,1);
+box-shadow: 10px 10px 22px -7px rgba(0,0,0,1);
 }
 
 .card:hover {
-  border: 3px solid var(--primary);
+  border: 3px solid var(--secondary);
   /* transform: scale(1.05); */
 }
 
-.card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
 
 img {
   opacity: 65%;
