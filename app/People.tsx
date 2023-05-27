@@ -41,7 +41,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col items-center p-3 text-center md:w-1/4">
           <p className="text-xl">Tarnóczi Péter</p>
-          <p>termelési igazgató</p>
+          <p>kirendeltség vezető Százhalombatta</p>
           <a href="tel:+36 20 374 0624" className="hover:underline">
             +36 20 374 0624
           </a>
@@ -54,7 +54,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col items-center p-3 text-center md:w-1/4">
           <p className="text-xl">Nagy László</p>
-          <p>termelési igazgató</p>
+          <p>kirendeltség vezető Miskolc</p>
           <a href="tel:+36 20 267 6703" className="hover:underline">
             +36 20 267 6703
           </a>
@@ -67,7 +67,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col items-center p-3 text-center md:w-1/4">
           <p className="text-xl">Polestyuk Zoltán</p>
-          <p>termelési igazgató</p>
+          <p>kirendeltség vezető Szeged</p>
           <a href="tel:+36 20 293 8499" className="hover:underline">
             +36 20 293 8499
           </a>
@@ -80,7 +80,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col items-center p-3 text-center md:w-1/4">
           <p className="text-xl">Maár Viktória</p>
-          <p>termelési igazgató</p>
+          <p>gazdasági igazgató</p>
           <a href="tel:+36 20 402 8999" className="hover:underline">
             +36 20 402 8999
           </a>
@@ -90,7 +90,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col items-center p-3 text-center md:w-1/4">
           <p className="text-xl">Zsigmond Hajnalka</p>
-          <p>termelési igazgató</p>
+          <p>irodavezető</p>
           <a href="tel:+36 20 374 0014" className="hover:underline">
             +36 20 374 0014
           </a>
