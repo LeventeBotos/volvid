@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+
+/* * {
   border: 1px red solid;
-}
+} */
 * {
   --primary: #F6B41C;
   /* --primary: #053387;  */
@@ -57,7 +58,8 @@ li {
 
 body {
   scroll-behavior: smooth;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  background-color: #DDE9F6;
   color: #1d1d1d;
   font-weight: 600;
 }

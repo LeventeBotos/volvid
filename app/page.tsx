@@ -5,7 +5,7 @@ import Testamonials from "./Testamonials";
 import { Location } from "./Location";
 import { People } from "./People";
 import { Qualities } from "./Qualities";
-import Navbar from "./Test";
+import Navbar from "./Navbar";
 
 export default function Home() {
   return (

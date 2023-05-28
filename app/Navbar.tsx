@@ -75,10 +75,7 @@ const Navbar = () => {
       >
         <GiHamburgerMenu className="h-full w-auto" />
       </button>
-      <div
-        className=" hidden w-full flex-grow lg:flex lg:w-auto lg:items-center"
-        id="nav-content"
-      >
+      <div className=" hidden lg:block lg:items-center" id="nav-content">
         <div className="flex flex-row justify-center gap-3">
           <div
             onClick={() => {
