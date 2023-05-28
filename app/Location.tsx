@@ -1,6 +1,6 @@
 export const Location = () => {
   return (
-    <div className="flex flex-col ">
+    <section className="flex flex-col ">
       <p className="pb-3 text-center text-3xl font-bold">Telephelyeink</p>
       <div className="flex flex-col py-3 md:flex-row">
         <iframe
@@ -88,6 +88,6 @@ export const Location = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,6 +1,6 @@
 export const People = () => {
   return (
-    <div>
+    <section>
       <p className="pb-3 text-center text-3xl font-bold">Vezetőink</p>
       <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-10">
         <div className="card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
@@ -132,6 +132,6 @@ export const People = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

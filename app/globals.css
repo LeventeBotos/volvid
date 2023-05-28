@@ -9,6 +9,18 @@
   --primary: #F6B41C;
   /* --primary: #053387;  */
   --secondary: #053387;
+  --night: #0C0F0A;
+  --eerie: #1D1E18;
+  --mint: #CBF3F0;
+}
+
+summary {
+  background-color: rgb(245, 245, 245);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .gridd {
@@ -77,6 +89,7 @@ button {
 
 button:hover {
   color: white;
+
 }
 
 button:active,
@@ -91,7 +104,7 @@ button span {
  border-radius: 6px;
  width: 100%;
  height: 100%;
- /* transition: 300ms; */
+ transition: all .3s;
 }
 
 button:hover span {
@@ -119,7 +132,7 @@ button:active {
   /* box-shadow: 15px 15px 30px var(--secondary); */
              /* -15px -15px 30px var(--secondary);  */
    /* box-shadow: 5px 5px 30px #00DDEB */
-  border: 3px solid whitesmoke;
+  border: 3px solid snow;
   -webkit-box-shadow: 10px 10px 22px -7px rgba(0,0,0,1);
 -moz-box-shadow: 10px 10px 22px -7px rgba(0,0,0,1);
 box-shadow: 10px 10px 22px -7px rgba(0,0,0,1);
