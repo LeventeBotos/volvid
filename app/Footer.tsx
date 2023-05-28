@@ -119,7 +119,7 @@ export const Footer = () => {
           <Link
             target="_blank"
             className="whitee"
-            href="https://www.divedin.com"
+            href="https://www.Linkedin.com"
           >
             <AiFillLinkedin />
           </Link>

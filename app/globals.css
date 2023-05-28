@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
+* {
   border: 1px red solid;
-} */
+}
 * {
   --primary: #F6B41C;
   /* --primary: #053387;  */
@@ -85,6 +85,21 @@ button {
  white-space: nowrap;
  cursor: pointer;
  transition: all .3s;
+}
+
+.menuu {
+  text-decoration: none;
+  user-select: none;
+  background-color: transparent;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+  align-items: center;
+  padding: 0;
+  min-width: fit-content;
+
 }
 
 button:hover {
