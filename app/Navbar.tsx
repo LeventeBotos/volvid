@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import Image from "next/image";
 
 const Navbar = () => {
   function onLinkClick(num: number) {
@@ -63,9 +64,14 @@ const Navbar = () => {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-10 flex items-center justify-between bg-[#f5f5f5] bg-opacity-50 p-3 backdrop-blur-lg backdrop-filter">
-      <img
+      {/* <img
         src="https://static.wixstatic.com/media/1752f4_d75b1eda8bd24e9290a20ee4da74e03f~mv2.png/v1/fill/w_285,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/volvid%20logo.png"
         alt="logo"
+        className=" h-16 self-center opacity-100 md:h-24"
+      /> */}
+      <img
+        alt="logo"
+        src="/images/logo.png"
         className=" h-16 self-center opacity-100 md:h-24"
       />
       <button

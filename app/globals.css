@@ -14,6 +14,15 @@
   --mint: #CBF3F0;
 }
 
+.s1 {
+  background-image: url('/images/cover.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 66vh;
+  /* background-color: #053387; */
+}
+
 summary {
   background-color: rgb(245, 245, 245);
   color: white;
