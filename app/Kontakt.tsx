@@ -1,12 +1,29 @@
 "use client";
-import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
+import {
+  AiOutlineMail,
+  AiOutlineMessage,
+  AiOutlinePhone,
+} from "react-icons/ai";
 import { BsPersonVcard } from "react-icons/bs";
+import { useState } from "react";
 
 export const Kontakt = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
   async function handleSubmit(e: any) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
+    console.log("sending");
+    let data = {
+      name,
+      email,
+      message,
+    };
     console.log(data);
+    fetch;
   }
 
   return (
@@ -25,10 +42,13 @@ export const Kontakt = () => {
           autoComplete="email"
           className=" rounded-xl p-3 text-white md:p-5"
           required
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
       </div>
       <div className="flex items-center gap-4 text-center text-2xl">
-        <AiOutlineMail className="hidden text-4xl md:block" />
+        <AiOutlinePhone className="hidden text-4xl md:block" />
         <input
           id="frm-phone"
           type="text"
@@ -37,6 +57,9 @@ export const Kontakt = () => {
           autoComplete="tel"
           className=" rounded-xl p-3 text-white md:p-5"
           required
+          onChange={(e) => {
+            setPhone(e.target.value);
+          }}
         />
       </div>
       <div className="flex items-center gap-4 text-center text-2xl">
@@ -47,8 +70,11 @@ export const Kontakt = () => {
           name="first"
           placeholder="Név"
           className="rounded-xl p-3 text-white  md:p-5"
-          autoComplete="given-name"
+          autoComplete="name"
           required
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
         />
       </div>
       <div className="flex items-center gap-4 text-center text-2xl">
@@ -58,6 +84,9 @@ export const Kontakt = () => {
           placeholder="Üzenet"
           name="message"
           className="rounded-xl p-3 text-white md:w-full md:p-5"
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
         ></textarea>
       </div>
 
