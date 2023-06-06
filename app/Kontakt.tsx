@@ -8,6 +8,8 @@ import {
 import { BsClipboardCheck, BsPersonVcard } from "react-icons/bs";
 import { useState } from "react";
 import Select from "react-select";
+import axios from "axios";
+import sendEmail from "./send";
 
 export const Kontakt = () => {
   const [name, setName] = useState("");
@@ -17,6 +19,7 @@ export const Kontakt = () => {
   const [submitted, setSubmitted] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
+  const subject = "subject";
   const options = [
     { value: "RT", label: "Radiográfiai vizsgálat" },
     { value: "PT", label: "Folyadékbehatolásos vizsgálat" },
@@ -55,7 +58,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
     { value: "msz", label: "MSZ EN ISO" },
     { value: "asme", label: "ASME" },
   ];
-  async function handleSubmit(e: any) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     console.log("sending");
     let data = {
@@ -67,7 +70,13 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       message,
     };
     console.log(data);
-    fetch;
+    try {
+      await axios.post("/api/email", data);
+      console.log("Email sent successfully");
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   }
   const handleSelectChange = (selectedOptions: any) => {
     setSelectedOption(selectedOptions);
