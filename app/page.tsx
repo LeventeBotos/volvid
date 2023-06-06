@@ -14,9 +14,6 @@ export default function Home() {
       <div className="h-20 md:h-28" />
       <S1 />
       <br />
-      <div className="h-96 w-full bg-slate-600 text-center text-xl font-bold text-white">
-        hi
-      </div>
       <Navbar />
       <br />
       <Qualities />

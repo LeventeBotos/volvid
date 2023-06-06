@@ -20,6 +20,7 @@ export const Kontakt = () => {
     let data = {
       name,
       email,
+      phone,
       message,
     };
     console.log(data);
@@ -28,19 +29,20 @@ export const Kontakt = () => {
 
   return (
     <form
-      className="flex flex-col items-center gap-4 text-center "
+      className="flex flex-col items-center gap-4 bg-[#1f1f1f] p-5 text-center"
       onSubmit={handleSubmit}
     >
-      <p className="text-2xl font-bold ">Kontakt</p>
+      <p className="text-2xl font-bold text-white">Kontakt</p>
+
       <div className="flex items-center gap-4 text-center text-2xl ">
-        <AiOutlineMail className="hidden text-4xl md:block" />
+        <AiOutlineMail className="hidden text-4xl text-white md:block" />
         <input
           id="frm-email"
           type="email"
           placeholder="Email"
           name="email"
           autoComplete="email"
-          className=" rounded-xl p-3 text-white md:p-5"
+          className="rounded-xl p-3 md:p-5"
           required
           onChange={(e) => {
             setEmail(e.target.value);
@@ -48,14 +50,14 @@ export const Kontakt = () => {
         />
       </div>
       <div className="flex items-center gap-4 text-center text-2xl">
-        <AiOutlinePhone className="hidden text-4xl md:block" />
+        <AiOutlinePhone className="hidden text-4xl text-white md:block" />
         <input
           id="frm-phone"
           type="text"
           name="phone"
           placeholder="Telefonszám"
           autoComplete="tel"
-          className=" rounded-xl p-3 text-white md:p-5"
+          className=" rounded-xl p-3  md:p-5"
           required
           onChange={(e) => {
             setPhone(e.target.value);
@@ -63,13 +65,13 @@ export const Kontakt = () => {
         />
       </div>
       <div className="flex items-center gap-4 text-center text-2xl">
-        <BsPersonVcard className="hidden text-4xl md:block" />
+        <BsPersonVcard className="hidden text-4xl text-white md:block" />
         <input
           id="frm-first"
           type="text"
           name="first"
           placeholder="Név"
-          className="rounded-xl p-3 text-white  md:p-5"
+          className="rounded-xl p-3  md:p-5"
           autoComplete="name"
           required
           onChange={(e) => {
@@ -78,12 +80,12 @@ export const Kontakt = () => {
         />
       </div>
       <div className="flex items-center gap-4 text-center text-2xl">
-        <AiOutlineMessage className="hidden text-4xl md:block" />
+        <AiOutlineMessage className="hidden text-4xl text-white md:block" />
         <textarea
           id="frm-message"
           placeholder="Üzenet"
           name="message"
-          className="rounded-xl p-3 text-white md:w-full md:p-5"
+          className="rounded-xl p-3  md:w-full md:p-5"
           onChange={(e) => {
             setMessage(e.target.value);
           }}
