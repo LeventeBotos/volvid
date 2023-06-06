@@ -36,7 +36,7 @@ export const People = () => {
           </a>
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
-          <p className="text-md">Kuruczné Prescher Viktória</p>
+          <p className="text-lg">Kuruczné Prescher Viktória</p>
           <p>termelési igazgató</p>
           <a
             href="tel:+36 20 403 5353"

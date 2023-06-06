@@ -13,13 +13,13 @@ export const About = () => {
         mind bel- mind külföldön. Ez biztosítja, hogy magas szintű szaktudással
         és profizmussal álljunk rendelkezésre ügyfeleinknek. Jelenleg két
         állandó laboratóriummal rendelkezünk Magyarországon. Az egyik
-        laboratóriumunk a MOL Nyrt. Dunai Finomítójában található
-        Százhalombattán, míg a másik Miskolcon található. Ezeken a helyszíneken
-        garantáljuk a hatékony és pontos anyagvizsgálati szolgáltatásokat. Ezen
-        kívül büszkék vagyunk németországi és ausztriai telephelyeinkre is,
-        melyeket 2017-ben alakítottunk ki. Ezen telephelyeken is kiváló minőségű
-        anyagvizsgálati szolgáltatásokkal állunk rendelkezésre partnereink
-        számára.
+        laboratóriumunk a MOL Nyrt. Dunai Finomítója mellett található
+        Százhalombattán, míg a másik kettő Miskolcon és Szegeden található.
+        Ezeken a helyszíneken garantáljuk a hatékony és pontos anyagvizsgálati
+        szolgáltatásokat. Ezen kívül büszkék vagyunk németországi és ausztriai
+        telephelyeinkre is, melyeket 2017-ben alakítottunk ki. Ezen
+        telephelyeken is kiváló minőségű anyagvizsgálati szolgáltatásokkal
+        állunk rendelkezésre partnereink számára.
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 export const Services = () => {
   return (
     <section className="flex flex-col">
-      <p className="pb-3 text-center text-3xl font-bold">Ajánlataink</p>
+      <p className="pb-3 text-center text-3xl font-bold">Vizsgálataink</p>
       <div className=" flex flex-row flex-wrap content-around items-stretch justify-center gap-10">
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Radiográfiai vizsgálat</p>
@@ -19,29 +19,15 @@ export const Services = () => {
           </a>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
-          <p className="pb-3 text-2xl">Ultrahangos vizsgálat</p>
-          <p>
-            Az ultrahangos vizsgálat (UT) egy képalkotó eljárás, amelyben
-            ultrahanghullámokat használnak a test belső szerkezetének
-            vizsgálatára. Az ultrahangos vizsgálat segítségével részletes
-            képeket kaphatunk a szervekről, szövetekről és szervrendszerekről,
-            és felismerhetünk eltéréseket vagy rendellenességeket.
-          </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
-        </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Folyadékbehatolásos vizsgálat</p>
           <p>
-            A folyadékbehatolásos vizsgálat (PT) egy nemromboló anyagvizsgálati
-            eljárás, amelyet főként repedések, hibák vagy anyagfáradások
-            kimutatására alkalmaznak. A vizsgálat során egy folyadékot
-            alkalmaznak a vizsgált felületen, majd eltávolítják, és egy fehérítő
-            anyaggal kezelik. Ezután a felszínt megvizsgálják, és a fehérítő
-            anyag által kitöltött repedéseket vagy hibákat könnyen észlelhetik.
+            A folyadékbehatolásos vizsgálat (PT) egy roncsolás mentes
+            anyagvizsgálati eljárás, amelyet főként repedések, hibák vagy
+            anyagfáradások kimutatására alkalmaznak. A vizsgálat során egy
+            folyadékot alkalmaznak a vizsgált felületen, majd eltávolítják, és
+            egy fehérítő anyaggal kezelik. Ezután a felszínt megvizsgálják, és a
+            fehérítő anyag által kitöltött repedéseket vagy hibákat könnyen
+            észlelhetik.
           </p>
           <a href="/" target="_blank">
             <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
@@ -65,6 +51,22 @@ export const Services = () => {
             </button>
           </a>
         </div>
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+          <p className="pb-3 text-2xl">Ultrahangos vizsgálat</p>
+          <p>
+            Az ultrahangos vizsgálat (UT) egy képalkotó eljárás, amelyben
+            ultrahanghullámokat használnak a test belső szerkezetének
+            vizsgálatára. Az ultrahangos vizsgálat segítségével részletes
+            képeket kaphatunk a szervekről, szövetekről és szervrendszerekről,
+            és felismerhetünk eltéréseket vagy rendellenességeket.
+          </p>
+          <a href="/" target="_blank">
+            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
+              <span className="rounded-full">Több info</span>
+            </button>
+          </a>
+        </div>
+
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Szemrevételezéses vizsgálat</p>
           <p>
