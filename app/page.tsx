@@ -6,6 +6,7 @@ import { Location } from "./Location";
 import { People } from "./People";
 import { Qualities } from "./Qualities";
 import Navbar from "./Navbar";
+import { Kontakt } from "./Kontakt";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <br />
       {/* <Testamonials /> */}
       <Services />
+      <br />
+      <Kontakt />
       <br />
       <People />
       <br />
