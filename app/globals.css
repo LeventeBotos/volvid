@@ -15,7 +15,7 @@
 }
 
 .s1 {
-  background-image: url('images/cover.webp');
+  background-image: url('/public/images/cover.jpg');
   background-size: cover;
   background-position: center;
   color: white;
