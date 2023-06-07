@@ -1,12 +1,12 @@
 export const S1 = () => {
   return (
     <section
-      id="hero"
-      className="s1 flex  flex-col items-center justify-evenly p-5 text-center"
+    id="hero"
+      className="s1 flex  flex-col items-center justify-evenly p-5 text-center text-black "
     >
       <p className="text-6xl font-semibold">Volvid</p>
       <div className="text-xl">Minőség. Tapasztalat. Megbízhatóság.</div>
-      <div>
+    <div>
         {" "}
         <button className=" items-center rounded-full text-center">
           <span className="rounded-full">Kontakt</span>
