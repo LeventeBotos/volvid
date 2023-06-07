@@ -9,7 +9,6 @@ import { BsClipboardCheck, BsPersonVcard } from "react-icons/bs";
 import { useState } from "react";
 import Select from "react-select";
 import axios from "axios";
-import sendEmail from "./send";
 
 export const Kontakt = () => {
   const [name, setName] = useState("");
