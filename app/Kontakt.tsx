@@ -8,7 +8,7 @@ import {
 import { BsClipboardCheck, BsPersonVcard } from "react-icons/bs";
 import { useState } from "react";
 import Select from "react-select";
-import axios from "axios";
+import axios, { AxiosRequestConfig, AxiosRequestHeaders } from "axios";
 
 export const Kontakt = () => {
   const [name, setName] = useState("");
@@ -69,13 +69,46 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       message,
     };
     console.log(data);
-    try {
-      await axios.post("/api/email", data);
-      console.log("Email sent successfully");
-      setSubmitted(true);
-    } catch (error) {
-      console.error("Error sending email:", error);
-    }
+    // try {
+    //   const response = await axios.get("/api/email", { params: data });
+    //   console.log(response);
+    //   console.log("Email sent successfully");
+    //   setSubmitted(true);
+    // } catch (error) {
+    //   console.error(error);
+    // }
+    // let ret = await axios.get("/api/hello");
+    // let ret = await axios
+    //   .post("/api/email", {
+    //     name: "Levi",
+    //   })
+    //   .then(function (response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+    // const makeApiCall = async () => {
+    // await fetch("/api/email", {
+    //   method: "POST",
+    //   body: JSON.stringify({ hello: "world" }),
+    // });
+    // };
+    // let ret = await fetch("/api/email", {
+    //   method: "POST",
+    //   body: JSON.stringify({ name: "John" }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
+    // console.log(ret);
+    // let ret = await axios("/api/email", {
+    //   method: "POST",
+    //   data: JSON.stringify(name),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
   }
   const handleSelectChange = (selectedOptions: any) => {
     setSelectedOption(selectedOptions);
