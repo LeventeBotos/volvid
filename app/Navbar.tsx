@@ -71,7 +71,7 @@ const Navbar = () => {
       /> */}
       <img
         alt="logo"
-        src="/images/logo.png"
+        src="images/logo.png"
         className=" h-16 self-center opacity-100 md:h-24"
       />
       <button
