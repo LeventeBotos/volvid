@@ -8,6 +8,7 @@ import { Qualities } from "./Qualities";
 import Navbar from "./Navbar";
 import { Kontakt } from "./Kontakt";
 import Buttons from "./Buttons";
+import { Jogosultsag } from "./Jogosultsag";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
       <People />
       <br />
       <Location />
+      <br />
+      <Jogosultsag />
       <br />
     </main>
   );

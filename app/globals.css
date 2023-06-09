@@ -15,7 +15,6 @@
 }
 
 .s1 {
-  background-image: url('/public/images/cover.jpg');
   background-size: cover;
   background-position: center;
   height: 66vh;
