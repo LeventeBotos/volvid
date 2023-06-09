@@ -9,10 +9,12 @@ import Navbar from "./Navbar";
 import { Kontakt } from "./Kontakt";
 import Buttons from "./Buttons";
 import { Jogosultsag } from "./Jogosultsag";
+import { Projects } from "./Projects";
+import { Work } from "./Work";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="text-center">
       <div className="h-20 md:h-28" />
       <S1 />
       <br />
@@ -22,12 +24,16 @@ export default function Home() {
       <br />
       <About />
       <br />
+      <Projects />
+      <br />
       {/* <Testamonials /> */}
       <Services />
       <br />
       <Kontakt />
       <br />
       <People />
+      <br />
+      <Work />
       <br />
       <Location />
       <br />
