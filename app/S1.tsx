@@ -52,17 +52,26 @@ export const S1 = () => {
   return (
     <section
       id="hero"
-      className="s1 flex  flex-col items-center justify-evenly p-5 text-center text-[#1f1f1f] "
+      className="s1 flex h-96 flex-col  items-center justify-evenly bg-black text-center "
     >
-      <p className="text-6xl font-semibold">Volvid</p>
-      <div className="text-xl">Minőség. Tapasztalat. Megbízhatóság.</div>
-      <div>
+      <img
+        src="/images/green.jpg"
+        className=" -z-2 opacity-45 absolute h-96 w-full object-cover
+      "
+        alt="bg"
+      />
+
+      <p className="z-10 text-6xl font-semibold text-white">Volvid</p>
+      <div className=" z-10 text-xl text-white">
+        Minőség. Tapasztalat. Megbízhatóság.
+      </div>
+      <div className="z-10">
         {" "}
         <button
           onClick={() => {
             onLinkClick(0);
           }}
-          className=" items-center rounded-full text-center"
+          className=" z-10 items-center rounded-full text-center"
         >
           <span className="rounded-full">Kontakt</span>
         </button>

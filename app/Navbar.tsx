@@ -64,11 +64,6 @@ const Navbar = () => {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-10 flex items-center justify-between bg-[#f5f5f5] bg-opacity-50 p-3 backdrop-blur-lg backdrop-filter">
-      {/* <img
-        src="https://static.wixstatic.com/media/1752f4_d75b1eda8bd24e9290a20ee4da74e03f~mv2.png/v1/fill/w_285,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/volvid%20logo.png"
-        alt="logo"
-        className=" h-16 self-center opacity-100 md:h-24"
-      /> */}
       <img
         alt="logo"
         src="images/logo.png"
@@ -76,13 +71,23 @@ const Navbar = () => {
       />
       <button
         id="nav-toggle"
-        className="menuu block h-12 w-auto items-center hover:text-primary lg:hidden"
+        className="menuu block h-12 w-auto items-center lg:hidden"
         onClick={togglePanel}
       >
         <GiHamburgerMenu className="h-full w-auto" />
       </button>
       <div className=" hidden lg:block lg:items-center" id="nav-content">
         <div className="flex flex-row justify-evenly gap-2">
+          <button
+            onClick={() => {
+              onLinkClick(0);
+            }}
+            className="flex min-w-min flex-row  items-center rounded-full text-center transition  hover:text-white"
+          >
+            <span className=" rounded-full transition hover:bg-transparent">
+              Kontakt
+            </span>
+          </button>
           <button
             onClick={() => {
               onLinkClick(0);
@@ -99,14 +104,14 @@ const Navbar = () => {
           >
             <span className="rounded-full hover:bg-white">Ajánlataink</span>
           </button>
-          <button
+          {/* <button
             onClick={() => {
               onLinkClick(2);
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className="rounded-full hover:bg-white">Vezetőink</span>
-          </button>
+          </button> */}
           <button
             onClick={() => {
               onLinkClick(3);
@@ -115,14 +120,14 @@ const Navbar = () => {
           >
             <span className="rounded-full hover:bg-white">Rólunk</span>
           </button>
-          <button
+          {/* <button
             onClick={() => {
               onLinkClick(4);
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className="rounded-full hover:bg-white">Telephelyek</span>
-          </button>
+          </button> */}
         </div>
       </div>
       <div
@@ -180,7 +185,7 @@ const Navbar = () => {
             </span>
           </button>
         </div>
-        <div className="flex flex-col p-5 text-center text-white">
+        {/* <div className="flex flex-col p-5 text-center text-white">
           <p>Kövess minket!</p>
           <div className="flex justify-center text-5xl">
             <a
@@ -193,12 +198,12 @@ const Navbar = () => {
             <Link
               target="_blank"
               className="whitee"
-              href="https://www.Linkedin.com"
+              href="https://www.linkedin.com/company/volvid-zrt./about/"
             >
               <AiFillLinkedin />
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

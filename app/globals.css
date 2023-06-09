@@ -14,12 +14,7 @@
   --mint: #CBF3F0;
 }
 
-.s1 {
-  background-size: cover;
-  background-position: center;
-  height: 66vh;
-  /* background-color: #053387; */
-}
+
 
 summary {
   background-color: rgb(245, 245, 245);

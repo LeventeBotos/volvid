@@ -84,34 +84,34 @@ export const Projects = () => {
           </li>
         </ul>
       </div> */}
-      <div>
-        <div className="flex h-36 flex-col justify-between md:h-36 md:flex-row">
-          <button
-            className="bg-transparent text-4xl text-primary hover:text-black"
-            onClick={previousTestimonial}
-          >
-            <AiOutlineArrowLeft />
-          </button>
-          <div className="card-container h-full w-full md:w-2/3">
-            {projects.map((projects, index) => (
-              <div
-                key={index}
-                className={`testimonial ${
-                  index === activeIndex ? "active" : ""
-                } card flex  flex-col justify-evenly p-1 md:p-5 `}
-              >
-                <p className="">{projects.name}</p>
+      <div className=" flex h-64 flex-col justify-between md:h-36 md:flex-row">
+        <button
+          className="bg-transparent text-4xl text-primary hover:text-black"
+          onClick={previousTestimonial}
+        >
+          <AiOutlineArrowLeft />
+        </button>
+        <div className=" w-full md:w-2/3">
+          {projects.map((projects, index) => (
+            <div
+              key={index}
+              className={`testimonial ${
+                index === activeIndex ? "active" : ""
+              } card flex h-40 items-center justify-center  p-1 text-center md:h-32 md:p-5 `}
+            >
+              <div className="flex h-full flex-col justify-evenly">
+                <p className="text-xl font-bold">{projects.name}</p>
                 <p className=" text-xl">{projects.content}</p>
               </div>
-            ))}
-          </div>
-          <button
-            className="bg-transparent text-4xl text-primary hover:text-black"
-            onClick={nextTestimonial}
-          >
-            <AiOutlineArrowRight />
-          </button>
+            </div>
+          ))}
         </div>
+        <button
+          className="bg-transparent text-4xl text-primary hover:text-black"
+          onClick={nextTestimonial}
+        >
+          <AiOutlineArrowRight />
+        </button>
       </div>
     </section>
   );

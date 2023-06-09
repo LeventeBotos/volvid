@@ -7,7 +7,6 @@ import { People } from "./People";
 import { Qualities } from "./Qualities";
 import Navbar from "./Navbar";
 import { Kontakt } from "./Kontakt";
-import Buttons from "./Buttons";
 import { Jogosultsag } from "./Jogosultsag";
 import { Projects } from "./Projects";
 import { Work } from "./Work";
