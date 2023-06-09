@@ -59,28 +59,19 @@ LT: ASME BPVC SEC.5 ARTICLE 10
   ];
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
-    let data = {
-      name,
-      email,
-      phone,
-      selectedOption,
-      selectedOption2,
-      message,
-    };
-
+    // console.log(JSON.stringify(selectedOption));
     try {
-      const response = await axios.get("http://localhost:3001/api/emails", {
+      const response = await axios.get("http://80.98.246.4:3001/api/emails", {
         params: {
           name: name,
           email: email,
           phone: phone,
-          selectedOption: selectedOption,
-          selectedOption2: selectedOption2,
+          selectedOption: JSON.stringify(selectedOption),
+          selectedOption2: JSON.stringify(selectedOption2),
           message: message,
         },
         headers: {
-          "Access-Control-Allow-Origin": "http://localhost:3001",
+          "Access-Control-Allow-Origin": "http://80.98.246.4:3001/",
         },
       });
       console.log("Email sent successfully");
