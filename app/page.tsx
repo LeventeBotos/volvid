@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="h-20 md:h-28" />
+      <Buttons />
       <S1 />
       <br />
       <Navbar />

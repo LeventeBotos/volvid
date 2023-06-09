@@ -59,7 +59,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
   ];
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log("sending");
+
     let data = {
       name,
       email,
@@ -68,47 +68,27 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       selectedOption2,
       message,
     };
-    console.log(data);
-    // try {
-    //   const response = await axios.get("/api/email", { params: data });
-    //   console.log(response);
-    //   console.log("Email sent successfully");
-    //   setSubmitted(true);
-    // } catch (error) {
-    //   console.error(error);
-    // }
-    // let ret = await axios.get("/api/hello");
-    // let ret = await axios
-    //   .post("/api/email", {
-    //     name: "Levi",
-    //   })
-    //   .then(function (response) {
-    //     console.log(response);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
-    // const makeApiCall = async () => {
-    // await fetch("/api/email", {
-    //   method: "POST",
-    //   body: JSON.stringify({ hello: "world" }),
-    // });
-    // };
-    // let ret = await fetch("/api/email", {
-    //   method: "POST",
-    //   body: JSON.stringify({ name: "John" }),
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // });
-    // console.log(ret);
-    // let ret = await axios("/api/email", {
-    //   method: "POST",
-    //   data: JSON.stringify(name),
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // });
+
+    try {
+      const response = await axios.get("http://localhost:3001/api/emails", {
+        params: {
+          name: name,
+          email: email,
+          phone: phone,
+          selectedOption: selectedOption,
+          selectedOption2: selectedOption2,
+          message: message,
+        },
+        headers: {
+          "Access-Control-Allow-Origin": "http://localhost:3001",
+        },
+      });
+      console.log("Email sent successfully");
+      console.log(response);
+      setSubmitted(true);
+    } catch (error) {
+      console.error(error);
+    }
   }
   const handleSelectChange = (selectedOptions: any) => {
     setSelectedOption(selectedOptions);
