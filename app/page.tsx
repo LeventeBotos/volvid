@@ -10,6 +10,7 @@ import { Kontakt } from "./Kontakt";
 import { Jogosultsag } from "./Jogosultsag";
 import { Projects } from "./Projects";
 import { Work } from "./Work";
+import { Memberships } from "./Memberships";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
       <Qualities />
       <br />
       <About />
+      <br />
+      <Memberships />
       <br />
       <Projects />
       <br />

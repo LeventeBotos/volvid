@@ -3,7 +3,7 @@ export const Services = () => {
     <section className="flex flex-col">
       <p className="pb-3 text-center text-3xl font-bold">Vizsgálataink</p>
       <div className=" flex flex-row flex-wrap content-around items-stretch justify-center gap-4 md:gap-10">
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Radiográfiai vizsgálat</p>
           <p>
             A radiográfiai vizsgálat (RT) egy orvosi képalkotó eljárás, amelyben
@@ -12,13 +12,8 @@ export const Services = () => {
             struktúrák részletes vizsgálatát, segítve az orvosokat a diagnózis
             felállításában és a megfelelő terápia kiválasztásában.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Folyadékbehatolásos vizsgálat</p>
           <p>
             A folyadékbehatolásos vizsgálat (PT) egy roncsolás mentes
@@ -29,13 +24,8 @@ export const Services = () => {
             fehérítő anyag által kitöltött repedéseket vagy hibákat könnyen
             észlelhetik.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Mágnesezhető poros vizsgálat</p>
           <p>
             A mágnesezhető poros vizsgálat (MT) egy nemromboló anyagvizsgálati
@@ -45,13 +35,8 @@ export const Services = () => {
             majd speciális eszközökkel vizsgálják meg a porral kitöltött
             repedéseket vagy hibákat.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Ultrahangos vizsgálat</p>
           <p>
             Az ultrahangos vizsgálat (UT) egy képalkotó eljárás, amelyben
@@ -60,14 +45,9 @@ export const Services = () => {
             képeket kaphatunk a szervekről, szövetekről és szervrendszerekről,
             és felismerhetünk eltéréseket vagy rendellenességeket.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
 
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Szemrevételezéses vizsgálat</p>
           <p>
             A szemrevételezéses vizsgálat (VT) egy vizuális ellenőrzési eljárás,
@@ -76,13 +56,8 @@ export const Services = () => {
             vagy szerkezetek látható hibáinak, sérüléseinek vagy deformációinak
             felismerésében.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Tömörségi vizsgálat</p>
           <p>
             A tömörségi vizsgálat (LT) egy anyagvizsgálati eljárás, amelyet a
@@ -90,13 +65,8 @@ export const Services = () => {
             Ez az eljárás segít kimutatni a szivárgást, repedéseket vagy más
             anyaghibákat a vizsgált alkatrészben vagy szerkezetben.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">
             Fémek felületi szigetelésének vizsgálata
           </p>
@@ -107,13 +77,8 @@ export const Services = () => {
             speciális eszközökkel mérnek az esetleges áteresztődést vagy
             hiányosságot.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Keménységmérés</p>
           <p>
             A keménységmérés (HT) egy eljárás, amely a fémek vagy más anyagok
@@ -121,13 +86,8 @@ export const Services = () => {
             anyag ellenállását a behatolásra vagy nyomásra, és ez alapján
             meghatározzák a keménységi értéket.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Pozitív anyagazonosítás</p>
           <p>
             A pozitív anyagazonosítás (PMI) egy eljárás, amelynek során az
@@ -136,11 +96,6 @@ export const Services = () => {
             található kémiai elemeket és összetevőket, ezáltal meghatározzák az
             anyag pontos azonosítását.
           </p>
-          <a href="/" target="_blank">
-            <button className="flex flex-row items-center rounded-full bg-primary text-center md:m-3">
-              <span className="rounded-full">Több info</span>
-            </button>
-          </a>
         </div>
       </div>
     </section>

@@ -22,27 +22,9 @@ export const Projects = () => {
 
   const projects = [
     {
-      name: "Gönyűi Erőmű",
-      content: "üzemi leállás vizsgálata.",
-    },
-    {
       name: "MOL Nyrt. Dunai Finomító",
       content:
-        "üzemek és tartályok anyagvizsgálata üzemközi csővezetékek állapotfelmérése, üzemi átalakításokvizsgálatai.",
-    },
-    {
-      name: "Péti Nitrogén Művek",
-      content: "reaktor és hőcserélővizsgálatok.",
-    },
-    {
-      name: "OMV Schwechati Finomító",
-      content:
-        "leállásokon anyagvizsgálatok, és leálláson kívüli időszakban állapotfelmérés.",
-    },
-    {
-      name: "BorsodChem Nyrt. Kazincbarcikai gyár",
-      content:
-        "üzemi leállások anyagvizsgálata, keretszerződött partner vagyunk.",
+        "Üzemek és tartályok anyagvizsgálata üzemközi csővezetékek állapotfelmérése, üzemi átalakításokvizsgálatai.",
     },
     {
       name: "Németországban a BayernOil",
@@ -50,7 +32,25 @@ export const Projects = () => {
     },
     {
       name: "Németországban az OMV Burghauseni Finomítóban, Wacker kémiai üzemben",
-      content: "anyagvizsgálatok végzése folyamatosan.",
+      content: "Anyagvizsgálatok végzése folyamatosan.",
+    },
+    {
+      name: "BorsodChem Nyrt. Kazincbarcikai gyár",
+      content:
+        "Üzemi leállások anyagvizsgálata, keretszerződött partner vagyunk.",
+    },
+    {
+      name: "Péti Nitrogén Művek",
+      content: "Reaktor és hőcserélővizsgálatok.",
+    },
+    {
+      name: "Gönyűi Erőmű",
+      content: "Üzemi leállás vizsgálata.",
+    },
+    {
+      name: "OMV Schwechati Finomító",
+      content:
+        "Leállásokon anyagvizsgálatok, és leálláson kívüli időszakban állapotfelmérés.",
     },
   ];
 

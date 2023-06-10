@@ -1,7 +1,7 @@
 export const About = () => {
   return (
-    <section className="flex flex-col justify-evenly p-3 text-center md:p-10">
-      <p className="pb-3 text-center text-3xl font-bold">Rólunk</p>
+    <section className="flex flex-col justify-evenly gap-4 text-center md:px-10">
+      <p className=" text-center text-2xl font-bold">Rólunk</p>
       <div className="text-xl xl:px-20">
         A VOLVID Service Zártkörűen Működő Részvénytársaság (Volvid Zrt.)
         örömmel mutatkozik be Önöknek. Cégünk egy 100%-ban magyar tulajdonú
