@@ -59,14 +59,14 @@ export const S1 = () => {
         className=" -z-2 opacity-45 absolute h-96 w-full object-contain
       "
       >
-        <Image fill src="/images/green.jpg" objectFit="cover" alt="bg" />
+        <Image fill src="/images/green.webp" objectFit="cover" alt="bg" />
       </div>
 
       <p className="z-10 text-6xl font-semibold text-white">Volvid</p>
       <div className=" z-10 text-xl text-white">
         Minőség. Tapasztalat. Megbízhatóság.
       </div>
-      <div className="z-10">
+      <div className="z-10 ">
         {" "}
         <button
           onClick={() => {

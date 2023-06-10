@@ -68,7 +68,7 @@ const Navbar = () => {
         height={15}
         width={150}
         alt="logo"
-        src="/images/logo.png"
+        src="/images/logo.webp"
         className=" self-center p-3 opacity-100 "
       />
       <button
