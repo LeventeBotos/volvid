@@ -63,11 +63,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-10 flex items-center justify-between bg-[#f5f5f5] bg-opacity-50 p-3 backdrop-blur-lg backdrop-filter">
-      <img
+    <nav className="fixed left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#f5f5f5] bg-opacity-50 p-3 backdrop-blur-lg backdrop-filter md:h-24">
+      <Image
+        height={15}
+        width={150}
         alt="logo"
-        src="images/logo.png"
-        className=" h-16 self-center opacity-100 md:h-24"
+        src="/images/logo.png"
+        className=" self-center p-3 opacity-100 "
       />
       <button
         id="nav-toggle"

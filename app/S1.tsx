@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export const S1 = () => {
   function onLinkClick(num: number) {
@@ -54,12 +55,12 @@ export const S1 = () => {
       id="hero"
       className="s1 flex h-96 flex-col  items-center justify-evenly bg-black text-center "
     >
-      <img
-        src="/images/green.jpg"
-        className=" -z-2 opacity-45 absolute h-96 w-full object-cover
+      <div
+        className=" -z-2 opacity-45 absolute h-96 w-full object-contain
       "
-        alt="bg"
-      />
+      >
+        <Image fill src="/images/green.jpg" objectFit="cover" alt="bg" />
+      </div>
 
       <p className="z-10 text-6xl font-semibold text-white">Volvid</p>
       <div className=" z-10 text-xl text-white">
