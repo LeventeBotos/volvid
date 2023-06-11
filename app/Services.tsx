@@ -6,11 +6,13 @@ export const Services = () => {
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Radiográfiai vizsgálat</p>
           <p>
-            A radiográfiai vizsgálat (RT) egy orvosi képalkotó eljárás, amelyben
-            röntgensugárzást használnak a test belső részeinek vizsgálatára. A
-            módszer lehetővé teszi a szervek, csontok és más anatómiai
-            struktúrák részletes vizsgálatát, segítve az orvosokat a diagnózis
-            felállításában és a megfelelő terápia kiválasztásában.
+            A radiográfiai vizsgálat (RT) röntgensugárzást használ az anyagok és
+            szerkezetek belső részeinek vizsgálatára. Ez segíti az anyagok
+            minőségellenőrzését, hibakeresését és biztonságának ellenőrzését
+            különböző iparágakban. A módszer hatékonyan észlelheti a hibákat,
+            repedéseket és szerkezeti eltéréseket. Szakképzett szakemberek
+            végzik a vizsgálatokat, és biztonsági protokollok betartásával
+            minimalizálják a sugárzás kockázatát.
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">

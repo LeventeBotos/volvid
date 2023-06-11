@@ -71,7 +71,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           message: message,
         },
         headers: {
-          "Access-Control-Allow-Origin": "http://80.98.246.4:3001/",
+          "Access-Control-Allow-Origin": "*",
         },
       });
       console.log("Email sent successfully");
