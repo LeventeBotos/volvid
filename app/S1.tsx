@@ -59,7 +59,12 @@ export const S1 = () => {
         className=" -z-2 opacity-45 absolute h-96 w-full object-contain
       "
       >
-        <Image fill src="/images/green.webp" objectFit="cover" alt="bg" />
+        {/* <Image fill src="/images/green.webp" objectFit="cover" alt="bg" /> */}
+        <img
+          src="/images/green.webp"
+          alt="bg"
+          className=" h-full w-full object-cover"
+        />
       </div>
 
       <p className="z-10 text-6xl font-semibold text-white">Volvid</p>
