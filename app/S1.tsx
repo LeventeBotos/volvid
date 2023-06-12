@@ -77,9 +77,10 @@ export const S1 = () => {
           onClick={() => {
             onLinkClick(0);
           }}
-          className=" z-10 items-center rounded-full text-center"
+          className=" items-center rounded-full border-4 border-solid border-black bg-transparent  p-5 text-center text-white hover:border-white hover:bg-white hover:text-black"
         >
-          <span className="rounded-full">Kontakt</span>
+          Kontakt
+          {/* <span className="rounded-full">Kontakt</span> */}
         </button>
       </div>
     </section>

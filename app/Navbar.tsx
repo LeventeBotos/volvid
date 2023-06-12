@@ -71,7 +71,11 @@ const Navbar = () => {
         src="/images/logo.webp"
         className=" self-center p-3 opacity-100 "
       /> */}
-      <img src="/images/logo.webp" alt="logo" className=" h-16 md:h-20" />
+      <img
+        src="/images/logo.webp"
+        alt="logo"
+        className=" h-16 opacity-100 md:h-20"
+      />
       <button
         id="nav-toggle"
         className="menuu block h-12 w-auto items-center lg:hidden"
@@ -85,20 +89,30 @@ const Navbar = () => {
             onClick={() => {
               onLinkClick(0);
             }}
-            className="flex min-w-min flex-row  items-center rounded-full text-center transition  hover:text-white"
+            className="flex flex-row  items-center rounded-full text-center transition  hover:text-white"
           >
             <span className=" rounded-full transition hover:bg-transparent">
               Kontakt
             </span>
           </button>
-          <button
+          {/* <button
             onClick={() => {
               onLinkClick(0);
             }}
             className="flex min-w-min flex-row  items-center rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className=" rounded-full hover:bg-white">Főlap</span>
+          </button> */}
+          <button
+            onClick={() => {
+              onLinkClick(0);
+            }}
+            className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
+          >
+            Főlap
+            {/* <span className="rounded-full">Kontakt</span> */}
           </button>
+
           <button
             onClick={() => {
               onLinkClick(1);
