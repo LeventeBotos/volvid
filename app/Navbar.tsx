@@ -109,17 +109,26 @@ const Navbar = () => {
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Főlap
+            Főoldal
             {/* <span className="rounded-full">Kontakt</span> */}
           </button>
 
-          <button
+          {/* <button
             onClick={() => {
               onLinkClick(1);
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className="rounded-full hover:bg-white">Ajánlataink</span>
+          </button> */}
+          <button
+            onClick={() => {
+              onLinkClick(1);
+            }}
+            className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
+          >
+            Ajánlataink
+            {/* <span className="rounded-full">Kontakt</span> */}
           </button>
           {/* <button
             onClick={() => {
@@ -129,13 +138,22 @@ const Navbar = () => {
           >
             <span className="rounded-full hover:bg-white">Vezetőink</span>
           </button> */}
-          <button
+          {/* <button
             onClick={() => {
               onLinkClick(3);
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className="rounded-full hover:bg-white">Rólunk</span>
+          </button> */}
+          <button
+            onClick={() => {
+              onLinkClick(2);
+            }}
+            className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
+          >
+            Rólunk
+            {/* <span className="rounded-full">Kontakt</span> */}
           </button>
           {/* <button
             onClick={() => {
@@ -160,7 +178,9 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className="rounded-full bg-[#1f1f1f] text-white">Főlap</span>
+            <span className="rounded-full bg-[#1f1f1f] text-white">
+              Főoldal
+            </span>
           </button>
           <button
             onClick={() => {
