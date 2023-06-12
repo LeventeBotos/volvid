@@ -61,19 +61,20 @@ LT: ASME BPVC SEC.5 ARTICLE 10
     e.preventDefault();
     // console.log(JSON.stringify(selectedOption));
     try {
-      const response = await axios.get("http://80.98.246.4:3001/api/emails", {
-        params: {
-          name: name,
-          email: email,
-          phone: phone,
-          selectedOption: JSON.stringify(selectedOption),
-          selectedOption2: JSON.stringify(selectedOption2),
-          message: message,
-        },
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
-      });
+      const response = await axios.post(
+        "http://localhost:3000/api/email",
+        null,
+        {
+          params: {
+            name: name,
+            email: email,
+            phone: phone,
+            selectedOption: JSON.stringify(selectedOption),
+            selectedOption2: JSON.stringify(selectedOption2),
+            message: message,
+          },
+        }
+      );
       console.log("Email sent successfully");
       console.log(response);
       setSubmitted(true);

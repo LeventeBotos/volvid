@@ -68,9 +68,9 @@ export const S1 = () => {
       </div>
 
       <p className="z-10 text-6xl font-semibold text-white">Volvid</p>
-      <div className=" z-10 text-xl text-white">
+      <p className=" z-10 text-xl text-white">
         Minőség. Tapasztalat. Megbízhatóság.
-      </div>
+      </p>
       <div className="z-10 ">
         {" "}
         <button
