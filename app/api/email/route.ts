@@ -14,12 +14,17 @@ export function getQSParamFromURL(
 }
 
 export async function POST(req: NextRequest) {
-  const name = getQSParamFromURL("name", req.url);
-  const phone = getQSParamFromURL("phone", req.url);
-  const email = getQSParamFromURL("email", req.url);
-  const selectedOption = getQSParamFromURL("selectedOption", req.url);
-  const selectedOption2 = getQSParamFromURL("selectedOption2", req.url);
-  const message = getQSParamFromURL("message", req.url);
+  // let params = new URLSearchParams(document.location.search);
+  // let name = params.get("name"); // is the string "Jonathan"
+  // const name = getQSParamFromURL("name", req.url);
+  const { nextUrl: { search } } = req;
+  const urlSearchParams = new URLSearchParams(search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  // const phone = getQSParamFromURL("phone", req.url);
+  // const email = getQSParamFromURL("email", req.url);
+  // const selectedOption = getQSParamFromURL("selectedOption", req.url);
+  // const selectedOption2 = getQSParamFromURL("selectedOption2", req.url);
+  // const message = getQSParamFromURL("message", req.url);
 
   const msg = {
     to: 'levinandi98@gmail.com',
@@ -27,21 +32,21 @@ export async function POST(req: NextRequest) {
     from: 'botos.levente2007@gmail.com', // Your website email address here
     subject: 'Új árajánlat',
     text: 'and easy to do anywhere, even with Node.js',
-    html: `<div>${name} árajánlatot kért.
+    html: `<div>${params.name} árajánlatot kért.
         <br />
-        Telefonszám: <a href="tel:${phone}">${phone}</a>,
+        Telefonszám: <a href="tel:${params.phone}">${params.phone}</a>,
         <br />
-        Email:  <a href="mailto:${email}">${email}</a>
+        Email:  <a href="mailto:${params.email}">${params.email}</a>
         <br />
-        Választotta: ${selectedOption}, ${selectedOption2}
+        Választotta: ${params.selectedOption}, ${params.selectedOption2}
         <br />
-        Üzenet: ${message}
+        Üzenet: ${params.message}
         </div>`
   };
   
   sgMail.send(msg);
   console.log("sent");
   console.log(req.url);
-  console.log(msg);
+  console.log(params);
   return new NextResponse("sent successfully");
 }
