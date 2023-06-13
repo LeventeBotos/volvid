@@ -6,36 +6,41 @@ export const Services = () => {
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Radiográfiai vizsgálat</p>
           <p>
-            A radiográfiai vizsgálat (RT) röntgensugárzást használ az anyagok és
-            szerkezetek belső részeinek vizsgálatára. Ez segíti az anyagok
-            minőségellenőrzését, hibakeresését és biztonságának ellenőrzését
-            különböző iparágakban. A módszer hatékonyan észlelheti a hibákat,
-            repedéseket és szerkezeti eltéréseket. Szakképzett szakemberek
-            végzik a vizsgálatokat, és biztonsági protokollok betartásával
-            minimalizálják a sugárzás kockázatát.
+            A radiográfiai vizsgálat (RT) röntgensugárzást használ az anyagok,
+            szerkezetek és hegesztési varratok belső részeinek vizsgálatára. Ez
+            segíti az anyagok és szerkezeti elemek minőségellenőrzését,
+            hibakeresését és biztonságának ellenőrzését különböző iparágakban. A
+            módszer hatékonyan észlelheti a térfogati jellegű anyagfolytonossági
+            hibákat, bizonyos esetekben a repedéseket és szerkezeti eltéréseket.
+            Szakképzett anyagvizsgáló szakemberek végzik a vizsgálatokat, és
+            biztonsági előírások betartásával minimalizálják a sugárzás
+            hatásának kockázatát.
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Folyadékbehatolásos vizsgálat</p>
           <p>
-            A folyadékbehatolásos vizsgálat (PT) egy roncsolás mentes
-            anyagvizsgálati eljárás, amelyet főként repedések, hibák vagy
-            anyagfáradások kimutatására alkalmaznak. A vizsgálat során egy
-            folyadékot alkalmaznak a vizsgált felületen, majd eltávolítják, és
-            egy fehérítő anyaggal kezelik. Ezután a felszínt megvizsgálják, és a
-            fehérítő anyag által kitöltött repedéseket vagy hibákat könnyen
-            észlelhetik.
+            A folyadékbehatolásos vizsgálat (PT) egy roncsolásmentes
+            anyagvizsgálati eljárás, amelyet főként felületre kifutó repedésre
+            utaló indikációt, anyagfolytonossági hibák vagy anyagfáradások
+            kimutatására alkalmaznak. A vizsgálat során egy folyadékot
+            alkalmaznak a vizsgált felületen, majd eltávolítják, és egy fehérítő
+            anyaggal kezelik. Ezután a felszínt megvizsgálják, és a fehérítő
+            anyag által kitöltött repedéseket vagy hibákat könnyen észlelhetik.
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Mágnesezhető poros vizsgálat</p>
           <p>
-            A mágnesezhető poros vizsgálat (MT) egy nemromboló anyagvizsgálati
-            eljárás, amelyet a fémekben található felületi repedések, hibák vagy
-            anyagfáradások kimutatására alkalmaznak. A vizsgálat során egy
-            mágneses anyagot por formájában alkalmaznak a vizsgált felületen,
-            majd speciális eszközökkel vizsgálják meg a porral kitöltött
-            repedéseket vagy hibákat.
+            A mágnesezhető poros vizsgálat (MT) egy roncsolásmentes
+            anyagvizsgálati eljárás, amelyet a fémekben található felületi
+            illetve felület közeli repedésre utaló anyagfolytonossági hibák vagy
+            anyagfáradás okozta repedések kimutatására alkalmaznak. A vizsgálat
+            során a mágneses térerő hatására rendeződő mágnespor által kirajzolt
+            erővonalak által következtethetünk lineáris indikációra.
+            {/*egy mágneses anyagot por formájában alkalmaznak a
+            vizsgált felületen, majd speciális eszközökkel vizsgálják meg a
+            porral kitöltött repedéseket vagy hibákat. */}
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
@@ -44,8 +49,11 @@ export const Services = () => {
             Az ultrahangos vizsgálat (UT) egy képalkotó eljárás, amelyben
             ultrahanghullámokat használnak a test belső szerkezetének
             vizsgálatára. Az ultrahangos vizsgálat segítségével részletes
-            képeket kaphatunk a szervekről, szövetekről és szervrendszerekről,
-            és felismerhetünk eltéréseket vagy rendellenességeket.
+            képeket kaphatunk az anyagok, szerkezeti elemek és varratok belső
+            anyagfolytonossági hibáiról.
+            {/* szervekről, szövetekről és
+            szervrendszerekről, és felismerhetünk eltéréseket vagy
+            rendellenességeket. */}
           </p>
         </div>
 
@@ -73,20 +81,20 @@ export const Services = () => {
             Fémek felületi szigetelésének vizsgálata
           </p>
           <p>
-            A fémek felületi szigetelésének vizsgálata (IT) egy eljárás, amely a
-            fémfelületek szigetelésének hatékonyságát ellenőrzi. A vizsgálat
-            során a fémfelületet elektromosan ellenálló réteggel vonják be, majd
-            speciális eszközökkel mérnek az esetleges áteresztődést vagy
-            hiányosságot.
+            A fémek felületi szigetelésének vizsgálata (IT), másnéven átütés
+            vizsgálat egy eljárás, amely a fémfelületek bevonatainak épségét
+            ellenőrzi. A vizsgálat során a fémfelületek bevonatát speciális
+            eszközökkel vizsgálják mely során az esetleg látható elektromos ív a
+            szigetelés sérülésére utal.
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Keménységmérés</p>
           <p>
             A keménységmérés (HT) egy eljárás, amely a fémek vagy más anyagok
-            keménységét méri. A vizsgálat során speciális műszerekkel mérik a
-            anyag ellenállását a behatolásra vagy nyomásra, és ez alapján
-            meghatározzák a keménységi értéket.
+            keménységét méri. A vizsgálat során speciális műszerekkel mérik az
+            anyag benyomódással szembeni ellenállását a benyomódás mértékéből
+            következtethetünk az anyag keménységére.
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
@@ -95,8 +103,8 @@ export const Services = () => {
             A pozitív anyagazonosítás (PMI) egy eljárás, amelynek során az
             anyagokat vagy alkatrészeket az összetételük alapján azonosítják. Az
             eljárás során elemzést végeznek, hogy meghatározzák az anyagokban
-            található kémiai elemeket és összetevőket, ezáltal meghatározzák az
-            anyag pontos azonosítását.
+            található kémiai elemeket és összetevőket, ezáltal meghatározzák a
+            vizsgált anyag összetételét.
           </p>
         </div>
       </div>

@@ -3,15 +3,15 @@ const sgMail = require('@sendgrid/mail');
 
 sgMail.setApiKey(process.env.SGMAIL);
 
-function getQSParamFromURL(
-  key: string,
-  url: string | undefined
-): string | null {
-  if (!url) return "";
-  const search = new URL(url).search;
-  const urlParams = new URLSearchParams(search);
-  return urlParams.get(key);
-}
+// function getQSParamFromURL(
+//   key: string,
+//   url: string | undefined
+// ): string | null {
+//   if (!url) return "";
+//   const search = new URL(url).search;
+//   const urlParams = new URLSearchParams(search);
+//   return urlParams.get(key);
+// }
 
 export async function POST(req: NextRequest) {
   // let params = new URLSearchParams(document.location.search);

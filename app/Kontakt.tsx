@@ -10,6 +10,8 @@ import { useState } from "react";
 import Select from "react-select";
 import axios, { AxiosRequestConfig, AxiosRequestHeaders } from "axios";
 
+let options2 = [{}];
+
 export const Kontakt = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -53,16 +55,12 @@ UT-pa: ASME BPVC SEC.5 ARTICLE 4
 LT: ASME BPVC SEC.5 ARTICLE 10
 */
 
-  const options2 = [
-    { value: "msz", label: "MSZ EN ISO" },
-    { value: "asme", label: "ASME" },
-  ];
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     // console.log(JSON.stringify(selectedOption));
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/email",
+        "https://localhost:3000/api/email",
         null,
         {
           params: {
@@ -88,6 +86,51 @@ LT: ASME BPVC SEC.5 ARTICLE 10
   const handleSelectChange2 = (selectedOptions: any) => {
     setSelectedOption2(selectedOptions);
   };
+  function standard() {
+    // options2.push({ value: "test", label: "hi" });
+    // if (selectedOption.value.includes("rt")) {
+    //   options2.push({ value: "test", label: "hi" });
+    // }
+    console.log(selectedOption);
+    let i: number = 0;
+    while (i < selectedOption.length) {
+      if (selectedOption[i].value === "RT") {
+        options2.push(
+          { value: "MSZ EN ISO 17636-1", label: "MSZ EN ISO 17636-1" },
+          {
+            value: "ASME BPVC SEC.5 ARTICLE 6",
+            label: "ASME BPVC SEC.5 ARTICLE 6",
+          }
+        );
+        console.log("true");
+        break;
+      } else {
+        i++;
+      }
+    }
+    //make the code here to check the selectedOption, and update it accordingly the table that you should define the stuff from:
+    /* 
+  RT: MSZ EN ISO 17636-1 
+  DRT: MSZ EN ISO 17636-2  
+  UT: MSZ EN ISO 17640 10.2-es fejezet
+  UT-PAw: MSZ EN ISO 13588
+  VT: MSZ EN ISO 17637
+  PT: MSZ EN ISO 3451-1
+  MT: MSZ EN ISO 17638
+  LT: MSZ EN 1593
+  
+  ASME:
+  UTw: ASME BPVC SEC.5 ARTICLE 23
+  VT: ASME BPVC SEC.5 ARTICLE 9
+  UT-L: ASME BPVC SEC.5 ARTICLE 5
+  PT: ASME BPVC SEC.5 ARTICLE 6
+  MT: ASME BPVC SEC.5 ARTICLE 7
+  RT: ASME BPVC SEC.5 ARTICLE 2
+  UT-pa: ASME BPVC SEC.5 ARTICLE 4
+  LT: ASME BPVC SEC.5 ARTICLE 10
+  */
+  }
+
   return (
     <form
       className="flex flex-col items-center gap-4 bg-[#1f1f1f] p-5 text-center"
@@ -102,7 +145,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           type="text"
           name="first"
           placeholder="Név"
-          className="w-full rounded-xl p-3 md:p-5"
+          className="w-full rounded-md p-3 md:p-5"
           autoComplete="name"
           required
           onChange={(e) => {
@@ -118,7 +161,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           placeholder="Email"
           name="email"
           autoComplete="email"
-          className=" w-full rounded-xl p-3 md:p-5"
+          className=" w-full  rounded-md p-3 md:p-5"
           required
           onChange={(e) => {
             setEmail(e.target.value);
@@ -133,7 +176,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           name="phone"
           placeholder="Telefonszám"
           autoComplete="tel"
-          className="w-full rounded-xl p-3  md:p-5"
+          className="w-full rounded-md p-3  md:p-5"
           required
           onChange={(e) => {
             setPhone(e.target.value);
@@ -161,6 +204,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           isMulti
           className="w-full rounded-xl"
         />
+        <button onClick={standard}>push</button>
       </div>
 
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
@@ -169,7 +213,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           id="frm-message"
           placeholder="Üzenet"
           name="message"
-          className="w-full rounded-xl p-3 md:w-full md:p-5"
+          className="w-full rounded-md p-3 md:w-full md:p-5"
           onChange={(e) => {
             setMessage(e.target.value);
           }}

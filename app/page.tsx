@@ -11,7 +11,6 @@ import { Jogosultsag } from "./Jogosultsag";
 import { Projects } from "./Projects";
 import { Work } from "./Work";
 import { Memberships } from "./Memberships";
-import { I18n } from "./I18n";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <div className="h-20 md:h-28" />
       <S1 />
       <br />
-      <I18n />
       <Navbar />
       <br />
       <Qualities />
