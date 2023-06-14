@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
         </div>`
   };
   
-  sgMail.send(msg);
+  sgMail.send(msg)
   console.log("sent");
   console.log(req.url);
   console.log(params);
