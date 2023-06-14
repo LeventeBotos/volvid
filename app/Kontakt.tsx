@@ -10,6 +10,18 @@ import { useState } from "react";
 import Select from "react-select";
 import axios, { AxiosRequestConfig, AxiosRequestHeaders } from "axios";
 
+const options = [
+  { value: "RT", label: "Radiográfiai vizsgálat" },
+  { value: "PT", label: "Folyadékbehatolásos vizsgálat" },
+  { value: "MT", label: "Mágnesezhető poros vizsgálat" },
+  { value: "HT", label: "Keménységmérés" },
+  { value: "UT", label: "Ultrahangos vizsgálat" },
+  { value: "LT", label: "Tömörségi vizsgálat" },
+  { value: "VT", label: "Szemrevételezéses vizsgálat" },
+  { value: "IT", label: "Fémek felületi szigetelésének vizsgálata" },
+  { value: "PMI", label: "Pozitív anyagazonosítás" },
+  { value: "Other", label: "Más" },
+];
 let options2 = [{}];
 
 export const Kontakt = () => {
@@ -20,19 +32,6 @@ export const Kontakt = () => {
   const [submitted, setSubmitted] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
-  const subject = "subject";
-  const options = [
-    { value: "RT", label: "Radiográfiai vizsgálat" },
-    { value: "PT", label: "Folyadékbehatolásos vizsgálat" },
-    { value: "MT", label: "Mágnesezhető poros vizsgálat" },
-    { value: "HT", label: "Keménységmérés" },
-    { value: "UT", label: "Ultrahangos vizsgálat" },
-    { value: "LT", label: "Tömörségi vizsgálat" },
-    { value: "VT", label: "Szemrevételezéses vizsgálat" },
-    { value: "IT", label: "Fémek felületi szigetelésének vizsgálata" },
-    { value: "PMI", label: "Pozitív anyagazonosítás" },
-    { value: "Other", label: "Más" },
-  ];
 
   /* 
 RT: MSZ EN ISO 17636-1 
@@ -86,30 +85,8 @@ LT: ASME BPVC SEC.5 ARTICLE 10
   const handleSelectChange2 = (selectedOptions: any) => {
     setSelectedOption2(selectedOptions);
   };
-  function standard() {
-    // options2.push({ value: "test", label: "hi" });
-    // if (selectedOption.value.includes("rt")) {
-    //   options2.push({ value: "test", label: "hi" });
-    // }
-    console.log(selectedOption);
-    let i: number = 0;
-    while (i < selectedOption.length) {
-      if (selectedOption[i].value === "RT") {
-        options2.push(
-          { value: "MSZ EN ISO 17636-1", label: "MSZ EN ISO 17636-1" },
-          {
-            value: "ASME BPVC SEC.5 ARTICLE 6",
-            label: "ASME BPVC SEC.5 ARTICLE 6",
-          }
-        );
-        console.log("true");
-        break;
-      } else {
-        i++;
-      }
-    }
-    //make the code here to check the selectedOption, and update it accordingly the table that you should define the stuff from:
-    /* 
+  //make the code here to check the selectedOption, and update it accordingly the table that you should define the stuff from:
+  /* 
   RT: MSZ EN ISO 17636-1 
   DRT: MSZ EN ISO 17636-2  
   UT: MSZ EN ISO 17640 10.2-es fejezet
@@ -129,7 +106,6 @@ LT: ASME BPVC SEC.5 ARTICLE 10
   UT-pa: ASME BPVC SEC.5 ARTICLE 4
   LT: ASME BPVC SEC.5 ARTICLE 10
   */
-  }
 
   return (
     <form
@@ -204,7 +180,6 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           isMulti
           className="w-full rounded-xl"
         />
-        <button onClick={standard}>push</button>
       </div>
 
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
