@@ -222,25 +222,40 @@ const Navbar = () => {
             </span>
           </button>
         </div>
-        {/* <div className="flex flex-col p-5 text-center text-white">
-          <p>Kövess minket!</p>
-          <div className="flex justify-center text-5xl">
-            <a
-              target="_blank"
-              className="whitee"
-              href="https://www.facebook.com"
-            >
-              <AiFillFacebook />
-            </a>
+        <div className=" items-center p-5 font-bold text-white">
+          <div className="flex w-full justify-evenly">
             <Link
-              target="_blank"
-              className="whitee"
-              href="https://www.linkedin.com/company/volvid-zrt./about/"
+              href="/"
+              className="flex w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
             >
-              <AiFillLinkedin />
+              <img
+                className="h-full rounded-l-lg"
+                alt="hungary"
+                src="/images/hungarian.svg"
+              />
+            </Link>
+            <Link
+              href="/en"
+              className="w-1/3 border-2 border-solid border-white text-center"
+            >
+              <img
+                className="h-full"
+                alt="english"
+                src="/images/american.svg"
+              />
+            </Link>
+            <Link
+              href="/de"
+              className="w-1/3 rounded-r-lg border-2 border-solid border-white text-center"
+            >
+              <img
+                className="h-full rounded-r-lg"
+                alt="german"
+                src="/images/german.svg"
+              />
             </Link>
           </div>
-        </div> */}
+        </div>
       </div>
     </nav>
   );

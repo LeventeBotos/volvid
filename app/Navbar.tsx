@@ -1,12 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-import Image from "next/image";
 
-const Navbar = () => {
+export const Navbar = () => {
   function onLinkClick(num: number) {
     const sections = document.getElementsByTagName("section");
     if (num >= 0 && num < sections.length) {
@@ -63,14 +61,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#f5f5f5] bg-opacity-50 p-3 backdrop-blur-lg backdrop-filter md:h-24">
-      {/* <Image
-        height={15}
-        width={150}
-        alt="logo"
-        src="/images/logo.webp"
-        className=" self-center p-3 opacity-100 "
-      /> */}
+    <nav className="fixed left-0 right-0 top-0 z-30 flex h-20 items-center justify-between bg-[#f5f5f5] bg-opacity-50 p-3 backdrop-blur-lg backdrop-filter md:h-24">
       <img
         src="/images/logo.webp"
         alt="logo"
@@ -95,14 +86,7 @@ const Navbar = () => {
               Kontakt
             </span>
           </button>
-          {/* <button
-            onClick={() => {
-              onLinkClick(0);
-            }}
-            className="flex min-w-min flex-row  items-center rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className=" rounded-full hover:bg-white">Főlap</span>
-          </button> */}
+
           <button
             onClick={() => {
               onLinkClick(0);
@@ -110,17 +94,8 @@ const Navbar = () => {
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
             Főoldal
-            {/* <span className="rounded-full">Kontakt</span> */}
           </button>
 
-          {/* <button
-            onClick={() => {
-              onLinkClick(1);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">Ajánlataink</span>
-          </button> */}
           <button
             onClick={() => {
               onLinkClick(1);
@@ -128,24 +103,8 @@ const Navbar = () => {
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
             Ajánlataink
-            {/* <span className="rounded-full">Kontakt</span> */}
           </button>
-          {/* <button
-            onClick={() => {
-              onLinkClick(2);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">Vezetőink</span>
-          </button> */}
-          {/* <button
-            onClick={() => {
-              onLinkClick(3);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">Rólunk</span>
-          </button> */}
+
           <button
             onClick={() => {
               onLinkClick(2);
@@ -153,20 +112,12 @@ const Navbar = () => {
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
             Rólunk
-            {/* <span className="rounded-full">Kontakt</span> */}
           </button>
-          {/* <button
-            onClick={() => {
-              onLinkClick(4);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">Telephelyek</span>
-          </button> */}
         </div>
       </div>
+      {/* Nav Panel */}
       <div
-        className={`fixed inset-y-0 left-0 z-20 flex w-64 flex-col justify-between bg-[#1f1f1f] lg:hidden ${
+        className={`fixed inset-y-0 left-0 z-30 flex w-64 flex-col justify-between bg-[#1f1f1f] lg:hidden ${
           isOpen ? "block" : "hidden"
         }`}
         id="nav-panel"
@@ -222,28 +173,41 @@ const Navbar = () => {
             </span>
           </button>
         </div>
-        {/* <div className="flex flex-col p-5 text-center text-white">
-          <p>Kövess minket!</p>
-          <div className="flex justify-center text-5xl">
-            <a
-              target="_blank"
-              className="whitee"
-              href="https://www.facebook.com"
-            >
-              <AiFillFacebook />
-            </a>
+        <div className=" items-center p-5 font-bold text-white">
+          <div className="flex w-full justify-evenly">
             <Link
-              target="_blank"
-              className="whitee"
-              href="https://www.linkedin.com/company/volvid-zrt./about/"
+              href="/"
+              className="flex w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
             >
-              <AiFillLinkedin />
+              <img
+                className="h-full rounded-l-lg"
+                alt="hungary"
+                src="/images/hungarian.svg"
+              />
+            </Link>
+            <Link
+              href="/en"
+              className="w-1/3 border-2 border-solid border-white text-center"
+            >
+              <img
+                className="h-full"
+                alt="english"
+                src="/images/american.svg"
+              />
+            </Link>
+            <Link
+              href="/de"
+              className="w-1/3 rounded-r-lg border-2 border-solid border-white text-center"
+            >
+              <img
+                className="h-full rounded-r-lg"
+                alt="german"
+                src="/images/german.svg"
+              />
             </Link>
           </div>
-        </div> */}
+        </div>
       </div>
     </nav>
   );
 };
-
-export default Navbar;
