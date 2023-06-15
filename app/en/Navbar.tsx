@@ -92,7 +92,7 @@ const Navbar = () => {
             className="flex flex-row  items-center rounded-full text-center transition  hover:text-white"
           >
             <span className=" rounded-full transition hover:bg-transparent">
-              Kontakt
+              Contact
             </span>
           </button>
           {/* <button
@@ -101,7 +101,7 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row  items-center rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className=" rounded-full hover:bg-white">Főlap</span>
+            <span className=" rounded-full hover:bg-white">Home</span>
           </button> */}
           <button
             onClick={() => {
@@ -109,8 +109,8 @@ const Navbar = () => {
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Főoldal
-            {/* <span className="rounded-full">Kontakt</span> */}
+            Home
+            {/* <span className="rounded-full">Contact</span> */}
           </button>
 
           {/* <button
@@ -119,7 +119,7 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className="rounded-full hover:bg-white">Ajánlataink</span>
+            <span className="rounded-full hover:bg-white">Services</span>
           </button> */}
           <button
             onClick={() => {
@@ -127,8 +127,8 @@ const Navbar = () => {
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Ajánlataink
-            {/* <span className="rounded-full">Kontakt</span> */}
+            Services
+            {/* <span className="rounded-full">Contact</span> */}
           </button>
           {/* <button
             onClick={() => {
@@ -136,7 +136,7 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className="rounded-full hover:bg-white">Vezetőink</span>
+            <span className="rounded-full hover:bg-white">Leaders</span>
           </button> */}
           {/* <button
             onClick={() => {
@@ -144,7 +144,7 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className="rounded-full hover:bg-white">Rólunk</span>
+            <span className="rounded-full hover:bg-white">About Us</span>
           </button> */}
           <button
             onClick={() => {
@@ -152,8 +152,8 @@ const Navbar = () => {
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Rólunk
-            {/* <span className="rounded-full">Kontakt</span> */}
+            About Us
+            {/* <span className="rounded-full">Contact</span> */}
           </button>
           {/* <button
             onClick={() => {
@@ -161,7 +161,7 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className="rounded-full hover:bg-white">Telephelyek</span>
+            <span className="rounded-full hover:bg-white">Locations</span>
           </button> */}
         </div>
       </div>
@@ -178,9 +178,7 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className="rounded-full bg-[#1f1f1f] text-white">
-              Főoldal
-            </span>
+            <span className="rounded-full bg-[#1f1f1f] text-white">Home</span>
           </button>
           <button
             onClick={() => {
@@ -189,7 +187,7 @@ const Navbar = () => {
             className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
-              Ajánlataink
+              Services
             </span>
           </button>
           <button
@@ -199,7 +197,7 @@ const Navbar = () => {
             className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
-              Vezetőink
+              Leaders
             </span>
           </button>
           <button
@@ -208,7 +206,9 @@ const Navbar = () => {
             }}
             className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
           >
-            <span className="rounded-full bg-[#1f1f1f] text-white">Rólunk</span>
+            <span className="rounded-full bg-[#1f1f1f] text-white">
+              About Us
+            </span>
           </button>
 
           <button
@@ -218,12 +218,12 @@ const Navbar = () => {
             className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
-              Telephelyek
+              Locations
             </span>
           </button>
         </div>
         {/* <div className="flex flex-col p-5 text-center text-white">
-          <p>Kövess minket!</p>
+          <p>Follow us!</p>
           <div className="flex justify-center text-5xl">
             <a
               target="_blank"

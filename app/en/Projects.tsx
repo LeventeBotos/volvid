@@ -22,41 +22,41 @@ export const Projects = () => {
 
   const projects = [
     {
-      name: "MOL Nyrt. Dunai Finomító",
+      name: "MOL Nyrt. Danube Refinery",
       content:
-        "Üzemek és tartályok anyagvizsgálata üzemközi csővezetékek állapotfelmérése, üzemi átalakításokvizsgálatai.",
+        "Material testing of plants and tanks, condition monitoring of interplant pipelines, testing of operational transformations.",
     },
     {
-      name: "Németországban a BayernOil",
-      content: "Ingolstadt környéki finomítóiban folyamatos vizsgálatok.",
+      name: "BayernOil in Germany",
+      content: "Continuous testing in refineries near Ingolstadt.",
     },
     {
-      name: "Németországban az OMV Burghauseni Finomítóban, Wacker kémiai üzemben",
-      content: "Anyagvizsgálatok végzése folyamatosan.",
+      name: "OMV Burghausen Refinery and Wacker Chemical Plant in Germany",
+      content: "Continuous material testing.",
     },
     {
-      name: "BorsodChem Nyrt. Kazincbarcikai gyár",
+      name: "Kazincbarcika Plant of BorsodChem Nyrt.",
       content:
-        "Üzemi leállások anyagvizsgálata, keretszerződött partner vagyunk.",
+        "Material testing during plant shutdowns, we are a contracted partner.",
     },
     {
-      name: "Péti Nitrogén Művek",
-      content: "Reaktor és hőcserélővizsgálatok.",
+      name: "Péti Nitrogen Works",
+      content: "Reactor and heat exchanger testing.",
     },
     {
-      name: "Gönyűi Erőmű",
-      content: "Üzemi leállás vizsgálata.",
+      name: "Gönyű Power Plant",
+      content: "Testing during plant shutdowns.",
     },
     {
-      name: "OMV Schwechati Finomító",
+      name: "OMV Schwechat Refinery",
       content:
-        "Leállásokon anyagvizsgálatok, és leálláson kívüli időszakban állapotfelmérés.",
+        "Material testing during shutdowns and condition monitoring during non-shutdown periods.",
     },
   ];
 
   return (
     <section className="flex  flex-col gap-4 text-center">
-      <p className="text-2xl font-bold">Jelentősebb projektek</p>
+      <p className="text-2xl font-bold">Significant Projects</p>
       {/* <div>
         <ul className="gap-2 text-xl">
           <li>Gönyűi Erőmű üzemi leállás vizsgálata</li>

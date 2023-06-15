@@ -111,7 +111,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col p-5">
-        <p>Kövess minket!</p>
+        <p>Follow us!</p>
         <div className="flex justify-center text-5xl">
           <a target="_blank" className="whitee" href="https://www.facebook.com">
             <AiFillFacebook />

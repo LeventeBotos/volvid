@@ -113,7 +113,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       className="flex flex-col items-center gap-4 bg-[#1f1f1f] p-5 text-center"
       onSubmit={handleSubmit}
     >
-      <p className="text-2xl font-bold text-white">Kontakt</p>
+      <p className="text-2xl font-bold text-white">Contact</p>
 
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
         <BsPersonVcard className="hidden text-4xl text-white md:block" />
@@ -121,7 +121,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           id="frm-first"
           type="text"
           name="first"
-          placeholder="Név"
+          placeholder="Name"
           className="w-full rounded-md p-3 md:p-5"
           autoComplete="name"
           required
@@ -130,6 +130,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           }}
         />
       </div>
+
       <div className=" flex w-full items-center gap-4 text-center text-2xl md:w-2/3 ">
         <AiOutlineMail className="hidden text-4xl text-white md:block" />
         <input
@@ -145,13 +146,14 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           }}
         />
       </div>
+
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
         <AiOutlinePhone className="hidden text-4xl text-white md:block" />
         <input
           id="frm-phone"
           type="text"
           name="phone"
-          placeholder="Telefonszám"
+          placeholder="Phone Number"
           autoComplete="tel"
           className="w-full rounded-md p-3  md:p-5"
           required
@@ -160,23 +162,25 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           }}
         />
       </div>
+
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
         <BsClipboardCheck className="hidden text-4xl text-white md:block" />
         <Select
           defaultValue={selectedOption}
           onChange={handleSelectChange}
-          placeholder="Vizsgálati Eljárás"
+          placeholder="Testing Procedure"
           options={options}
           isMulti
           className="w-full rounded-xl"
         />
       </div>
+
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
         <AiOutlineSearch className="hidden text-4xl text-white md:block" />
         <Select
           defaultValue={selectedOption2}
           onChange={handleSelectChange2}
-          placeholder="Vizsgálati szabvány"
+          placeholder="Testing Standard"
           options={options2}
           isMulti
           className="w-full rounded-xl"
@@ -187,7 +191,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
         <AiOutlineMessage className="hidden text-4xl text-white md:block" />
         <textarea
           id="frm-message"
-          placeholder="Üzenet"
+          placeholder="Message"
           name="message"
           className="w-full rounded-md p-3 md:w-full md:p-5"
           onChange={(e) => {
@@ -200,7 +204,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
         type="submit"
         className="flex flex-row items-center rounded-full bg-primary text-center md:m-3"
       >
-        <span className="rounded-full">Küldés</span>
+        <span className="rounded-full">Submit</span>
       </button>
     </form>
   );
