@@ -76,7 +76,7 @@ export const Services = () => {
             procedure that checks the integrity of coatings on metal surfaces.
             During the inspection, the coating on metal surfaces is examined
             using special tools, and any visible electric arcs indicate damage
-            to the coating's insulation.
+            to the insulation of the coating.
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
@@ -86,7 +86,7 @@ export const Services = () => {
             metals or other materials. During the test, the resistance of the
             material to indentation is measured using specialized instruments,
             and the degree of indentation provides information about the
-            material's hardness.
+            hardness of the material.
           </p>
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
