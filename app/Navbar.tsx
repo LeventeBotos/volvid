@@ -177,30 +177,30 @@ export const Navbar = () => {
           <div className="flex w-full justify-evenly">
             <Link
               href="/"
-              className="flex w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
+              className=" flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
             >
               <img
-                className="h-full rounded-l-lg"
-                alt="hungary"
+                className=" h-full rounded-l-lg object-cover opacity-100"
+                alt="hungarian"
                 src="/images/hungarian.svg"
               />
             </Link>
             <Link
               href="/en"
-              className="w-1/3 border-2 border-solid border-white text-center"
+              className="h-12 w-1/3 border-2 border-solid border-white text-center"
             >
               <img
-                className="h-full"
+                className="h-full object-cover opacity-100"
                 alt="english"
                 src="/images/american.svg"
               />
             </Link>
             <Link
               href="/de"
-              className="w-1/3 rounded-r-lg border-2 border-solid border-white text-center"
+              className="h-12 w-1/3 rounded-r-lg border-2 border-solid border-white text-center"
             >
               <img
-                className="h-full rounded-r-lg"
+                className="h-full rounded-r-lg object-cover opacity-100"
                 alt="german"
                 src="/images/german.svg"
               />
