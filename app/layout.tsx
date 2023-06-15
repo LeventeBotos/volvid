@@ -9,11 +9,7 @@ export const metadata = {
   description: "Volvid weboldal",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="hu">
       <body className={inter.className}>
@@ -23,3 +19,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;
