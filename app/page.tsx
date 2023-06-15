@@ -5,7 +5,6 @@ import Testamonials from "./Testamonials";
 import { Location } from "./Location";
 import { People } from "./People";
 import { Qualities } from "./Qualities";
-import Navbar from "./Navbar";
 import { Kontakt } from "./Kontakt";
 import { Jogosultsag } from "./Jogosultsag";
 import { Projects } from "./Projects";
