@@ -192,7 +192,7 @@ export const Navbar = () => {
               <img
                 className="h-full object-cover opacity-100"
                 alt="english"
-                src="/images/american.svg"
+                src="/images/english.svg"
               />
             </Link>
             <Link
