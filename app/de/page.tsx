@@ -17,8 +17,8 @@ export default function Home() {
     <main className="text-center">
       <div className="h-20 md:h-28" />
       <S1 />
-      {/* <br />
-      <Navbar /> */}
+      <br />
+      <Navbar />
       <br />
       <Qualities />
       <br />
