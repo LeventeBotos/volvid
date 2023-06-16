@@ -23,9 +23,9 @@ export default function Home() {
       <br />
       <About />
       <br />
-      <Memberships />
-      <br />
       <Projects />
+      <br />
+      <Memberships />
       <br />
       {/* <Testamonials /> */}
       <Services />

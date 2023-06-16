@@ -80,38 +80,25 @@ export const Navbar = () => {
             onClick={() => {
               onLinkClick(0);
             }}
-            className="flex flex-row  items-center rounded-full text-center transition  hover:text-white"
-          >
-            <span className=" rounded-full transition hover:bg-transparent">
-              Kontakt
-            </span>
-          </button>
-
-          <button
-            onClick={() => {
-              onLinkClick(0);
-            }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
             Főoldal
           </button>
-
           <button
             onClick={() => {
               onLinkClick(1);
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Ajánlataink
+            Rólunk
           </button>
-
           <button
             onClick={() => {
-              onLinkClick(2);
+              onLinkClick(4);
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Rólunk
+            Vizsgálataink
           </button>
         </div>
       </div>

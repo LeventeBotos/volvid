@@ -22,7 +22,12 @@ const options = [
   { value: "PMI", label: "Pozitív anyagazonosítás" },
   { value: "Other", label: "Más" },
 ];
-let options2 = [{}];
+let options2: Option[] = [];
+
+interface Option {
+  value: string;
+  label: string;
+}
 
 export const Kontakt = () => {
   const [name, setName] = useState("");
@@ -30,9 +35,9 @@ export const Kontakt = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [selectedOption2, setSelectedOption2] = useState(null);
-
+  const [selectedOption, setSelectedOption] = useState<Option[]>([]);
+  const [selectedOption2, setSelectedOption2] = useState<Option | null>(null);
+  let n: number = 0;
   /* 
 RT: MSZ EN ISO 17636-1 
 DRT: MSZ EN ISO 17636-2  
@@ -75,18 +80,33 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       );
       console.log("Email sent successfully");
       console.log(response);
+      alert("sent succesfully!");
       setSubmitted(true);
     } catch (error) {
       console.error(error);
     }
   }
+
   const handleSelectChange = (selectedOptions: any) => {
     setSelectedOption(selectedOptions);
   };
+
   const handleSelectChange2 = (selectedOptions: any) => {
     setSelectedOption2(selectedOptions);
   };
-  //make the code here to check the selectedOption, and update it accordingly the table that you should define the stuff from:
+  function pushOptions(option: any) {
+    console.log("called");
+    console.log(selectedOption);
+
+    if (option[n].value === "RT") {
+      console.log(n);
+      n += 1;
+      options2.push({ value: "RT", label: "Radiográfiai vizsgálat" });
+    } else {
+      options2.push({ value: "IDK", label: "Undefined" });
+    }
+  }
+
   /* 
   RT: MSZ EN ISO 17636-1 
   DRT: MSZ EN ISO 17636-2  
@@ -164,10 +184,26 @@ LT: ASME BPVC SEC.5 ARTICLE 10
         <BsClipboardCheck className="hidden text-4xl text-white md:block" />
         <Select
           defaultValue={selectedOption}
-          onChange={handleSelectChange}
+          onChange={(selectedOption) => {
+            handleSelectChange(selectedOption);
+            if (selectedOption[n].value === "RT") {
+              options2.push({
+                value: "RT",
+                label: JSON.stringify(selectedOption),
+              });
+            } else {
+              n = n + 1;
+              options2.push({ value: "IDK", label: "Undefined" });
+            }
+
+            // console.log(selectedOption);
+            // pushOptions(selectedOption);
+            // options2.push(...selectedOption);
+          }}
           placeholder="Vizsgálati Eljárás"
           options={options}
           isMulti
+          required
           className="w-full rounded-xl"
         />
       </div>
@@ -200,7 +236,9 @@ LT: ASME BPVC SEC.5 ARTICLE 10
         type="submit"
         className="flex flex-row items-center rounded-full bg-primary text-center md:m-3"
       >
-        <span className="rounded-full">Küldés</span>
+        <span className="rounded-full">
+          {submitted ? "Köszönjük!" : "Küldés"}
+        </span>
       </button>
     </form>
   );
