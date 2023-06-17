@@ -32,7 +32,7 @@ export const Location = () => {
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
           <p className="text-xl">Telephely, iroda, laboratórium</p>
-          <p className="">Százhalombatta, MOL Dunai Finomító, 2440</p>
+          <p className="">Miskolc, Besenyői u. 8, 3527</p>
           <a
             href="https://www.google.com/maps/dir//Miskolc,+Beseny%C5%91i+u.+8,+3527/@48.1082399,20.7908248,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x473f5ffffd4d607f:0x4f80810c7dfec91!2m2!1d20.8011031!2d48.108226!3e0?entry=ttu"
             target="_blank"

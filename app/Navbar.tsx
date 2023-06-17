@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineMenu } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
 
 export const Navbar = () => {
   function onLinkClick(num: number) {
@@ -69,10 +70,15 @@ export const Navbar = () => {
       />
       <button
         id="nav-toggle"
-        className="menuu block h-12 w-auto items-center lg:hidden"
+        className="menuu block h-12 w-auto items-center hover:text-black lg:hidden"
         onClick={togglePanel}
       >
-        <GiHamburgerMenu className="h-full w-auto" />
+        {isOpen ? (
+          <GrClose className="h-full w-auto p-1 hover:text-black" />
+        ) : (
+          <AiOutlineMenu className="h-full w-auto hover:text-black" />
+        )}
+        {/*  */}
       </button>
       <div className=" hidden lg:block lg:items-center" id="nav-content">
         <div className="flex flex-row justify-evenly gap-2">
@@ -102,7 +108,11 @@ export const Navbar = () => {
           </button>
         </div>
       </div>
-      {/* Nav Panel */}
+      {/* 
+      =========================================================================================================================
+      Mobile Navbar
+      =========================================================================================================================
+      */}
       <div
         className={`fixed inset-y-0 left-0 z-30 flex w-64 flex-col justify-between bg-[#1f1f1f] lg:hidden ${
           isOpen ? "block" : "hidden"
