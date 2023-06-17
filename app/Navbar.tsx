@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
+import Flagselect from "./Flagselect";
 
 export const Navbar = () => {
   function onLinkClick(num: number) {
@@ -106,6 +108,9 @@ export const Navbar = () => {
           >
             Vizsgálataink
           </button>
+          <Flagselect />
+
+          {/* {openLang ? "open" : "closed"} */}
         </div>
       </div>
       {/* 
@@ -124,7 +129,7 @@ export const Navbar = () => {
             onClick={() => {
               onLinkClick(0);
             }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
+            className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
               Főoldal
@@ -134,39 +139,18 @@ export const Navbar = () => {
             onClick={() => {
               onLinkClick(1);
             }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full bg-[#1f1f1f] text-white">
-              Ajánlataink
-            </span>
-          </button>
-          <button
-            onClick={() => {
-              onLinkClick(2);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full bg-[#1f1f1f] text-white">
-              Vezetőink
-            </span>
-          </button>
-          <button
-            onClick={() => {
-              onLinkClick(3);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
+            className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">Rólunk</span>
           </button>
-
           <button
             onClick={() => {
               onLinkClick(4);
             }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
+            className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
-              Telephelyek
+              Vizsgálataink
             </span>
           </button>
         </div>
