@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -156,7 +155,7 @@ export const Navbar = () => {
         </div>
         <div className=" items-center p-5 font-bold text-white">
           <div className="flex w-full justify-evenly">
-            <Link
+            <a
               href="/"
               className=" flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
             >
@@ -165,8 +164,8 @@ export const Navbar = () => {
                 alt="hungarian"
                 src="/images/hungarian.svg"
               />
-            </Link>
-            <Link
+            </a>
+            <a
               href="/en"
               className="h-12 w-1/3 border-2 border-solid border-white text-center"
             >
@@ -175,8 +174,8 @@ export const Navbar = () => {
                 alt="english"
                 src="/images/english.svg"
               />
-            </Link>
-            <Link
+            </a>
+            <a
               href="/de"
               className="h-12 w-1/3 rounded-r-lg border-2 border-solid border-white text-center"
             >
@@ -185,7 +184,7 @@ export const Navbar = () => {
                 alt="german"
                 src="/images/german.svg"
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

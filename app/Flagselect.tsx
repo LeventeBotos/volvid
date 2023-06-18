@@ -1,6 +1,5 @@
 "use clients";
 
-import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineDown } from "react-icons/ai";
 
@@ -30,20 +29,20 @@ const Flagselect = () => {
           openLang ? "block" : "hidden"
         }`}
       >
-        <Link href="/en" className=" items-center ">
+        <a href="/en" className=" items-center ">
           <img
             className=" rounded-lg object-contain opacity-100"
             alt="english"
             src="/images/english.svg"
           />
-        </Link>
-        <Link href="/de" className="">
+        </a>
+        <a href="/de" className="">
           <img
             className=" rounded-lg opacity-100"
             alt="german"
             src="/images/german.svg"
           />
-        </Link>
+        </a>
       </div>
     </div>
   );
