@@ -1,14 +1,16 @@
 "use client";
 import {
+  AiOutlineCheckCircle,
   AiOutlineMail,
   AiOutlineMessage,
   AiOutlinePhone,
   AiOutlineSearch,
+  AiOutlineSend,
 } from "react-icons/ai";
 import { BsClipboardCheck, BsPersonVcard } from "react-icons/bs";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Select from "react-select";
-import Lottie, { LottiePlayer, useLottie } from "lottie-react";
+// import Lottie, { LottiePlayer } from "lottie-react";
 import animationData from "./lotties/sending.json";
 import axios, { AxiosRequestConfig, AxiosRequestHeaders } from "axios";
 import { type } from "os";
@@ -197,7 +199,7 @@ const options: Option[] = [
 ];
 
 export const Kontakt = () => {
-  const lottieRef = useRef();
+  // const lottieRef = useRef<typeof LottiePlayer | null>(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -229,7 +231,7 @@ export const Kontakt = () => {
       console.log("Email sent successfully");
       console.log(response);
       // alert("sent succesfully!");
-      lottieRef.current.play();
+      // lottieRef.current?.play();
       setSubmitted(true);
     } catch (error) {
       console.error(error);
@@ -362,21 +364,22 @@ export const Kontakt = () => {
 
       <button
         type="submit"
-        onClick={() => {
-          console.log("play");
-        }}
+        // onClick={() => {
+        //   lottieRef.current?.play();
+        // }}
         className="flex flex-row items-center rounded-full bg-primary p-0 text-center "
       >
         {submitted ? (
-          "Köszönjük!"
+          <AiOutlineCheckCircle />
         ) : (
-          <Lottie
-            lottieRef={lottieRef}
-            animationData={animationData}
-            style={animationStyle}
-            loop={false}
-            autoplay={false}
-          />
+          <AiOutlineSend />
+          // <Lottie
+          //   lottieRef={lottieRef}
+          //   animationData={animationData}
+          //   style={animationStyle}
+          //   loop={false}
+          //   autoplay={false}
+          // />
         )}
       </button>
     </form>
