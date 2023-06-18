@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-import Image from "next/image";
+import { AiOutlineMenu } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
+import Flagselect from "./Flagselect";
 
 const Navbar = () => {
   function onLinkClick(num: number) {
@@ -81,7 +80,11 @@ const Navbar = () => {
         className="menuu block h-12 w-auto items-center lg:hidden"
         onClick={togglePanel}
       >
-        <GiHamburgerMenu className="h-full w-auto" />
+        {isOpen ? (
+          <GrClose className="h-full w-auto p-1 hover:text-black" />
+        ) : (
+          <AiOutlineMenu className="h-full w-auto hover:text-black" />
+        )}
       </button>
       <div className=" hidden lg:block lg:items-center" id="nav-content">
         <div className="flex flex-row justify-evenly gap-2">
@@ -89,82 +92,34 @@ const Navbar = () => {
             onClick={() => {
               onLinkClick(0);
             }}
-            className="flex flex-row  items-center rounded-full text-center transition  hover:text-white"
-          >
-            <span className=" rounded-full transition hover:bg-transparent">
-              Contact
-            </span>
-          </button>
-          {/* <button
-            onClick={() => {
-              onLinkClick(0);
-            }}
-            className="flex min-w-min flex-row  items-center rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className=" rounded-full hover:bg-white">Home</span>
-          </button> */}
-          <button
-            onClick={() => {
-              onLinkClick(0);
-            }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
             Home
-            {/* <span className="rounded-full">Contact</span> */}
           </button>
-
-          {/* <button
-            onClick={() => {
-              onLinkClick(1);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">Services</span>
-          </button> */}
           <button
             onClick={() => {
               onLinkClick(1);
+            }}
+            className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
+          >
+            About
+          </button>
+          <button
+            onClick={() => {
+              onLinkClick(4);
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
             Services
-            {/* <span className="rounded-full">Contact</span> */}
           </button>
-          {/* <button
-            onClick={() => {
-              onLinkClick(2);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">Leaders</span>
-          </button> */}
-          {/* <button
-            onClick={() => {
-              onLinkClick(3);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">About Us</span>
-          </button> */}
-          <button
-            onClick={() => {
-              onLinkClick(2);
-            }}
-            className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
-          >
-            About Us
-            {/* <span className="rounded-full">Contact</span> */}
-          </button>
-          {/* <button
-            onClick={() => {
-              onLinkClick(4);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-transparent text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full hover:bg-white">Locations</span>
-          </button> */}
+          <Flagselect />
         </div>
       </div>
+      {/* 
+      =========================================================================================================================
+      Mobile Navbar
+      =========================================================================================================================
+      */}
       <div
         className={`fixed inset-y-0 left-0 z-30 flex w-64 flex-col justify-between bg-[#1f1f1f] lg:hidden ${
           isOpen ? "block" : "hidden"
@@ -176,7 +131,7 @@ const Navbar = () => {
             onClick={() => {
               onLinkClick(0);
             }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
+            className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">Home</span>
           </button>
@@ -184,47 +139,24 @@ const Navbar = () => {
             onClick={() => {
               onLinkClick(1);
             }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
+            className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
+          >
+            <span className="rounded-full bg-[#1f1f1f] text-white">About</span>
+          </button>
+          <button
+            onClick={() => {
+              onLinkClick(4);
+            }}
+            className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
               Services
             </span>
           </button>
-          <button
-            onClick={() => {
-              onLinkClick(2);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full bg-[#1f1f1f] text-white">
-              Leaders
-            </span>
-          </button>
-          <button
-            onClick={() => {
-              onLinkClick(3);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full bg-[#1f1f1f] text-white">
-              About Us
-            </span>
-          </button>
-
-          <button
-            onClick={() => {
-              onLinkClick(4);
-            }}
-            className="flex min-w-min flex-row items-center  rounded-full bg-white text-center hover:bg-black hover:text-black hover:underline"
-          >
-            <span className="rounded-full bg-[#1f1f1f] text-white">
-              Locations
-            </span>
-          </button>
         </div>
         <div className=" items-center p-5 font-bold text-white">
           <div className="flex w-full justify-evenly">
-            <Link
+            <a
               href="/"
               className=" flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
             >
@@ -233,8 +165,8 @@ const Navbar = () => {
                 alt="hungarian"
                 src="/images/hungarian.svg"
               />
-            </Link>
-            <Link
+            </a>
+            <a
               href="/en"
               className="h-12 w-1/3 border-2 border-solid border-white text-center"
             >
@@ -243,8 +175,8 @@ const Navbar = () => {
                 alt="english"
                 src="/images/english.svg"
               />
-            </Link>
-            <Link
+            </a>
+            <a
               href="/de"
               className="h-12 w-1/3 rounded-r-lg border-2 border-solid border-white text-center"
             >
@@ -253,7 +185,7 @@ const Navbar = () => {
                 alt="german"
                 src="/images/german.svg"
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -11,9 +11,8 @@ import { BsClipboardCheck, BsPersonVcard } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 import Select from "react-select";
 // import Lottie, { LottiePlayer } from "lottie-react";
-import animationData from "./lotties/sending.json";
+// import animationData from "./lotties/sending.json";
 import axios, { AxiosRequestConfig, AxiosRequestHeaders } from "axios";
-import { type } from "os";
 
 interface Option {
   value: string;
@@ -21,9 +20,9 @@ interface Option {
   optionss?: Option[];
 }
 
-const animationStyle = {
-  height: 75,
-};
+// const animationStyle = {
+//   height: 75,
+// };
 
 /* 
 RT: MSZ EN ISO 17636-1 
@@ -80,17 +79,6 @@ const options2 = [
     ],
   },
   {
-    value: "HT",
-    label: "Keménységmérés",
-    options: [
-      {
-        value: "undefined",
-        label: "undefined",
-      },
-      { value: "undefined", label: "undefined" },
-    ],
-  },
-  {
     value: "LT",
     label: "Tömörségi vizsgálat",
     options: [
@@ -98,34 +86,6 @@ const options2 = [
       {
         value: "ASME BPVC SEC.5 ARTICLE 10",
         label: "ASME BPVC SEC.5 ARTICLE 10",
-      },
-    ],
-  },
-  {
-    value: "IT",
-    label: "Fémek felületi szigetelésének vizsgálata",
-    options: [
-      {
-        value: "undefined",
-        label: "undefined",
-      },
-      {
-        value: "undefined",
-        label: "undefined",
-      },
-    ],
-  },
-  {
-    value: "PMI",
-    label: "Pozitív anyagazonosítás",
-    options: [
-      {
-        value: "undefined",
-        label: "undefined",
-      },
-      {
-        value: "undefined",
-        label: "undefined",
       },
     ],
   },
@@ -164,6 +124,10 @@ const options2 = [
         label: "ASME BPVC SEC.5 ARTICLE 9",
       },
     ],
+  },
+  {
+    value: "Más",
+    label: "Más",
   },
 ];
 
@@ -230,7 +194,6 @@ export const Kontakt = () => {
       );
       console.log("Email sent successfully");
       console.log(response);
-      // alert("sent succesfully!");
       // lottieRef.current?.play();
       setSubmitted(true);
     } catch (error) {
@@ -248,7 +211,7 @@ export const Kontakt = () => {
 
   return (
     <form
-      className="flex flex-col items-center gap-4 bg-[#1f1f1f] p-5 text-center"
+      className=" flex flex-col items-center gap-4 bg-[#1f1f1f] p-5 text-center"
       onSubmit={handleSubmit}
     >
       <p className="text-2xl font-bold text-white">Kontakt</p>
@@ -369,9 +332,9 @@ export const Kontakt = () => {
         // }}
         className="flex flex-row items-center rounded-full bg-primary  text-center "
       >
-        <span className=" flex items-center justify-evenly rounded-full text-center text-2xl">
+        <span className=" flex items-center justify-evenly rounded-full text-center text-3xl">
           {submitted ? (
-            <AiOutlineCheckCircle />
+            <AiOutlineCheckCircle className="text-green-500" />
           ) : (
             <AiOutlineSend />
             // <Lottie

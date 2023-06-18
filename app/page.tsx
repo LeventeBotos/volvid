@@ -10,10 +10,13 @@ import { Jogosultsag } from "./Jogosultsag";
 import { Projects } from "./Projects";
 import { Work } from "./Work";
 import { Memberships } from "./Memberships";
+import { Footer } from "./Footer";
+import { Navbar } from "./Navbar";
 
 export default function Home() {
   return (
     <main className="text-center">
+      <Navbar />
       <div className="h-20 md:h-28" />
       <S1 />
       {/* <br />
@@ -23,9 +26,9 @@ export default function Home() {
       <br />
       <About />
       <br />
-      <Projects />
-      <br />
       <Memberships />
+      <br />
+      <Projects />
       <br />
       {/* <Testamonials /> */}
       <Services />
@@ -40,6 +43,7 @@ export default function Home() {
       <br />
       <Jogosultsag />
       <br />
+      <Footer />
     </main>
   );
 }

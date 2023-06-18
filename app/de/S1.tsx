@@ -69,7 +69,7 @@ export const S1 = () => {
 
       <p className="z-10 text-6xl font-semibold text-white">Volvid</p>
       <p className=" z-10 text-xl text-white">
-        Qualität. Erfahrung. Zuverlässigkeit.
+        Quality. Experience. Reliability.
       </p>
       <div className="z-10 ">
         {" "}
@@ -79,7 +79,7 @@ export const S1 = () => {
           }}
           className=" bg-blur-xl items-center rounded-full border-4 border-solid border-black bg-black bg-opacity-25  p-5 text-center text-white hover:border-white hover:bg-white hover:text-black"
         >
-          Kontakt
+          Contact
           {/* <span className="rounded-full">Kontakt</span> */}
         </button>
       </div>

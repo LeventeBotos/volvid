@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <section className="flex flex-col justify-evenly gap-4 text-center md:px-10">
       <p className=" text-center text-2xl font-bold">About us</p>
-      <div className="text-xl xl:px-20">
+      <div className="h-96 overflow-y-scroll px-2 text-xl md:px-1 xl:px-20">
         VOLVID Service Private Limited Liability Company (Volvid Zrt.) is
         pleased to introduce itself to you. Our company is 100% Hungarian-owned,
         we have been operating successfully since February 2017. Our main

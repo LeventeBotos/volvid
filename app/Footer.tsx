@@ -1,8 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-
 function onLinkClick(num: number) {
   const sections = document.getElementsByTagName("section");
   if (num >= 0 && num < sections.length) {
@@ -55,74 +52,72 @@ export const Footer = () => {
   return (
     <footer className=" flex w-full flex-col bg-[#1f1f1f] text-center text-white">
       <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-10 py-5">
-        <div
+        <button
           onClick={() => {
             onLinkClick(0);
           }}
-          className=""
+          className=" items-center rounded-full text-center"
         >
-          <button className="flex  flex-row items-center rounded-full text-center md:m-3">
-            <span className="whitee rounded-full bg-[#1f1f1f]">Főlap</span>
-          </button>
-        </div>
-        <div
+          <span className="rounded-full">Főoldal</span>
+        </button>
+        <button
           onClick={() => {
             onLinkClick(1);
           }}
-          className=" "
+          className=" items-center rounded-full text-center"
         >
-          <button className="flex flex-row items-center rounded-full text-center md:m-3">
-            <span className="whitee rounded-full bg-[#1f1f1f]">
-              Ajánlataink
-            </span>
-          </button>
-        </div>
-        <div
+          <span className="rounded-full">Rólunk</span>
+        </button>
+
+        <button
           onClick={() => {
-            onLinkClick(2);
+            onLinkClick(5);
           }}
-          className=""
+          className=" items-center rounded-full text-center"
         >
-          <button className="flex flex-row items-center rounded-full text-center md:m-3">
-            <span className="whitee rounded-full bg-[#1f1f1f]">Vezetőink</span>
-          </button>
-        </div>
-        <div
+          <span className="rounded-full">Vezetőink</span>
+        </button>
+        <button
           onClick={() => {
-            onLinkClick(3);
+            onLinkClick(6);
           }}
-          className=""
+          className=" items-center rounded-full text-center"
         >
-          <button className="flex flex-row items-center rounded-full text-center md:m-3">
-            <span className="whitee rounded-full bg-[#1f1f1f]">Rólunk</span>
-          </button>
-        </div>
-        <div
-          onClick={() => {
-            onLinkClick(4);
-          }}
-          className=""
-        >
-          <button className="flex flex-row items-center rounded-full text-center md:m-3">
-            <span className="whitee rounded-full bg-[#1f1f1f]">
-              Telephelyek
-            </span>
-          </button>
-        </div>
+          <span className="rounded-full">Telephelyeink</span>
+        </button>
       </div>
-      <div className="flex flex-col p-5">
-        <p>Kövess minket!</p>
-        <div className="flex justify-center text-5xl">
-          <a target="_blank" className="whitee" href="https://www.facebook.com">
-            <AiFillFacebook />
-          </a>
-          <Link
-            target="_blank"
-            className="whitee"
-            href="https://www.Linkedin.com"
+      <div className=" items-center self-center p-5 font-bold text-white ">
+        <div className="flex w-full justify-evenly">
+          <a
+            href="/"
+            className=" flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
           >
-            <AiFillLinkedin />
-          </Link>
+            <img
+              className=" h-full rounded-l-lg object-cover opacity-100"
+              alt="hungarian"
+              src="/images/hungarian.svg"
+            />
+          </a>
+          <a
+            href="/en"
+            className="flex h-12 w-1/3 flex-col  border-2 border-solid border-white text-center"
+          >
+            <img
+              className="h-full object-cover opacity-100"
+              alt="english"
+              src="/images/english.svg"
+            />
+          </a>
+          <a
+            href="/de"
+            className="flex h-12 w-1/3 flex-col rounded-r-lg border-2 border-solid border-white text-center"
+          >
+            <img
+              className="h-full rounded-r-lg object-cover opacity-100"
+              alt="german"
+              src="/images/german.svg"
+            />
+          </a>
         </div>
       </div>
       <p className="text-gray-400">Copyright © Volvid 2023</p>
