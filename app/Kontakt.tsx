@@ -10,35 +10,13 @@ import { useState } from "react";
 import Select from "react-select";
 import axios, { AxiosRequestConfig, AxiosRequestHeaders } from "axios";
 
-const options = [
-  { value: "RT", label: "Radiográfiai vizsgálat" },
-  { value: "PT", label: "Folyadékbehatolásos vizsgálat" },
-  { value: "MT", label: "Mágnesezhető poros vizsgálat" },
-  { value: "HT", label: "Keménységmérés" },
-  { value: "UT", label: "Ultrahangos vizsgálat" },
-  { value: "LT", label: "Tömörségi vizsgálat" },
-  { value: "VT", label: "Szemrevételezéses vizsgálat" },
-  { value: "IT", label: "Fémek felületi szigetelésének vizsgálata" },
-  { value: "PMI", label: "Pozitív anyagazonosítás" },
-  { value: "Other", label: "Más" },
-];
-let options2: Option[] = [];
-
 interface Option {
   value: string;
   label: string;
+  optionss?: Option[];
 }
 
-export const Kontakt = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<Option[]>([]);
-  const [selectedOption2, setSelectedOption2] = useState<Option | null>(null);
-  let n: number = 0;
-  /* 
+/* 
 RT: MSZ EN ISO 17636-1 
 DRT: MSZ EN ISO 17636-2  
 UT: MSZ EN ISO 17640 10.2-es fejezet
@@ -58,6 +36,84 @@ RT: ASME BPVC SEC.5 ARTICLE 2
 UT-pa: ASME BPVC SEC.5 ARTICLE 4
 LT: ASME BPVC SEC.5 ARTICLE 10
 */
+const options: Option[] = [
+  {
+    value: "RT",
+    label: "Radiográfiai vizsgálat",
+    optionss: [
+      {
+        value: "ASME BPVC SEC.5 ARTICLE 2",
+        label: "ASME BPVC SEC.5 ARTICLE 2",
+      },
+      { value: "MSZ EN ISO 17636-1", label: "MSZ EN ISO 17636-1" },
+    ],
+  },
+  {
+    value: "PT",
+    label: "Folyadékbehatolásos vizsgálat",
+    optionss: [
+      {
+        value: "ASME BPVC SEC.5 ARTICLE 6",
+        label: "ASME BPVC SEC.5 ARTICLE 6",
+      },
+      { value: "MSZ EN ISO 3451-1", label: "MSZ EN ISO 3451-1" },
+    ],
+  },
+  {
+    value: "MT",
+    label: "Mágnesezhető poros vizsgálat",
+    optionss: [
+      {
+        value: "ASME BPVC SEC.5 ARTICLE 7",
+        label: "ASME BPVC SEC.5 ARTICLE 7",
+      },
+      { value: "MSZ EN ISO 17638", label: "MSZ EN ISO 17638" },
+    ],
+  },
+  { value: "HT", label: "Keménységmérés" },
+  {
+    value: "LT",
+    label: "Tömörségi vizsgálat",
+    optionss: [{ value: "MSZ EN 1593", label: "MSZ EN 1593" }],
+  },
+  {
+    value: "IT",
+    label: "Fémek felületi szigetelésének vizsgálata",
+    optionss: [
+      {
+        value: "ASME BPVC SEC.5 ARTICLE 23",
+        label: "ASME BPVC SEC.5 ARTICLE 23",
+      },
+    ],
+  },
+  { value: "PMI", label: "Pozitív anyagazonosítás" },
+  { value: "UT", label: "Ultrahangos vizsgálat" },
+  {
+    value: "VT",
+    label: "Szemrevételezéses vizsgálat",
+    optionss: [
+      { value: "MSZ EN ISO 17637", label: "MSZ EN ISO 17637" },
+      {
+        value: "ASME BPVC SEC.5 ARTICLE 9",
+        label: "ASME BPVC SEC.5 ARTICLE 9",
+      },
+    ],
+  },
+  { value: "Other", label: "Más" },
+];
+
+let options2: Option[] = [];
+
+export const Kontakt = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<Option | null>(null);
+  const [selectedSuboption, setSelectedSuboption] = useState<Option | null>(
+    null
+  );
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -73,7 +129,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
             email: email,
             phone: phone,
             selectedOption: JSON.stringify(selectedOption),
-            selectedOption2: JSON.stringify(selectedOption2),
+            selectedOption2: JSON.stringify(selectedSuboption),
             message: message,
           },
         }
@@ -87,46 +143,14 @@ LT: ASME BPVC SEC.5 ARTICLE 10
     }
   }
 
-  const handleSelectChange = (selectedOptions: any) => {
-    setSelectedOption(selectedOptions);
+  const handleOptionChange = (selectedOption: Option | null) => {
+    setSelectedOption(selectedOption);
+    setSelectedSuboption(null);
   };
 
-  const handleSelectChange2 = (selectedOptions: any) => {
-    setSelectedOption2(selectedOptions);
+  const handleSuboptionChange = (selectedSuboption: Option | null) => {
+    setSelectedSuboption(selectedSuboption);
   };
-  function pushOptions(option: any) {
-    console.log("called");
-    console.log(selectedOption);
-
-    if (option[n].value === "RT") {
-      console.log(n);
-      n += 1;
-      options2.push({ value: "RT", label: "Radiográfiai vizsgálat" });
-    } else {
-      options2.push({ value: "IDK", label: "Undefined" });
-    }
-  }
-
-  /* 
-  RT: MSZ EN ISO 17636-1 
-  DRT: MSZ EN ISO 17636-2  
-  UT: MSZ EN ISO 17640 10.2-es fejezet
-  UT-PAw: MSZ EN ISO 13588
-  VT: MSZ EN ISO 17637
-  PT: MSZ EN ISO 3451-1
-  MT: MSZ EN ISO 17638
-  LT: MSZ EN 1593
-  
-  ASME:
-  UTw: ASME BPVC SEC.5 ARTICLE 23
-  VT: ASME BPVC SEC.5 ARTICLE 9
-  UT-L: ASME BPVC SEC.5 ARTICLE 5
-  PT: ASME BPVC SEC.5 ARTICLE 6
-  MT: ASME BPVC SEC.5 ARTICLE 7
-  RT: ASME BPVC SEC.5 ARTICLE 2
-  UT-pa: ASME BPVC SEC.5 ARTICLE 4
-  LT: ASME BPVC SEC.5 ARTICLE 10
-  */
 
   return (
     <form
@@ -180,45 +204,32 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           }}
         />
       </div>
-      <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
-        <BsClipboardCheck className="hidden text-4xl text-white md:block" />
-        <Select
-          defaultValue={selectedOption}
-          onChange={(selectedOption) => {
-            handleSelectChange(selectedOption);
-            if (selectedOption[n].value === "RT") {
-              options2.push({
-                value: "RT",
-                label: JSON.stringify(selectedOption),
-              });
-            } else {
-              n = n + 1;
-              options2.push({ value: "IDK", label: "Undefined" });
-            }
-
-            // console.log(selectedOption);
-            // pushOptions(selectedOption);
-            // options2.push(...selectedOption);
-          }}
-          placeholder="Vizsgálati Eljárás"
-          options={options}
-          isMulti
-          required
-          className="w-full rounded-xl"
-        />
+      <div className="flex h-28 w-full flex-col items-center justify-evenly gap-4 text-center text-2xl md:w-2/3">
+        <div className=" flex w-full flex-row items-center gap-4">
+          <BsClipboardCheck className="hidden text-4xl text-white md:block" />
+          <Select
+            className="w-full"
+            value={selectedOption}
+            onChange={handleOptionChange}
+            options={options}
+            isClearable
+            placeholder="Vizsgálati Eljárás"
+          />
+        </div>
+        {selectedOption && (
+          <div className=" flex w-full flex-row items-center gap-4">
+            <AiOutlineSearch className="hidden text-4xl text-white md:block" />
+            <Select
+              className="w-full"
+              value={selectedSuboption}
+              onChange={handleSuboptionChange}
+              options={selectedOption.optionss || []}
+              isClearable
+              placeholder="Vizsgálati Szabvány"
+            />
+          </div>
+        )}
       </div>
-      <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
-        <AiOutlineSearch className="hidden text-4xl text-white md:block" />
-        <Select
-          defaultValue={selectedOption2}
-          onChange={handleSelectChange2}
-          placeholder="Vizsgálati szabvány"
-          options={options2}
-          isMulti
-          className="w-full rounded-xl"
-        />
-      </div>
-
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
         <AiOutlineMessage className="hidden text-4xl text-white md:block" />
         <textarea
