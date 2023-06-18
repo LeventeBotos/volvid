@@ -6,15 +6,22 @@ import {
   AiOutlineSearch,
 } from "react-icons/ai";
 import { BsClipboardCheck, BsPersonVcard } from "react-icons/bs";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Select from "react-select";
+import Lottie, { LottiePlayer, useLottie } from "lottie-react";
+import animationData from "./lotties/sending.json";
 import axios, { AxiosRequestConfig, AxiosRequestHeaders } from "axios";
+import { type } from "os";
 
 interface Option {
   value: string;
   label: string;
   optionss?: Option[];
 }
+
+const animationStyle = {
+  height: 75,
+};
 
 /* 
 RT: MSZ EN ISO 17636-1 
@@ -36,11 +43,11 @@ RT: ASME BPVC SEC.5 ARTICLE 2
 UT-pa: ASME BPVC SEC.5 ARTICLE 4
 LT: ASME BPVC SEC.5 ARTICLE 10
 */
-const options: Option[] = [
+const options2 = [
   {
     value: "RT",
     label: "Radiográfiai vizsgálat",
-    optionss: [
+    options: [
       {
         value: "ASME BPVC SEC.5 ARTICLE 2",
         label: "ASME BPVC SEC.5 ARTICLE 2",
@@ -51,7 +58,7 @@ const options: Option[] = [
   {
     value: "PT",
     label: "Folyadékbehatolásos vizsgálat",
-    optionss: [
+    options: [
       {
         value: "ASME BPVC SEC.5 ARTICLE 6",
         label: "ASME BPVC SEC.5 ARTICLE 6",
@@ -62,7 +69,7 @@ const options: Option[] = [
   {
     value: "MT",
     label: "Mágnesezhető poros vizsgálat",
-    optionss: [
+    options: [
       {
         value: "ASME BPVC SEC.5 ARTICLE 7",
         label: "ASME BPVC SEC.5 ARTICLE 7",
@@ -70,28 +77,85 @@ const options: Option[] = [
       { value: "MSZ EN ISO 17638", label: "MSZ EN ISO 17638" },
     ],
   },
-  { value: "HT", label: "Keménységmérés" },
+  {
+    value: "HT",
+    label: "Keménységmérés",
+    options: [
+      {
+        value: "undefined",
+        label: "undefined",
+      },
+      { value: "undefined", label: "undefined" },
+    ],
+  },
   {
     value: "LT",
     label: "Tömörségi vizsgálat",
-    optionss: [{ value: "MSZ EN 1593", label: "MSZ EN 1593" }],
+    options: [
+      { value: "MSZ EN 1593", label: "MSZ EN 1593" },
+      {
+        value: "ASME BPVC SEC.5 ARTICLE 10",
+        label: "ASME BPVC SEC.5 ARTICLE 10",
+      },
+    ],
   },
   {
     value: "IT",
     label: "Fémek felületi szigetelésének vizsgálata",
-    optionss: [
+    options: [
+      {
+        value: "undefined",
+        label: "undefined",
+      },
+      {
+        value: "undefined",
+        label: "undefined",
+      },
+    ],
+  },
+  {
+    value: "PMI",
+    label: "Pozitív anyagazonosítás",
+    options: [
+      {
+        value: "undefined",
+        label: "undefined",
+      },
+      {
+        value: "undefined",
+        label: "undefined",
+      },
+    ],
+  },
+  {
+    value: "UTw",
+    label: "Ultrahangos vizsgálat",
+    options: [
       {
         value: "ASME BPVC SEC.5 ARTICLE 23",
         label: "ASME BPVC SEC.5 ARTICLE 23",
       },
+      { value: "MSZ EN ISO 13588", label: "MSZ EN ISO 13588" },
     ],
   },
-  { value: "PMI", label: "Pozitív anyagazonosítás" },
-  { value: "UT", label: "Ultrahangos vizsgálat" },
+  {
+    value: "UT-L",
+    label: "Ultrahangos vizsgálat",
+    options: [
+      {
+        value: "ASME BPVC SEC.5 ARTICLE 5",
+        label: "ASME BPVC SEC.5 ARTICLE 5",
+      },
+      {
+        value: "MSZ EN ISO 17640 10.2-es fejezet",
+        label: "MSZ EN ISO 17640 10.2-es fejezet",
+      },
+    ],
+  },
   {
     value: "VT",
     label: "Szemrevételezéses vizsgálat",
-    optionss: [
+    options: [
       { value: "MSZ EN ISO 17637", label: "MSZ EN ISO 17637" },
       {
         value: "ASME BPVC SEC.5 ARTICLE 9",
@@ -99,12 +163,41 @@ const options: Option[] = [
       },
     ],
   },
+];
+
+const options: Option[] = [
+  {
+    value: "RT",
+    label: "Radiográfiai vizsgálat",
+  },
+  {
+    value: "PT",
+    label: "Folyadékbehatolásos vizsgálat",
+  },
+  {
+    value: "MT",
+    label: "Mágnesezhető poros vizsgálat",
+  },
+  { value: "HT", label: "Keménységmérés" },
+  {
+    value: "LT",
+    label: "Tömörségi vizsgálat",
+  },
+  {
+    value: "IT",
+    label: "Fémek felületi szigetelésének vizsgálata",
+  },
+  { value: "PMI", label: "Pozitív anyagazonosítás" },
+  { value: "UT", label: "Ultrahangos vizsgálat" },
+  {
+    value: "VT",
+    label: "Szemrevételezéses vizsgálat",
+  },
   { value: "Other", label: "Más" },
 ];
 
-let options2: Option[] = [];
-
 export const Kontakt = () => {
+  const lottieRef = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -117,7 +210,6 @@ export const Kontakt = () => {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // console.log(JSON.stringify(selectedOption));
     try {
       const response = await axios.post(
         "https://volvid.vercel.app/api/email",
@@ -136,19 +228,19 @@ export const Kontakt = () => {
       );
       console.log("Email sent successfully");
       console.log(response);
-      alert("sent succesfully!");
+      // alert("sent succesfully!");
+      lottieRef.current.play();
       setSubmitted(true);
     } catch (error) {
       console.error(error);
     }
   }
 
-  const handleOptionChange = (selectedOption: Option | null) => {
-    setSelectedOption(selectedOption);
-    setSelectedSuboption(null);
+  const handleOptionChange = (selectedOptions: any) => {
+    setSelectedOption(selectedOptions);
   };
 
-  const handleSuboptionChange = (selectedSuboption: Option | null) => {
+  const handleSuboptionChange = (selectedSuboption: any) => {
     setSelectedSuboption(selectedSuboption);
   };
 
@@ -204,19 +296,30 @@ export const Kontakt = () => {
           }}
         />
       </div>
-      <div className="flex h-28 w-full flex-col items-center justify-evenly gap-4 text-center text-2xl md:w-2/3">
+      <div className="flex w-full flex-col items-center justify-evenly gap-4 text-center text-2xl md:w-2/3">
         <div className=" flex w-full flex-row items-center gap-4">
           <BsClipboardCheck className="hidden text-4xl text-white md:block" />
-          <Select
+          {/* <Select
             className="w-full"
             value={selectedOption}
             onChange={handleOptionChange}
             options={options}
             isClearable
             placeholder="Vizsgálati Eljárás"
+          /> */}
+          <Select
+            className="w-full"
+            value={selectedOption}
+            onChange={(selectedOptions) => {
+              handleOptionChange(selectedOptions);
+            }}
+            options={options}
+            isClearable
+            isMulti
+            placeholder="Vizsgálati Eljárás"
           />
         </div>
-        {selectedOption && (
+        {/* {selectedOption && (
           <div className=" flex w-full flex-row items-center gap-4">
             <AiOutlineSearch className="hidden text-4xl text-white md:block" />
             <Select
@@ -228,7 +331,21 @@ export const Kontakt = () => {
               placeholder="Vizsgálati Szabvány"
             />
           </div>
-        )}
+        )} */}
+        <div className=" flex w-full flex-row items-center gap-4">
+          <AiOutlineSearch className="hidden text-4xl text-white md:block" />
+          <Select
+            className="w-full"
+            value={selectedSuboption}
+            onChange={(selectedOptions) => {
+              handleSuboptionChange(selectedOptions);
+            }}
+            options={options2}
+            isClearable
+            isMulti
+            placeholder="Vizsgálati Szabvány"
+          />
+        </div>
       </div>
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
         <AiOutlineMessage className="hidden text-4xl text-white md:block" />
@@ -245,11 +362,22 @@ export const Kontakt = () => {
 
       <button
         type="submit"
-        className="flex flex-row items-center rounded-full bg-primary text-center md:m-3"
+        onClick={() => {
+          console.log("play");
+        }}
+        className="flex flex-row items-center rounded-full bg-primary p-0 text-center "
       >
-        <span className="rounded-full">
-          {submitted ? "Köszönjük!" : "Küldés"}
-        </span>
+        {submitted ? (
+          "Köszönjük!"
+        ) : (
+          <Lottie
+            lottieRef={lottieRef}
+            animationData={animationData}
+            style={animationStyle}
+            loop={false}
+            autoplay={false}
+          />
+        )}
       </button>
     </form>
   );
