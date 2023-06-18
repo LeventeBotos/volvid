@@ -367,20 +367,22 @@ export const Kontakt = () => {
         // onClick={() => {
         //   lottieRef.current?.play();
         // }}
-        className="flex flex-row items-center rounded-full bg-primary p-0 text-center "
+        className="flex flex-row items-center rounded-full bg-primary  text-center "
       >
-        {submitted ? (
-          <AiOutlineCheckCircle />
-        ) : (
-          <AiOutlineSend />
-          // <Lottie
-          //   lottieRef={lottieRef}
-          //   animationData={animationData}
-          //   style={animationStyle}
-          //   loop={false}
-          //   autoplay={false}
-          // />
-        )}
+        <span className=" flex items-center justify-evenly rounded-full text-center text-2xl">
+          {submitted ? (
+            <AiOutlineCheckCircle />
+          ) : (
+            <AiOutlineSend />
+            // <Lottie
+            //   lottieRef={lottieRef}
+            //   animationData={animationData}
+            //   style={animationStyle}
+            //   loop={false}
+            //   autoplay={false}
+            // />
+          )}
+        </span>
       </button>
     </form>
   );
