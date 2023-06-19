@@ -69,7 +69,7 @@ export const S1 = () => {
 
       <p className="z-10 text-6xl font-semibold text-white">Volvid</p>
       <p className=" z-10 text-xl text-white">
-        Quality. Experience. Reliability.
+        Qualität. Erfahrung. Zuverlässigkeit.
       </p>
       <div className="z-10 ">
         {" "}

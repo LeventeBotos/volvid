@@ -1,24 +1,26 @@
 export const About = () => {
   return (
     <section className="flex flex-col justify-evenly gap-4 text-center md:px-10">
-      <p className=" text-center text-2xl font-bold">About us</p>
+      <p className="text-center text-2xl font-bold">Über uns</p>
       <div className="h-96 overflow-y-scroll px-2 text-xl md:px-1 xl:px-20">
-        VOLVID Service Private Limited Liability Company (Volvid Zrt.) is
-        pleased to introduce itself to you. Our company is 100% Hungarian-owned,
-        we have been operating successfully since February 2017. Our main
-        activity is material testing, in which we are highly specialized of
-        non-destructive material testing. We perform Quality technical tests and
-        analyze to provide our customers with reliable results. Our company can
-        be proud of the many years of experience of the owners, both at home and
-        abroad. This ensures a high level of expertise and be available to our
-        customers with professionalism. There are currently three laboratories
-        in Hungary. One of them our laboratory is located next to the Danube
-        Refinery of MOL Nyrt Szazhalombatta, while the other two are located in
-        Miskolc and Szeged. At these locations, we guarantee efficient and
-        accurate material testing services. In addition, we are proud of Germany
-        and Austria also for our locations, which we developed in 2017. We offer
-        high-quality material testing services at theese sites as well we are
-        open for partners.
+        Die VOLVID Service GmbH (Volvid Zrt.) freut sich, sich Ihnen vorstellen
+        zu dürfen. Unser Unternehmen ist zu 100 % ungarisch und besteht seit
+        Februar 2017 erfolgreich. Unsere Haupttätigkeit ist die
+        Werkstoffprüfung, auf die wir uns besonders im Bereich der
+        zerstörungsfreien Werkstoffprüfung spezialisiert haben. Wir führen
+        qualitätstechnische Tests durch und analysieren sie, um unseren Kunden
+        zuverlässige Ergebnisse zu liefern. Unser Unternehmen kann auf
+        langjährige Erfahrung der Inhaber sowohl im Inland als auch im Ausland
+        stolz sein. Dies gewährleistet ein hohes Maß an Fachwissen und
+        Professionalität für unsere Kunden. Derzeit betreiben wir drei Labore in
+        Ungarn. Eines unserer Labore befindet sich neben der Raffinerie MOL Nyrt
+        Százhalombatta an der Donau, während sich die anderen beiden in Miskolc
+        und Szeged befinden. An diesen Standorten garantieren wir effiziente und
+        präzise Werkstoffprüfdienstleistungen. Darüber hinaus sind wir stolz
+        darauf, auch in Deutschland und Österreich Standorte entwickelt zu
+        haben, die wir im Jahr 2017 eröffnet haben. An diesen Standorten bieten
+        wir ebenfalls hochwertige Werkstoffprüfdienstleistungen an und sind
+        offen für Partnerschaften.
       </div>
     </section>
   );

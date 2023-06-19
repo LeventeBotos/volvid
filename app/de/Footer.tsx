@@ -1,20 +1,22 @@
 "use client";
 
+import React from "react";
+
 function onLinkClick(num: number) {
   const sections = document.getElementsByTagName("section");
   if (num >= 0 && num < sections.length) {
     const section = sections[num];
-    const offset = 105; // Adjust this value to set the desired offset
+    const offset = 105; // Passen Sie diesen Wert an, um den gewünschten Versatz festzulegen
 
     const sectionTop = section.offsetTop;
     const bodyScrollTop =
       document.documentElement.scrollTop || document.body.scrollTop;
     const targetScrollTop = sectionTop - offset;
 
-    // Calculate the scroll distance
+    // Berechnen Sie die Scroll-Distanz
     const scrollDistance = targetScrollTop - bodyScrollTop;
 
-    // Smooth scroll to the target position
+    // Sanftes Scrollen zur Zielposition
     scrollToSmoothly(scrollDistance);
   }
 }
@@ -48,63 +50,63 @@ function scrollToSmoothly(scrollDistance: number, duration = 300) {
   animateScroll();
 }
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
-    <footer className=" flex w-full flex-col bg-[#1f1f1f] text-center text-white">
+    <footer className="flex w-full flex-col bg-[#1f1f1f] text-center text-white">
       <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-10 py-5">
         <button
           onClick={() => {
             onLinkClick(0);
           }}
-          className=" items-center rounded-full text-center"
+          className="items-center rounded-full text-center"
         >
-          <span className="rounded-full">Main page</span>
+          <span className="rounded-full">Startseite</span>
         </button>
         <button
           onClick={() => {
             onLinkClick(1);
           }}
-          className=" items-center rounded-full text-center"
+          className="items-center rounded-full text-center"
         >
-          <span className="rounded-full">About</span>
+          <span className="rounded-full">Über uns</span>
         </button>
 
         <button
           onClick={() => {
             onLinkClick(5);
           }}
-          className=" items-center rounded-full text-center"
+          className="items-center rounded-full text-center"
         >
-          <span className="rounded-full">Leaders</span>
+          <span className="rounded-full">Führungskräfte</span>
         </button>
         <button
           onClick={() => {
             onLinkClick(6);
           }}
-          className=" items-center rounded-full text-center"
+          className="items-center rounded-full text-center"
         >
-          <span className="rounded-full">Our sites</span>
+          <span className="rounded-full">Unsere Standorte</span>
         </button>
       </div>
-      <div className=" items-center self-center p-5 font-bold text-white ">
+      <div className="items-center self-center p-5 font-bold text-white">
         <div className="flex w-full justify-evenly">
           <a
             href="/"
-            className=" flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
+            className="flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
           >
             <img
-              className=" h-full rounded-l-lg object-cover opacity-100"
-              alt="hungarian"
+              className="h-full rounded-l-lg object-cover opacity-100"
+              alt="ungarisch"
               src="/images/hungarian.svg"
             />
           </a>
           <a
             href="/en"
-            className="flex h-12 w-1/3 flex-col  border-2 border-solid border-white text-center"
+            className="flex h-12 w-1/3 flex-col border-2 border-solid border-white text-center"
           >
             <img
               className="h-full object-cover opacity-100"
-              alt="english"
+              alt="englisch"
               src="/images/english.svg"
             />
           </a>
@@ -114,13 +116,13 @@ export const Footer = () => {
           >
             <img
               className="h-full rounded-r-lg object-cover opacity-100"
-              alt="german"
+              alt="deutsch"
               src="/images/german.svg"
             />
           </a>
         </div>
       </div>
-      <p className="text-gray-400">Copyright © Volvid 2023</p>
+      <p className="text-gray-400">Urheberrecht © Volvid 2023</p>
     </footer>
   );
 };
