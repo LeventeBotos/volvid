@@ -1,9 +1,16 @@
+import HTLightbox from "./HT";
+import ITLightbox from "./It";
+import MTLightbox from "./MT";
+import LTLightbox from "./PT";
+import RTLightbox from "./RT";
+import UHLightbox from "./UH";
+
 export const Services = () => {
   return (
     <section className="flex flex-col">
       <p className="pb-3 text-center text-3xl font-bold">Vizsgálataink</p>
       <div className=" flex flex-row flex-wrap content-around items-stretch justify-center gap-4 md:gap-10">
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Radiográfiai vizsgálat</p>
           <p>
             A radiográfiai vizsgálat (RT) röntgensugárzást használ az anyagok,
@@ -16,8 +23,9 @@ export const Services = () => {
             biztonsági előírások betartásával minimalizálják a sugárzás
             hatásának kockázatát.
           </p>
+          <RTLightbox />
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Folyadékbehatolásos vizsgálat</p>
           <p>
             A folyadékbehatolásos vizsgálat (PT) egy roncsolásmentes
@@ -28,8 +36,9 @@ export const Services = () => {
             anyaggal kezelik. Ezután a felszínt megvizsgálják, és a fehérítő
             anyag által kitöltött repedéseket vagy hibákat könnyen észlelhetik.
           </p>
+          <LTLightbox />
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Mágnesezhető poros vizsgálat</p>
           <p>
             A mágnesezhető poros vizsgálat (MT) egy roncsolásmentes
@@ -38,12 +47,10 @@ export const Services = () => {
             anyagfáradás okozta repedések kimutatására alkalmaznak. A vizsgálat
             során a mágneses térerő hatására rendeződő mágnespor által kirajzolt
             erővonalak által következtethetünk lineáris indikációra.
-            {/*egy mágneses anyagot por formájában alkalmaznak a
-            vizsgált felületen, majd speciális eszközökkel vizsgálják meg a
-            porral kitöltött repedéseket vagy hibákat. */}
           </p>
+          <MTLightbox />
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Ultrahangos vizsgálat</p>
           <p>
             Az ultrahangos vizsgálat (UT) egy képalkotó eljárás, amelyben
@@ -51,13 +58,11 @@ export const Services = () => {
             vizsgálatára. Az ultrahangos vizsgálat segítségével részletes
             képeket kaphatunk az anyagok, szerkezeti elemek és varratok belső
             anyagfolytonossági hibáiról.
-            {/* szervekről, szövetekről és
-            szervrendszerekről, és felismerhetünk eltéréseket vagy
-            rendellenességeket. */}
           </p>
+          <UHLightbox />
         </div>
 
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Szemrevételezéses vizsgálat</p>
           <p>
             A szemrevételezéses vizsgálat (VT) egy vizuális ellenőrzési eljárás,
@@ -67,7 +72,7 @@ export const Services = () => {
             felismerésében.
           </p>
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Tömörségi vizsgálat</p>
           <p>
             A tömörségi vizsgálat (LT) egy anyagvizsgálati eljárás, amelyet a
@@ -75,8 +80,9 @@ export const Services = () => {
             Ez az eljárás segít kimutatni a szivárgást, repedéseket vagy más
             anyaghibákat a vizsgált alkatrészben vagy szerkezetben.
           </p>
+          <LTLightbox />
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">
             Fémek felületi szigetelésének vizsgálata
           </p>
@@ -87,8 +93,9 @@ export const Services = () => {
             eszközökkel vizsgálják mely során az esetleg látható elektromos ív a
             szigetelés sérülésére utal.
           </p>
+          <ITLightbox />
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Keménységmérés</p>
           <p>
             A keménységmérés (HT) egy eljárás, amely a fémek vagy más anyagok
@@ -96,8 +103,9 @@ export const Services = () => {
             anyag benyomódással szembeni ellenállását a benyomódás mértékéből
             következtethetünk az anyag keménységére.
           </p>
+          <HTLightbox />
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Pozitív anyagazonosítás</p>
           <p>
             A pozitív anyagazonosítás (PMI) egy eljárás, amelynek során az
