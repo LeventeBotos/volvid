@@ -13,7 +13,7 @@ export const Services = () => {
       <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-4 md:gap-10">
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Radiographic Testing</p>
-          <p>
+          <p className="pb-3">
             Radiographic Testing (RT) uses X-ray radiation to inspect the
             internal parts of materials, structures, and welds. It assists in
             quality control, defect detection, and safety assessment of
@@ -27,7 +27,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Liquid Penetrant Testing</p>
-          <p>
+          <p className="pb-3">
             Liquid Penetrant Testing (PT) is a non-destructive testing method
             primarily used to detect surface-breaking cracks, material
             discontinuities, or fatigue in materials. In this test, a liquid
@@ -40,7 +40,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Magnetic Particle Testing</p>
-          <p>
+          <p className="pb-3">
             Magnetic Particle Testing (MT) is a non-destructive testing method
             used to detect surface or near-surface discontinuities, material
             discontinuities, or cracks caused by material fatigue in metals.
@@ -52,7 +52,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Ultrasonic Testing</p>
-          <p>
+          <p className="pb-3">
             Ultrasonic Testing (UT) is an imaging technique that uses ultrasonic
             waves to examine the internal structure of an object. It provides
             detailed images of internal discontinuities in materials, structural
@@ -63,7 +63,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Visual Testing</p>
-          <p>
+          <p className="pb-3">
             Visual Testing (VT) is a visual inspection procedure in which the
             examiner visually examines surfaces, components, or structures with
             the naked eye. This procedure helps in identifying visible defects,
@@ -72,7 +72,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Leak Testing</p>
-          <p>
+          <p className="pb-3">
             Leak Testing (LT) is a material testing method used to verify the
             tightness of structures or components. This procedure helps in
             detecting leaks, cracks, or other material defects in the tested
@@ -82,7 +82,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Coating Inspection</p>
-          <p>
+          <p className="pb-3">
             Coating Inspection (IT), also known as holiday testing, is a
             procedure that checks the integrity of coatings on metal surfaces.
             During the inspection, the coating on metal surfaces is examined
@@ -93,7 +93,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Hardness Testing</p>
-          <p>
+          <p className="pb-3">
             Hardness Testing (HT) is a procedure used to measure the hardness of
             metals or other materials. During the test, the resistance of the
             material to indentation is measured using specialized instruments,
@@ -104,7 +104,7 @@ export const Services = () => {
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Positive Material Identification</p>
-          <p>
+          <p className="pb-3">
             Positive Material Identification (PMI) is a procedure used to
             identify materials or components based on their composition. The
             process involves analysis to determine the chemical elements and
