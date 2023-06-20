@@ -1,5 +1,5 @@
 import HTLightbox from "./HT";
-import ITLightbox from "./It";
+import ITLightbox from "./IT";
 import MTLightbox from "./MT";
 import LTLightbox from "./PT";
 import RTLightbox from "./RT";
