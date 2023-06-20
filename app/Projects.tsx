@@ -86,7 +86,7 @@ export const Projects = () => {
       </div> */}
       <div className=" flex h-64 flex-col justify-between md:h-36 md:flex-row">
         <button
-          aria-aria-label="Előző"
+          aria-label="Előző"
           className="bg-transparent text-4xl text-primary hover:text-black"
           onClick={previousTestimonial}
         >
