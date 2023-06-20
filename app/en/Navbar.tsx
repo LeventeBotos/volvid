@@ -76,6 +76,7 @@ const Navbar = () => {
         className=" h-16 opacity-100 md:h-20"
       />
       <button
+        aria-aria-label="menu"
         id="nav-toggle"
         className="menuu block h-12 w-auto items-center lg:hidden"
         onClick={togglePanel}
@@ -89,6 +90,7 @@ const Navbar = () => {
       <div className=" hidden lg:block lg:items-center" id="nav-content">
         <div className="flex flex-row justify-evenly gap-2">
           <button
+            aria-label="Home"
             onClick={() => {
               onLinkClick(0);
             }}
@@ -97,6 +99,7 @@ const Navbar = () => {
             Home
           </button>
           <button
+            aria-label="About"
             onClick={() => {
               onLinkClick(1);
             }}
@@ -105,6 +108,7 @@ const Navbar = () => {
             About
           </button>
           <button
+            aria-aria-label="Services"
             onClick={() => {
               onLinkClick(4);
             }}
@@ -128,6 +132,7 @@ const Navbar = () => {
       >
         <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-3 py-5">
           <button
+            aria-label="Home"
             onClick={() => {
               onLinkClick(0);
             }}
@@ -136,6 +141,7 @@ const Navbar = () => {
             <span className="rounded-full bg-[#1f1f1f] text-white">Home</span>
           </button>
           <button
+            aria-label="About"
             onClick={() => {
               onLinkClick(1);
             }}
@@ -144,6 +150,7 @@ const Navbar = () => {
             <span className="rounded-full bg-[#1f1f1f] text-white">About</span>
           </button>
           <button
+            aria-label="Services"
             onClick={() => {
               onLinkClick(4);
             }}

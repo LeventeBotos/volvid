@@ -275,6 +275,7 @@ export const Kontakt = () => {
           <Select
             className="w-full"
             value={selectedOption}
+            aria-label="Vizsgálati Eljárás"
             onChange={(selectedOptions) => {
               handleOptionChange(selectedOptions);
             }}
@@ -300,6 +301,7 @@ export const Kontakt = () => {
         <div className=" flex w-full flex-row items-center gap-4">
           <AiOutlineSearch className="hidden text-4xl text-white md:block" />
           <Select
+            aria-label="Vizsgálati Szabvány"
             className="w-full"
             value={selectedSuboption}
             onChange={(selectedOptions) => {
@@ -330,6 +332,7 @@ export const Kontakt = () => {
         // onClick={() => {
         //   lottieRef.current?.play();
         // }}
+        aria-label="Küldés"
         className="flex flex-row items-center rounded-full bg-primary  text-center "
       >
         <span className=" flex items-center justify-evenly rounded-full text-center text-3xl">

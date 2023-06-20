@@ -70,6 +70,7 @@ export const Navbar = () => {
       />
       <button
         id="nav-toggle"
+        aria-label="menu"
         className="menuu block h-12 w-auto items-center hover:text-black lg:hidden"
         onClick={togglePanel}
       >
@@ -83,6 +84,7 @@ export const Navbar = () => {
       <div className=" hidden lg:block lg:items-center" id="nav-content">
         <div className="flex flex-row justify-evenly gap-2">
           <button
+            aria-label="főoldal"
             onClick={() => {
               onLinkClick(0);
             }}
@@ -91,6 +93,7 @@ export const Navbar = () => {
             Főoldal
           </button>
           <button
+            aria-aria-label="Rólunk"
             onClick={() => {
               onLinkClick(1);
             }}
@@ -99,6 +102,7 @@ export const Navbar = () => {
             Rólunk
           </button>
           <button
+            aria-label="Vizsgálataink"
             onClick={() => {
               onLinkClick(4);
             }}
@@ -124,6 +128,7 @@ export const Navbar = () => {
       >
         <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-3 py-5">
           <button
+            aria-label="Főoldal"
             onClick={() => {
               onLinkClick(0);
             }}
@@ -134,6 +139,7 @@ export const Navbar = () => {
             </span>
           </button>
           <button
+            aria-label="Rólunk"
             onClick={() => {
               onLinkClick(1);
             }}
@@ -142,6 +148,7 @@ export const Navbar = () => {
             <span className="rounded-full bg-[#1f1f1f] text-white">Rólunk</span>
           </button>
           <button
+            aria-label="Vizsgálataink"
             onClick={() => {
               onLinkClick(4);
             }}

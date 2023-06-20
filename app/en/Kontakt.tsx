@@ -268,6 +268,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
             placeholder="Examination Procedure"
           /> */}
           <Select
+            aria-label="Examination Procedure"
             className="w-full"
             value={selectedOption}
             onChange={(selectedOptions) => {
@@ -295,6 +296,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
         <div className="flex w-full flex-row items-center gap-4">
           <AiOutlineSearch className="hidden text-4xl text-white md:block" />
           <Select
+            aria-label="Examination Standard"
             className="w-full"
             value={selectedSuboption}
             onChange={(selectedOptions) => {
@@ -321,6 +323,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       </div>
 
       <button
+        aria-label="send"
         type="submit"
         // onClick={() => {
         //   lottieRef.current?.play();
