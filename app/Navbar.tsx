@@ -93,7 +93,7 @@ export const Navbar = () => {
             Főoldal
           </button>
           <button
-            aria-aria-label="Rólunk"
+            aria-label="Rólunk"
             onClick={() => {
               onLinkClick(1);
             }}

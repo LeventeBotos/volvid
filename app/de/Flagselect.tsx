@@ -18,10 +18,11 @@ const Flagselect = () => {
         className=" flex h-full rounded-none  "
       >
         <img
-          className="my-1 rounded-md object-cover opacity-100"
-          alt="hungarian"
-          src="/images/hungarian.svg"
+          className=" rounded-lg opacity-100"
+          alt="german"
+          src="/images/german.svg"
         />
+
         <AiOutlineDown className="ml-1 self-center text-xl" />
       </div>
       <div
@@ -38,9 +39,9 @@ const Flagselect = () => {
         </a>
         <a href="/de" className="">
           <img
-            className=" rounded-lg opacity-100"
-            alt="german"
-            src="/images/german.svg"
+            className="my-1 rounded-md object-cover opacity-100"
+            alt="hungarian"
+            src="/images/hungarian.svg"
           />
         </a>
       </div>

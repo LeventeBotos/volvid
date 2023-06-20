@@ -76,7 +76,7 @@ const Navbar = () => {
         className=" h-16 opacity-100 md:h-20"
       />
       <button
-        aria-aria-label="menu"
+        aria-label="menu"
         id="nav-toggle"
         className="menuu block h-12 w-auto items-center lg:hidden"
         onClick={togglePanel}
@@ -108,7 +108,7 @@ const Navbar = () => {
             About
           </button>
           <button
-            aria-aria-label="Services"
+            aria-label="Services"
             onClick={() => {
               onLinkClick(4);
             }}
