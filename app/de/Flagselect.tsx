@@ -30,18 +30,18 @@ const Flagselect = () => {
           openLang ? "block" : "hidden"
         }`}
       >
+        <a href="/hu" className="">
+          <img
+            className="my-1 rounded-md object-cover opacity-100"
+            alt="hungarian"
+            src="/images/hungarian.svg"
+          />
+        </a>
         <a href="/en" className=" items-center ">
           <img
             className=" rounded-lg object-contain opacity-100"
             alt="english"
             src="/images/english.svg"
-          />
-        </a>
-        <a href="/de" className="">
-          <img
-            className="my-1 rounded-md object-cover opacity-100"
-            alt="hungarian"
-            src="/images/hungarian.svg"
           />
         </a>
       </div>

@@ -5,7 +5,17 @@ const nextConfig = {
         locales: ['hu', 'en', 'de'],
         defaultLocale: 'hu',
         localeDetection: false
-    }
+    },
+    async redirects() {
+            return [
+              {
+                source: '/hu',
+                destination: '/',
+                permanent: true,
+              },
+            ]
+         
+        }
 }
 
 module.exports = nextConfig
