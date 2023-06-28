@@ -92,7 +92,7 @@ export const Projects = () => {
         >
           <AiOutlineArrowLeft />
         </button>
-        <div className=" w-full md:w-2/3">
+        <div className=" flex w-full justify-evenly md:w-2/3">
           {projects.map((projects, index) => (
             <div
               key={index}

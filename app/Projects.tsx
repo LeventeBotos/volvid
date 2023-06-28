@@ -84,7 +84,7 @@ export const Projects = () => {
           </li>
         </ul>
       </div> */}
-      <div className=" flex h-64 flex-col justify-between md:h-36 md:flex-row">
+      <div className=" flex h-64 flex-col items-center justify-between md:h-36 md:flex-row">
         <button
           aria-label="Előző"
           className="bg-transparent text-4xl text-primary hover:text-black"
@@ -92,7 +92,7 @@ export const Projects = () => {
         >
           <AiOutlineArrowLeft />
         </button>
-        <div className=" w-full md:w-2/3">
+        <div className=" flex w-full justify-evenly self-center md:w-2/3">
           {projects.map((projects, index) => (
             <div
               key={index}
