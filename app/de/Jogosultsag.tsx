@@ -18,7 +18,7 @@ export const Jogosultsag: React.FC = () => {
         </a> */}
         <a
           className="card h-20 w-full p-3 text-center align-middle underline md:w-1/4"
-          href="/tanusitvanyok/Tanúsítvány-tartályvizsgáló-VolvidZrt-2020.pdf"
+          href="/tanusitvanyok/SCC-Tanúsítvány-Volvid-H.pdf"
         >
           <p className="m-auto">SCC Zertifikat</p>
         </a>
