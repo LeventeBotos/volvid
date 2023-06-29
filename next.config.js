@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     // output: 'export',
-    i18n: {
-        locales: ['hu', 'en', 'de'],
-        defaultLocale: 'hu',
-        localeDetection: false
-    },
+    // i18n: {
+    //     locales: ['hu', 'en', 'de'],
+    //     defaultLocale: 'hu',
+    //     localeDetection: true
+    // },
     async redirects() {
             return [
               {
