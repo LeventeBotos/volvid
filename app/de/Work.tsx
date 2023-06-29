@@ -18,12 +18,14 @@ export const Work = () => {
         <div className="flex justify-between">
           <p>
             {" "}
-            Do you already have a secondary education degree and are you
-            interested in material testing?{" "}
-            <ul>
+            <p>
+              Do you already have a secondary education degree and are you
+              interested in material testing?{" "}
+            </p>
+            <p>
               We take care of your training and provide long-term job
               opportunities, as well as continuous further education.
-            </ul>
+            </p>
           </p>
           <img />
         </div>

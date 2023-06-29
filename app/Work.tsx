@@ -17,12 +17,11 @@ export const Work = () => {
         </div>
         <div className="flex justify-between">
           <p>
-            {" "}
-            Van már középfokú végzettséged és érdekel az anyagvizsgálat?{" "}
-            <ul>
+            <p>Van már középfokú végzettséged és érdekel az anyagvizsgálat? </p>
+            <p>
               Mi gondoskodunk a képzésedről és hosszútávon munkalehetőséget,
               folyamatos továbbképzést biztosítunk.
-            </ul>
+            </p>
           </p>
           <img />
         </div>
