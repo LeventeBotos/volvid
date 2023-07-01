@@ -2,7 +2,7 @@ export const Memberships = () => {
   return (
     <section className="flex flex-col gap-4 text-xl">
       <p className="text-2xl font-bold">Tagságaink</p>
-      <ul>
+      <ul className="flex flex-col gap-2">
         <li>Magyar Roncsolásmentes Vizsgálati Szövetség (MAROVISZ)</li>
         <li>Német Roncsolásmentes Vizsgálati Szövetségnek (DGzfP)</li>
         <li>

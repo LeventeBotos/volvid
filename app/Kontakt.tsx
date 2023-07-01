@@ -214,7 +214,7 @@ export const Kontakt = () => {
       className=" flex flex-col items-center gap-4 bg-[#1f1f1f] p-5 text-center"
       onSubmit={handleSubmit}
     >
-      <p className="text-2xl font-bold text-white">Kontakt</p>
+      <p className="text-2xl font-bold text-white">Kapcsolat</p>
 
       <div className="flex w-full items-center gap-4 text-center text-2xl md:w-2/3">
         <BsPersonVcard className="hidden text-4xl text-white md:block" />
@@ -264,14 +264,6 @@ export const Kontakt = () => {
       <div className="flex w-full flex-col items-center justify-evenly gap-4 text-center text-2xl md:w-2/3">
         <div className=" flex w-full flex-row items-center gap-4">
           <BsClipboardCheck className="hidden text-4xl text-white md:block" />
-          {/* <Select
-            className="w-full"
-            value={selectedOption}
-            onChange={handleOptionChange}
-            options={options}
-            isClearable
-            placeholder="Vizsgálati Eljárás"
-          /> */}
           <Select
             className="w-full"
             value={selectedOption}
@@ -285,19 +277,6 @@ export const Kontakt = () => {
             placeholder="Vizsgálati Eljárás"
           />
         </div>
-        {/* {selectedOption && (
-          <div className=" flex w-full flex-row items-center gap-4">
-            <AiOutlineSearch className="hidden text-4xl text-white md:block" />
-            <Select
-              className="w-full"
-              value={selectedSuboption}
-              onChange={handleSuboptionChange}
-              options={selectedOption.optionss || []}
-              isClearable
-              placeholder="Vizsgálati Szabvány"
-            />
-          </div>
-        )} */}
         <div className=" flex w-full flex-row items-center gap-4">
           <AiOutlineSearch className="hidden text-4xl text-white md:block" />
           <Select
@@ -324,14 +303,11 @@ export const Kontakt = () => {
           onChange={(e) => {
             setMessage(e.target.value);
           }}
-        ></textarea>
+        />
       </div>
 
       <button
         type="submit"
-        // onClick={() => {
-        //   lottieRef.current?.play();
-        // }}
         aria-label="Küldés"
         className="flex flex-row items-center rounded-full bg-primary  text-center "
       >
@@ -340,13 +316,6 @@ export const Kontakt = () => {
             <AiOutlineCheckCircle className="text-green-500" />
           ) : (
             <AiOutlineSend />
-            // <Lottie
-            //   lottieRef={lottieRef}
-            //   animationData={animationData}
-            //   style={animationStyle}
-            //   loop={false}
-            //   autoplay={false}
-            // />
           )}
         </span>
       </button>

@@ -1,9 +1,9 @@
-import HTLightbox from "./HT";
-import ITLightbox from "./IT";
-import MTLightbox from "./MT";
-import LTLightbox from "./PT";
-import RTLightbox from "./RT";
-import UHLightbox from "./UH";
+import HTLightbox from "./{lightboxes}/HT";
+import ITLightbox from "./{lightboxes}/IT";
+import MTLightbox from "./{lightboxes}/MT";
+import LTLightbox from "./{lightboxes}/PT";
+import RTLightbox from "./{lightboxes}/RT";
+import UHLightbox from "./{lightboxes}/UH";
 
 export const Services = () => {
   return (

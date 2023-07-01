@@ -36,7 +36,7 @@ export const People = () => {
           </a>
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
-          <p className="text-lg">Kuruczné Prescher Viktória</p>
+          <p className="text-xl">Kuruczné Prescher Viktória</p>
           <p>termelési igazgató</p>
           <a
             href="tel:+36 20 403 5353"
@@ -53,7 +53,8 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Tarnóczi Péter</p>
-          <p>kirendeltség vezető Százhalombatta</p>
+          <p>kirendeltség vezető, Százhalombatta</p>
+
           <a
             href="tel:+36 20 374 0624"
             className="text-lg hover:underline md:text-base"
@@ -69,7 +70,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Nagy László</p>
-          <p>kirendeltség vezető Miskolc</p>
+          <p>kirendeltség vezető, Miskolc</p>
           <a
             href="tel:+36 20 267 6703"
             className="text-lg hover:underline md:text-base"
@@ -85,7 +86,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Polestyuk Zoltán</p>
-          <p>kirendeltség vezető Szeged</p>
+          <p>kirendeltség vezető, Szeged</p>
           <a
             href="tel:+36 20 293 8499"
             className="text-lg hover:underline md:text-base"

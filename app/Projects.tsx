@@ -57,33 +57,6 @@ export const Projects = () => {
   return (
     <section className="flex  flex-col gap-4 text-center">
       <p className="text-2xl font-bold">Jelentősebb projektek</p>
-      {/* <div>
-        <ul className="gap-2 text-xl">
-          <li>Gönyűi Erőmű üzemi leállás vizsgálata</li>
-          <li>
-            MOL Nyrt. Dunai Finomító üzemek és tartályok anyagvizsgálata,
-            üzemközi csővezetékek állapotfelmérése, üzemi átalakítások
-            vizsgálatai.
-          </li>
-          <li>Péti Nitrogén Művekben reaktor és hőcserélővizsgálatok.</li>
-          <li>
-            OMV Schwechati Finomító – leállásokon anyagvizsgálatok, és leálláson
-            kívüli időszakban állapotfelmérés.
-          </li>
-          <li>
-            BorsodChem Nyrt. Kazincbarcikai gyár – üzemi leállások
-            anyagvizsgálata, keretszerződött partner vagyunk.
-          </li>
-          <li>
-            Németországban a BayernOil – Ingolstadt környéki finomítóiban
-            folyamatos vizsgálatok.
-          </li>
-          <li>
-            Németországban az OMV Burghauseni Finomítóban és a Wacker kémiai
-            üzemben anyagvizsgálatok végzése folyamatosan.
-          </li>
-        </ul>
-      </div> */}
       <div className=" flex h-64 flex-col items-center justify-between md:h-36 md:flex-row">
         <button
           aria-label="Előző"

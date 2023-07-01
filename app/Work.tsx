@@ -6,33 +6,27 @@ export const Work = () => {
         <div className="flex justify-between">
           <img />
           <p>
-            {" "}
-            {/* Amennyiben egy nagy múltú stabil hátterű magyar cégnél szeretnél
-          dolgozni de kipróbálnád magad akár külföldön is akkor a Volvid
-          számodra remek lehetőség. */}
             Amennyiben az ország egyik legnagyobb anyagvizsgáló cégénél
             szeretnél dolgozni és kipróbálnád magad akár külföldön is akkor a
             Volvid Kft. számodra remek lehetőség.
           </p>
         </div>
         <div className="flex justify-between">
-          <p>
+          <div>
             <p>Van már középfokú végzettséged és érdekel az anyagvizsgálat? </p>
             <p>
               Mi gondoskodunk a képzésedről és hosszútávon munkalehetőséget,
               folyamatos továbbképzést biztosítunk.
             </p>
-          </p>
+          </div>
           <img />
         </div>
         <div className="flex justify-between">
-          {" "}
           <p>Neked a jó hozzáállást és a tanulási kedvet kell hoznod.</p>
           <img />
         </div>
         <div className="flex justify-between">
           <p>
-            {" "}
             Amennyiben már anyagvizsgáló vagy, rendelkezel érvényes papírokkal
             akkor akár hosszú távú külföldi munkát is tudunk biztosítani
             számodra Németországban és Ausztriában.

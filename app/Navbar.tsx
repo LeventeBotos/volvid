@@ -110,6 +110,15 @@ export const Navbar = () => {
           >
             Vizsgálataink
           </button>
+          <button
+            aria-label="Vizsgálataink"
+            onClick={() => {
+              onLinkClick(5);
+            }}
+            className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
+          >
+            Kapcsolat
+          </button>
           <Flagselect />
 
           {/* {openLang ? "open" : "closed"} */}

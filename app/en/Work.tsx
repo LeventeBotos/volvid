@@ -16,7 +16,7 @@ export const Work = () => {
           </p>
         </div>
         <div className="flex justify-between">
-          <p>
+          <div>
             {" "}
             <p>
               Do you already have a secondary education degree and are you
@@ -26,7 +26,7 @@ export const Work = () => {
               We take care of your training and provide long-term job
               opportunities, as well as continuous further education.
             </p>
-          </p>
+          </div>
           <img />
         </div>
         <div className="flex justify-between">
