@@ -19,7 +19,7 @@ export const Qualities = () => {
       <div className="flex h-20 w-full items-center justify-center px-3 text-center md:w-1/3">
         <FaCheck className="w-10 self-center p-2 text-9xl text-primary lg:w-1/12" />
         <p className=" w-5/6 px-2">
-          Professzionális szolgáltatás, bármikor és bárhol
+          Professzionális szolgáltatás, bárhol és bármikor
         </p>
       </div>
     </div>

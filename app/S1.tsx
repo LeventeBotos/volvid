@@ -76,7 +76,7 @@ export const S1 = () => {
           onClick={() => {
             onLinkClick(0);
           }}
-          className=" bg-blur-xl items-center rounded-full border-4 border-solid border-black bg-black bg-opacity-25  p-5 text-center text-white hover:border-white hover:bg-white hover:text-black"
+          className=" bg-blur-xl items-center rounded-full border-4 border-solid border-black bg-black bg-opacity-40  p-5 text-center text-white hover:border-white hover:bg-white hover:text-black"
         >
           Kapcsolat
         </button>

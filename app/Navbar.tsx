@@ -25,6 +25,25 @@ export const Navbar = () => {
     }
     setIsOpen(false);
   }
+  function onFormClick(num: number) {
+    const sections = document.getElementsByTagName("form");
+    if (num >= 0 && num < sections.length) {
+      const section = sections[num];
+      const offset = 105; // Adjust this value to set the desired offset
+
+      const sectionTop = section.offsetTop;
+      const bodyScrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      const targetScrollTop = sectionTop - offset;
+
+      // Calculate the scroll distance
+      const scrollDistance = targetScrollTop - bodyScrollTop;
+
+      // Smooth scroll to the target position
+      scrollToSmoothly(scrollDistance);
+    }
+    setIsOpen(false);
+  }
 
   function scrollToSmoothly(scrollDistance: number, duration = 300) {
     const start = document.documentElement.scrollTop || document.body.scrollTop;
@@ -113,7 +132,7 @@ export const Navbar = () => {
           <button
             aria-label="Vizsgálataink"
             onClick={() => {
-              onLinkClick(5);
+              onFormClick(0);
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
@@ -165,6 +184,17 @@ export const Navbar = () => {
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
               Vizsgálataink
+            </span>
+          </button>
+          <button
+            aria-label="Kapcsolat"
+            onClick={() => {
+              onFormClick(0);
+            }}
+            className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
+          >
+            <span className="rounded-full bg-[#1f1f1f] text-white">
+              Kapcsolat
             </span>
           </button>
         </div>

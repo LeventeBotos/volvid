@@ -24,7 +24,7 @@ export const Projects = () => {
     {
       name: "MOL Nyrt. Dunai Finomító",
       content:
-        "Üzemek és tartályok anyagvizsgálata üzemközi csővezetékek állapotfelmérése, üzemi átalakításokvizsgálatai.",
+        "Üzemek és tartályok anyagvizsgálata üzemközi csővezetékek állapotfelmérése, üzemi átalakítások vizsgálatai.",
     },
     {
       name: "Németországban a BayernOil",
@@ -50,7 +50,7 @@ export const Projects = () => {
     {
       name: "OMV Schwechati Finomító",
       content:
-        "Leállásokon anyagvizsgálatok, és leálláson kívüli időszakban állapotfelmérés.",
+        "Leállásokon anyagvizsgálatok és leálláson kívüli időszakban állapotfelmérés.",
     },
   ];
 
