@@ -23,119 +23,119 @@ interface Option {
 const options2 = [
   {
     value: "RT",
-    label: "Radiographic examination",
+    label: "Radiografische Untersuchung",
     options: [
       {
-        value: "ASME BPVC SEC.5 ARTICLE 2",
-        label: "ASME BPVC SEC.5 ARTICLE 2",
+        value: "ASME BPVC SEC.5 ARTIKEL 2",
+        label: "ASME BPVC SEC.5 ARTIKEL 2",
       },
       { value: "MSZ EN ISO 17636-1", label: "MSZ EN ISO 17636-1" },
     ],
   },
   {
     value: "PT",
-    label: "Liquid penetrant examination",
+    label: "Flüssigkeitsrissprüfung",
     options: [
       {
-        value: "ASME BPVC SEC.5 ARTICLE 6",
-        label: "ASME BPVC SEC.5 ARTICLE 6",
+        value: "ASME BPVC SEC.5 ARTIKEL 6",
+        label: "ASME BPVC SEC.5 ARTIKEL 6",
       },
       { value: "MSZ EN ISO 3451-1", label: "MSZ EN ISO 3451-1" },
     ],
   },
   {
     value: "MT",
-    label: "Magnetic particle examination",
+    label: "Magnetpulverprüfung",
     options: [
       {
-        value: "ASME BPVC SEC.5 ARTICLE 7",
-        label: "ASME BPVC SEC.5 ARTICLE 7",
+        value: "ASME BPVC SEC.5 ARTIKEL 7",
+        label: "ASME BPVC SEC.5 ARTIKEL 7",
       },
       { value: "MSZ EN ISO 17638", label: "MSZ EN ISO 17638" },
     ],
   },
   {
     value: "LT",
-    label: "Leakage testing",
+    label: "Leckprüfung",
     options: [
       { value: "MSZ EN 1593", label: "MSZ EN 1593" },
       {
-        value: "ASME BPVC SEC.5 ARTICLE 10",
-        label: "ASME BPVC SEC.5 ARTICLE 10",
+        value: "ASME BPVC SEC.5 ARTIKEL 10",
+        label: "ASME BPVC SEC.5 ARTIKEL 10",
       },
     ],
   },
   {
     value: "UTw",
-    label: "Ultrasonic testing",
+    label: "Ultraschallprüfung",
     options: [
       {
-        value: "ASME BPVC SEC.5 ARTICLE 23",
-        label: "ASME BPVC SEC.5 ARTICLE 23",
+        value: "ASME BPVC SEC.5 ARTIKEL 23",
+        label: "ASME BPVC SEC.5 ARTIKEL 23",
       },
       { value: "MSZ EN ISO 13588", label: "MSZ EN ISO 13588" },
     ],
   },
   {
     value: "UT-L",
-    label: "Ultrasonic testing",
+    label: "Ultraschallprüfung",
     options: [
       {
-        value: "ASME BPVC SEC.5 ARTICLE 5",
-        label: "ASME BPVC SEC.5 ARTICLE 5",
+        value: "ASME BPVC SEC.5 ARTIKEL 5",
+        label: "ASME BPVC SEC.5 ARTIKEL 5",
       },
       {
-        value: "MSZ EN ISO 17640 10.2 chapter",
-        label: "MSZ EN ISO 17640 10.2 chapter",
+        value: "MSZ EN ISO 17640 10.2 Kapitel",
+        label: "MSZ EN ISO 17640 10.2 Kapitel",
       },
     ],
   },
   {
     value: "VT",
-    label: "Visual testing",
+    label: "Visuelle Prüfung",
     options: [
       { value: "MSZ EN ISO 17637", label: "MSZ EN ISO 17637" },
       {
-        value: "ASME BPVC SEC.5 ARTICLE 9",
-        label: "ASME BPVC SEC.5 ARTICLE 9",
+        value: "ASME BPVC SEC.5 ARTIKEL 9",
+        label: "ASME BPVC SEC.5 ARTIKEL 9",
       },
     ],
   },
   {
     value: "Other",
-    label: "Other",
+    label: "Andere",
   },
 ];
 
 const options: Option[] = [
   {
     value: "RT",
-    label: "Radiographic examination",
+    label: "Radiografische Untersuchung",
   },
   {
     value: "PT",
-    label: "Liquid penetrant examination",
+    label: "Flüssigkeitsrissprüfung",
   },
   {
     value: "MT",
-    label: "Magnetic particle examination",
+    label: "Magnetpulverprüfung",
   },
   { value: "HT", label: "Hardness testing" },
   {
     value: "LT",
-    label: "Leakage testing",
+    label: "Leckprüfung",
   },
   {
     value: "IT",
-    label: "Surface insulation testing of metals",
+    label: "Oberflächenisolationsprüfung von Metallen",
   },
   { value: "PMI", label: "Positive material identification" },
   { value: "UT", label: "Ultrasonic testing" },
   {
     value: "VT",
-    label: "Visual testing",
+    label: "Visuelle Prüfung",
   },
-  { value: "Other", label: "Other" },
+  { value: "Other", label: "Andere" },
 ];
 
 export const Kontakt = () => {
@@ -187,8 +187,6 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           },
         }
       );
-      console.log("Email sent successfully");
-      console.log(response);
       // lottieRef.current?.play();
       setSubmitted(true);
     } catch (error) {

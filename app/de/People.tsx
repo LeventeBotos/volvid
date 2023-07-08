@@ -21,7 +21,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Kornél Botos</p>
-          <p>Technical Director</p>
+          <p>Technischer Direktor</p>
           <a
             href="tel:+36 20 479 6353"
             className="text-lg hover:underline md:text-base"
@@ -37,7 +37,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-lg">Viktória Kuruczné Prescher</p>
-          <p>Production Director</p>
+          <p>Produktion Direktor</p>
           <a
             href="tel:+36 20 403 5353"
             className="text-lg hover:underline md:text-base"
@@ -53,7 +53,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Péter Tarnóczi</p>
-          <p>Branch Manager, Százhalombatta</p>
+          <p>Niederlassungsleiter, Százhalombatta</p>
           <a
             href="tel:+36 20 374 0624"
             className="text-lg hover:underline md:text-base"
@@ -69,7 +69,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">László Nagy</p>
-          <p>Branch Manager, Miskolc</p>
+          <p>Niederlassungsleiter, Miskolc</p>
           <a
             href="tel:+36 20 267 6703"
             className="text-lg hover:underline md:text-base"
@@ -85,7 +85,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Zoltán Polestyuk</p>
-          <p>Branch Manager, Szeged</p>
+          <p>Niederlassungsleiter, Szeged</p>
           <a
             href="tel:+36 20 293 8499"
             className="text-lg hover:underline md:text-base"
@@ -101,7 +101,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Viktória Maár</p>
-          <p>Financial Director</p>
+          <p>Finanzdirektor</p>
           <a
             href="tel:+36 20 402 8999"
             className="text-lg hover:underline md:text-base"
@@ -117,7 +117,7 @@ export const People = () => {
         </div>
         <div className=" card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Hajnalka Zsigmond</p>
-          <p>Office Manager</p>
+          <p>Büroleiter</p>
           <a
             href="tel:+36 20 374 0014"
             className="text-lg hover:underline md:text-base"

@@ -1,14 +1,14 @@
 export const Memberships = () => {
   return (
     <section className="flex flex-col gap-4 text-xl">
-      <p className="text-2xl font-bold">Our Memberships</p>
+      <p className="text-2xl font-bold">Unsere Mitgliedschaften</p>
       <ul>
-        <li>Hungarian Non-Destructive Testing Association (MAROVISZ)</li>
-        <li>German Society for Non-Destructive Testing (DGzfP)</li>
-        <li>Hungarian Welding and Materials Testing Association (MHtE)</li>
-        <li>Hungarian Society for Materials Testing (MAE)</li>
-        <li>Hungarian Association of Industrial Maintenance (MIKSZ)</li>
-        <li>Association of Mechanical Engineers (GTE)</li>
+        <li>Ungarischer Verband für zerstörungsfreie Prüfung (MAROVISZ)</li>
+        <li>Deutsche Gesellschaft für Zerstörungsfreie Prüfung (DGZfP)</li>
+        <li>Ungarischer Verband für Schweiß- und Werkstoffprüfung (MHtE)</li>
+        <li>Ungarische Gesellschaft für Werkstoffprüfung (MAE)</li>
+        <li>Ungarischer Verband für industrielle Instandhaltung (MIKSZ)</li>
+        <li>Verband der Maschinenbauingenieure (GTE)</li>
       </ul>
     </section>
   );

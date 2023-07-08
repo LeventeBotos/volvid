@@ -19,38 +19,38 @@ export const Projects = () => {
     const previousIndex = (activeIndex - 1 + projects.length) % projects.length;
     showTestimonial(previousIndex);
   }
-
   const projects = [
     {
       name: "MOL Nyrt. Danube Refinery",
       content:
-        "Material testing of plants and tanks, condition monitoring of interplant pipelines, testing of operational transformations.",
+        "Materialprüfung von Anlagen und Behältern, Zustandsüberwachung von zwischenbetrieblichen Pipelines, Prüfung von betrieblichen Umwandlungen.",
     },
     {
-      name: "BayernOil in Germany",
-      content: "Continuous testing in refineries near Ingolstadt.",
-    },
-    {
-      name: "OMV Burghausen Refinery and Wacker Chemical Plant in Germany",
-      content: "Continuous material testing.",
-    },
-    {
-      name: "Kazincbarcika Plant of BorsodChem Nyrt.",
+      name: "BayernOil in Deutschland",
       content:
-        "Material testing during plant shutdowns, we are a contracted partner.",
+        "Kontinuierliche Prüfungen in Raffinerien in der Nähe von Ingolstadt.",
     },
     {
-      name: "Péti Nitrogen Works",
-      content: "Reactor and heat exchanger testing.",
+      name: "OMV Burghausen Refinery und Wacker Chemical Plant in Deutschland",
+      content: "Kontinuierliche Materialprüfung.",
     },
     {
-      name: "Gönyű Power Plant",
-      content: "Testing during plant shutdowns.",
-    },
-    {
-      name: "OMV Schwechat Refinery",
+      name: "Kazincbarcika-Werk von BorsodChem Nyrt.",
       content:
-        "Material testing during shutdowns and condition monitoring during non-shutdown periods.",
+        "Materialprüfung während Anlagenstillständen, wir sind ein Vertragspartner.",
+    },
+    {
+      name: "Péti Stickstoffwerk",
+      content: "Reaktor- und Wärmetauscherprüfung.",
+    },
+    {
+      name: "Kraftwerk Gönyű",
+      content: "Prüfung während Anlagenstillständen.",
+    },
+    {
+      name: "OMV Schwechat Raffinerie",
+      content:
+        "Materialprüfung während Stillständen und Zustandsüberwachung während Nicht-Stillstandszeiten.",
     },
   ];
 
@@ -84,7 +84,7 @@ export const Projects = () => {
           </li>
         </ul>
       </div> */}
-      <div className=" flex h-64 flex-col justify-between md:h-36 md:flex-row">
+      <div className=" flex h-72 flex-col justify-between md:h-36 md:flex-row">
         <button
           aria-label="Previous"
           className="bg-transparent text-4xl text-primary hover:text-black"
@@ -98,7 +98,7 @@ export const Projects = () => {
               key={index}
               className={`testimonial ${
                 index === activeIndex ? "active" : ""
-              } card flex h-40 items-center justify-center  p-1 text-center md:h-32 md:p-5 `}
+              } card flex h-48 items-center justify-center  p-1 text-center md:h-32 md:p-5 `}
             >
               <div className="flex h-full flex-col justify-evenly">
                 <p className="text-xl font-bold">{projects.name}</p>

@@ -96,7 +96,7 @@ const Navbar = () => {
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Home
+            Startseite
           </button>
           <button
             aria-label="About"
@@ -105,7 +105,7 @@ const Navbar = () => {
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            About
+            Über uns
           </button>
           <button
             aria-label="Services"
@@ -114,7 +114,7 @@ const Navbar = () => {
             }}
             className=" items-center rounded-full border-4 border-solid border-transparent bg-transparent  p-3 text-center text-black hover:border-black hover:bg-black hover:text-white"
           >
-            Services
+            Dienstleistungen
           </button>
           <Flagselect />
         </div>
@@ -138,7 +138,9 @@ const Navbar = () => {
             }}
             className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
-            <span className="rounded-full bg-[#1f1f1f] text-white">Home</span>
+            <span className="rounded-full bg-[#1f1f1f] text-white">
+              Startseite
+            </span>
           </button>
           <button
             aria-label="About"
@@ -147,7 +149,9 @@ const Navbar = () => {
             }}
             className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
-            <span className="rounded-full bg-[#1f1f1f] text-white">About</span>
+            <span className="rounded-full bg-[#1f1f1f] text-white">
+              Über uns
+            </span>
           </button>
           <button
             aria-label="Services"
@@ -157,7 +161,7 @@ const Navbar = () => {
             className="flex w-2/3 rounded-full bg-white text-center hover:bg-black hover:underline"
           >
             <span className="rounded-full bg-[#1f1f1f] text-white">
-              Services
+              Dienstleistungen
             </span>
           </button>
         </div>

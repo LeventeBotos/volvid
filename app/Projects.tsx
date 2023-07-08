@@ -57,7 +57,7 @@ export const Projects = () => {
   return (
     <section className="flex  flex-col gap-4 text-center">
       <p className="text-2xl font-bold">Jelentősebb projektek</p>
-      <div className=" flex h-64 flex-col items-center justify-between md:h-36 md:flex-row">
+      <div className=" flex h-72 flex-col items-center justify-between md:h-36 md:flex-row">
         <button
           aria-label="Előző"
           className="bg-transparent text-4xl text-primary hover:text-black"
@@ -71,7 +71,7 @@ export const Projects = () => {
               key={index}
               className={`testimonial ${
                 index === activeIndex ? "active" : ""
-              } card flex h-40 items-center justify-center  p-1 text-center md:h-32 md:p-5 `}
+              } card flex h-48 items-center justify-center  p-1 text-center md:h-32 md:p-5 `}
             >
               <div className="flex h-full flex-col justify-evenly">
                 <p className="text-xl font-bold">{projects.name}</p>
