@@ -9,11 +9,11 @@ export const About = () => {
         anyagvizsgálat, melyen belül kiemelkedően szakosodtunk a roncsolásmentes
         anyagvizsgálat területén. Minőségi műszaki vizsgálatokat és elemzéseket
         végzünk, megbízható eredmények érdekében. Magas szintű szaktudással és
-        profizmussal állunk rendelkezésre Jelenleg három állandó laboratóriummal
-        rendelkezünk Magyarországon. Az egyik laboratóriumunk a MOL Nyrt. Dunai
+        profizmussal állunk rendelkezésre Jelenleg három állandó telephellyel
+        rendelkezünk Magyarországon. Az egyik telephely a MOL Nyrt. Dunai
         Finomítója mellett található Százhalombattán, a másik kettő Miskolcon és
-        Szegeden található. Ezen kívül büszkék vagyunk németországi és ausztriai
-        telephelyeinkre is, melyeket 2017-ben alakítottunk ki.
+        Szegeden található. Ezen kívül büszkék vagyunk hogy Németországban és
+        Ausztriában is dolgozunk.
       </div>
     </section>
   );

@@ -35,7 +35,7 @@ export const Projects = () => {
       content: "Anyagvizsgálatok végzése folyamatosan.",
     },
     {
-      name: "BorsodChem Nyrt. Kazincbarcikai gyár",
+      name: "BorsodChem Nyrt. Kazincbarcika",
       content:
         "Üzemi leállások anyagvizsgálata, keretszerződött partner vagyunk.",
     },

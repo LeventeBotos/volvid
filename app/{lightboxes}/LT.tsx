@@ -16,14 +16,6 @@ const LTLightbox = () => {
           "/images/LT/1.webp",
           "/images/LT/2.webp",
           "/images/LT/3.webp",
-          "/images/LT/4.webp",
-          "/images/LT/5.webp",
-          "/images/LT/6.webp",
-          "/images/LT/7.webp",
-          "/images/LT/8.webp",
-          "/images/LT/9.webp",
-          "/images/LT/10.webp",
-          "/images/LT/11.webp",
         ]}
       />
     </div>

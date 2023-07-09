@@ -4,12 +4,10 @@ export const Memberships = () => {
       <p className="text-2xl font-bold">Tagságaink</p>
       <ul className="flex flex-col gap-2">
         <li>Magyar Roncsolásmentes Vizsgálati Szövetség (MAROVISZ)</li>
-        <li>Német Roncsolásmentes Vizsgálati Szövetségnek (DGzfP)</li>
-        <li>
-          Magyar Hegesztéstechnikai és Anyagvizsgálati Egyesülésnek (MHtE)
-        </li>
+        <li>Német Roncsolásmentes Vizsgálati Szövetség (DGzfP)</li>
+        <li>Magyar Hegesztéstechnikai és Anyagvizsgálati Egyesület (MHtE)</li>
         <li>Magyar Anyagvizsgálók Egyesülete (MAE)</li>
-        <li>Magyar Ipari karbantartók szervezete (MIKSZ)</li>
+        <li>Magyar Ipari Karbantartók Szervezete (MIKSZ)</li>
         <li>Gépipari Tudományos Egyesület (GTE)</li>
       </ul>
     </section>

@@ -7,7 +7,8 @@ export async function POST(req: NextRequest) {
   const { nextUrl: { search } } = req;
   const urlSearchParams = new URLSearchParams(search);
   const params = Object.fromEntries(urlSearchParams.entries());
-
+  const selectedOptionString = JSON.stringify(params.selectedOption, null, 2);
+  const selectedOption2String = JSON.stringify(params.selectedOption2, null, 2);
   const msg = {
     to: 'levinandi98@gmail.com',
     // to: 'volvid.botosk@volvid.hu', // Your email where you'll receive emails
@@ -20,7 +21,9 @@ export async function POST(req: NextRequest) {
         <br />
         Email:  <a href="mailto:${params.email}">${params.email}</a>
         <br />
-        Választotta: ${params.selectedOption}, ${params.selectedOption2}
+        Választotta: ${selectedOptionString} 
+        <br />
+        Szabvány: ${selectedOption2String}
         <br />
         Üzenet: ${params.message}
         </div>`

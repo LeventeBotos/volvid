@@ -1,7 +1,8 @@
 import HTLightbox from "./{lightboxes}/HT";
 import ITLightbox from "./{lightboxes}/IT";
 import MTLightbox from "./{lightboxes}/MT";
-import LTLightbox from "./{lightboxes}/PT";
+import PTLightbox from "./{lightboxes}/PT";
+import LTLightbox from "./{lightboxes}/LT";
 import RTLightbox from "./{lightboxes}/RT";
 import UHLightbox from "./{lightboxes}/UH";
 
@@ -36,7 +37,7 @@ export const Services = () => {
             anyaggal kezelik. Ezután a felszínt megvizsgálják, és a fehérítő
             anyag által kitöltött repedéseket vagy hibákat könnyen észlelhetik.
           </p>
-          <LTLightbox />
+          <PTLightbox />
         </div>
         <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Mágnesezhető poros vizsgálat</p>

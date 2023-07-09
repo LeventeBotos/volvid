@@ -56,7 +56,7 @@ export const Projects = () => {
 
   return (
     <section className="flex  flex-col gap-4 text-center">
-      <p className="text-2xl font-bold">Significant Projects</p>
+      <p className="text-2xl font-bold">Signifikante Projekte</p>
       {/* <div>
         <ul className="gap-2 text-xl">
           <li>Gönyűi Erőmű üzemi leállás vizsgálata</li>
