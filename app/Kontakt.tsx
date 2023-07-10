@@ -169,13 +169,12 @@ export const Kontakt = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<Option | null>(null);
-  const [selectedSuboption, setSelectedSuboption] = useState<Option | null>(
-    null
-  );
+  const [selectedOption, setSelectedOption] = useState<Option[]>([]);
+  const [selectedSubOption, setSelectedSubOption] = useState<Option[]>([]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
     try {
       const response = await axios.post(
         "https://volvid.vercel.app/api/email",
@@ -186,8 +185,8 @@ export const Kontakt = () => {
             name: name,
             email: email,
             phone: phone,
-            selectedOption: JSON.stringify(selectedOption),
-            selectedOption2: JSON.stringify(selectedSuboption),
+            selectedOption: JSON.stringify(selectedOption), // Pass the stringified version
+            selectedOption2: JSON.stringify(selectedSubOption),
             message: message,
           },
         }
@@ -200,14 +199,35 @@ export const Kontakt = () => {
       console.error(error);
     }
   }
-
   const handleOptionChange = (selectedOptions: any) => {
-    setSelectedOption(selectedOptions);
+    if (Array.isArray(selectedOptions)) {
+      setSelectedOption(selectedOptions);
+      console.log(selectedOption);
+    } else if (selectedOptions) {
+      setSelectedOption([selectedOptions]);
+      console.log(selectedOption);
+    } else {
+      setSelectedOption([]);
+      console.log(selectedOption);
+    }
   };
 
-  const handleSuboptionChange = (selectedSuboption: any) => {
-    setSelectedSuboption(selectedSuboption);
+  const handleSuboptionChange = (selectedOptions: any) => {
+    if (Array.isArray(selectedOptions)) {
+      setSelectedSubOption(selectedOptions);
+      console.log(selectedOption);
+    } else if (selectedOptions) {
+      setSelectedSubOption([selectedOptions]);
+      console.log(selectedOption);
+    } else {
+      setSelectedSubOption([]);
+      console.log(selectedSubOption);
+    }
   };
+  // const handleSuboptionChange = (selectedSuboption: any) => {
+  //   console.log(selectedSuboption); // Check the selectedSuboption value received
+  //   selectedSubOption.push(selectedSuboption);
+  // };
 
   return (
     <form
@@ -282,7 +302,7 @@ export const Kontakt = () => {
           <Select
             aria-label="Vizsgálati Szabvány"
             className="w-full"
-            value={selectedSuboption}
+            value={selectedSubOption}
             onChange={(selectedOptions) => {
               handleSuboptionChange(selectedOptions);
             }}
@@ -313,9 +333,15 @@ export const Kontakt = () => {
       >
         <span className=" flex items-center justify-evenly rounded-full text-center text-3xl">
           {submitted ? (
-            <AiOutlineCheckCircle className="text-green-500" />
+            <div className="flex justify-between">
+              <p className="text-lg">Elküldve</p>
+              <AiOutlineCheckCircle className="text-green-500" />
+            </div>
           ) : (
-            <AiOutlineSend />
+            <div className="flex justify-between">
+              <p className="text-lg">Küldés</p>
+              <AiOutlineSend />
+            </div>
           )}
         </span>
       </button>

@@ -1,35 +1,42 @@
 import { NextRequest, NextResponse } from "next/server";
 const sgMail = require('@sendgrid/mail');
 
-sgMail.setApiKey(process.env.SGMAIL);
+interface Option {
+  value: string;
+  label: string;
+  optionss?: Option[];
+}
+
 
 export async function POST(req: NextRequest) {
   const { nextUrl: { search } } = req;
   const urlSearchParams = new URLSearchParams(search);
   const params = Object.fromEntries(urlSearchParams.entries());
-  const selectedOptionString = JSON.stringify(params.selectedOption, null, 2);
-  const selectedOption2String = JSON.stringify(params.selectedOption2, null, 2);
+  const selectedOption = JSON.parse(params.selectedOption);
+  const selectedOption2 = JSON.parse(params.selectedOption2);
+  const selectedOptionLabels = selectedOption.map((option: Option) => option.value).join(', ');
+  const selectedOption2Labels = selectedOption2.map((option: Option) => option.value).join(', ');
   const msg = {
     to: 'levinandi98@gmail.com',
-    // to: 'volvid.botosk@volvid.hu', // Your email where you'll receive emails
-    from: 'botos.levente2007@gmail.com', 
+    from: 'botos.levente2007@gmail.com',
     subject: 'Új árajánlat',
-    text: 'and easy to do anywhere, even with Node.js',
+    text: 'Volvid',
     html: `<div>${params.name} árajánlatot kért.
         <br />
         Telefonszám: <a href="tel:${params.phone}">${params.phone}</a>,
         <br />
         Email:  <a href="mailto:${params.email}">${params.email}</a>
         <br />
-        Választotta: ${selectedOptionString} 
+        Választotta: ${selectedOptionLabels}
         <br />
-        Szabvány: ${selectedOption2String}
+        Szabvány: ${selectedOption2Labels}
         <br />
         Üzenet: ${params.message}
         </div>`
   };
-  
-  await sgMail.send(msg)
+
+  // await sgMail.send(msg)
+  // console.log(msg);
   console.log("sent");
   return new NextResponse("sent successfully");
 }

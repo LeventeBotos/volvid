@@ -79,7 +79,7 @@ export const S1 = () => {
           }}
           className=" bg-blur-xl items-center rounded-full border-4 border-solid border-black bg-black bg-opacity-25  p-5 text-center text-white hover:border-white hover:bg-white hover:text-black"
         >
-          Contact
+          Kontakt
           {/* <span className="rounded-full">Kontakt</span> */}
         </button>
       </div>

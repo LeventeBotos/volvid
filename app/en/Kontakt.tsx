@@ -144,33 +144,12 @@ export const Kontakt = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<Option | null>(null);
-  const [selectedSuboption, setSelectedSuboption] = useState<Option | null>(
-    null
-  );
-  /* 
-RT: MSZ EN ISO 17636-1 
-DRT: MSZ EN ISO 17636-2  
-UT: MSZ EN ISO 17640 10.2-es fejezet
-UT-PAw: MSZ EN ISO 13588
-VT: MSZ EN ISO 17637
-PT: MSZ EN ISO 3451-1
-MT: MSZ EN ISO 17638
-LT: MSZ EN 1593
-
-ASME:
-UTw: ASME BPVC SEC.5 ARTICLE 23
-VT: ASME BPVC SEC.5 ARTICLE 9
-UT-L: ASME BPVC SEC.5 ARTICLE 5
-PT: ASME BPVC SEC.5 ARTICLE 6
-MT: ASME BPVC SEC.5 ARTICLE 7
-RT: ASME BPVC SEC.5 ARTICLE 2
-UT-pa: ASME BPVC SEC.5 ARTICLE 4
-LT: ASME BPVC SEC.5 ARTICLE 10
-*/
+  const [selectedOption, setSelectedOption] = useState<Option[]>([]);
+  const [selectedSubOption, setSelectedSubOption] = useState<Option[]>([]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
     try {
       const response = await axios.post(
         "https://volvid.vercel.app/api/email",
@@ -181,8 +160,8 @@ LT: ASME BPVC SEC.5 ARTICLE 10
             name: name,
             email: email,
             phone: phone,
-            selectedOption: JSON.stringify(selectedOption),
-            selectedOption2: JSON.stringify(selectedSuboption),
+            selectedOption: JSON.stringify(selectedOption), // Pass the stringified version
+            selectedOption2: JSON.stringify(selectedSubOption),
             message: message,
           },
         }
@@ -195,15 +174,31 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       console.error(error);
     }
   }
-
   const handleOptionChange = (selectedOptions: any) => {
-    setSelectedOption(selectedOptions);
+    if (Array.isArray(selectedOptions)) {
+      setSelectedOption(selectedOptions);
+      console.log(selectedOption);
+    } else if (selectedOptions) {
+      setSelectedOption([selectedOptions]);
+      console.log(selectedOption);
+    } else {
+      setSelectedOption([]);
+      console.log(selectedOption);
+    }
   };
 
-  const handleSuboptionChange = (selectedSuboption: any) => {
-    setSelectedSuboption(selectedSuboption);
+  const handleSuboptionChange = (selectedOptions: any) => {
+    if (Array.isArray(selectedOptions)) {
+      setSelectedSubOption(selectedOptions);
+      console.log(selectedOption);
+    } else if (selectedOptions) {
+      setSelectedSubOption([selectedOptions]);
+      console.log(selectedOption);
+    } else {
+      setSelectedSubOption([]);
+      console.log(selectedSubOption);
+    }
   };
-
   return (
     <form
       className="flex flex-col items-center gap-4 bg-[#1f1f1f] p-5 text-center"
@@ -298,7 +293,7 @@ LT: ASME BPVC SEC.5 ARTICLE 10
           <Select
             aria-label="Examination Standard"
             className="w-full"
-            value={selectedSuboption}
+            value={selectedSubOption}
             onChange={(selectedOptions) => {
               handleSuboptionChange(selectedOptions);
             }}
@@ -332,9 +327,15 @@ LT: ASME BPVC SEC.5 ARTICLE 10
       >
         <span className="flex items-center justify-evenly rounded-full text-center text-3xl">
           {submitted ? (
-            <AiOutlineCheckCircle className="text-green-500" />
+            <div className="flex justify-between">
+              <p className="text-lg">Sent</p>
+              <AiOutlineCheckCircle className="text-green-500" />
+            </div>
           ) : (
-            <AiOutlineSend />
+            <div className="flex justify-between">
+              <p className="text-lg">Send</p>
+              <AiOutlineSend />
+            </div>
             // <Lottie
             //   lottieRef={lottieRef}
             //   animationData={animationData}
