@@ -6,6 +6,8 @@ interface Option {
   label: string;
   optionss?: Option[];
 }
+sgMail.setApiKey(process.env.SGMAIL)
+
 
 
 export async function POST(req: NextRequest) {
