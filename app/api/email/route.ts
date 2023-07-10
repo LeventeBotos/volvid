@@ -35,8 +35,29 @@ export async function POST(req: NextRequest) {
         </div>`
   };
 
-  // await sgMail.send(msg)
-  // console.log(msg);
+  const msg2 = {
+    to: params.email,
+    from: "botos.levente2007@gmail.com",
+    subject: "Köszönjük megrendelését",
+    text: "Volvid",
+    html: `<div>Kedves ${params.name},
+    <br />
+    Megkaptuk a megrendelését.
+    Nemsokára felvesszük önnel a kapcsolatot a munka megkezdése érdekében.
+    Tisztázás érdekében ön:
+    Választotta: ${selectedOptionLabels}
+    <br />
+    Szabvány: ${selectedOption2Labels}
+    <br />
+   Köszönjük hogy minket választott!
+   <br />
+   Volvid Zrt.
+    </div>`
+  }
+
+  await sgMail.send(msg)
+  await sgMail.send(msg2)
+  console.log(msg);
   console.log("sent");
   return new NextResponse("sent successfully");
 }
