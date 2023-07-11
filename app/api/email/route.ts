@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
     html: `<div>Kedves ${params.name},
     <br />
     Megkaptuk a megrendelését.
-    Nemsokára felvesszük önnel a kapcsolatot a munka megkezdése érdekében.
+    Nemsokára felvesszük önnel a kapcsolatot az árajánlat kidolgozása érdekében.
     Tisztázás érdekében ön:
     Választotta: ${selectedOptionLabels}
     <br />
