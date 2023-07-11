@@ -1,7 +1,6 @@
 import { S1 } from "./S1";
 import { Services } from "./Services";
 import { About } from "./About";
-import Testamonials from "./Testamonials";
 import { Location } from "./Location";
 import { People } from "./People";
 import { Qualities } from "./Qualities";
@@ -28,7 +27,6 @@ export default function Home() {
       <br />
       <Projects />
       <br />
-      {/* <Testamonials /> */}
       <Services />
       <br />
       <Kontakt />

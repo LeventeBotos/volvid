@@ -74,6 +74,7 @@ export const Footer = () => {
           onClick={() => {
             onLinkClick(0);
           }}
+          aria-label="Main page"
           className=" items-center rounded-full text-center"
         >
           <span className="rounded-full">Main page</span>
@@ -82,6 +83,7 @@ export const Footer = () => {
           onClick={() => {
             onLinkClick(1);
           }}
+          aria-label="about"
           className=" items-center rounded-full text-center"
         >
           <span className="rounded-full">About</span>
@@ -91,6 +93,7 @@ export const Footer = () => {
           onClick={() => {
             onLinkClick(5);
           }}
+          aria-label="leaders"
           className=" items-center rounded-full text-center"
         >
           <span className="rounded-full">Leaders</span>
@@ -99,6 +102,7 @@ export const Footer = () => {
           onClick={() => {
             onFormClick(0);
           }}
+          aria-label="contact"
           className=" items-center rounded-full text-center"
         >
           <span className="rounded-full">Contact</span>
@@ -138,7 +142,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <p className="text-gray-400">Copyright © Volvid 2023</p>
+      <p className="text-gray-400">Copyright &copy; Volvid</p>
     </footer>
   );
 };

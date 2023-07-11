@@ -35,6 +35,7 @@ const Flagselect = () => {
             className="my-1 rounded-md object-cover opacity-100"
             alt="hungarian"
             src="/images/hungarian.svg"
+            loading="lazy"
           />
         </a>
         <a href="/de" className="">
@@ -42,6 +43,7 @@ const Flagselect = () => {
             className=" rounded-lg opacity-100"
             alt="german"
             src="/images/german.svg"
+            loading="lazy"
           />
         </a>
       </div>

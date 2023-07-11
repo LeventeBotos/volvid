@@ -63,7 +63,7 @@ export const Services = () => {
           <UHLightbox />
         </div>
 
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">Szemrevételezéses vizsgálat</p>
           <p className="pb-3">
             A szemrevételezéses vizsgálat (VT) egy vizuális ellenőrzési eljárás,

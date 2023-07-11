@@ -9,13 +9,6 @@ export const Jogosultsag: React.FC = () => {
         >
           <p className="align-middle">Akkreditierungsdokument</p>
         </a>
-
-        {/* <a
-          className="card w-full p-3 text-center underline md:w-1/4"
-          href="/tanusitvanyok/SCC-Tanúsítvány-Volvid-H.pdf"
-        >
-          <p>SCC tanusitvány</p>
-        </a> */}
         <a
           className="card h-20 w-full p-3 text-center align-middle underline md:w-1/4"
           href="/tanusitvanyok/SCC-Tanúsítvány-Volvid-H.pdf"

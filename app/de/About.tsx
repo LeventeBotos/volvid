@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <section className="flex flex-col justify-evenly gap-4 text-center md:px-10">
       <p className="text-center text-2xl font-bold">Über uns</p>
-      <div className="h-96 overflow-y-scroll px-2 text-xl md:px-1 xl:px-20">
+      <div className="h-96 overflow-y-scroll px-2 text-xl md:h-72 md:px-1 xl:px-20">
         Die VOLVID Service GmbH (Volvid Zrt.) freut sich, sich Ihnen vorstellen
         zu dürfen. Unser Unternehmen ist zu 100 % ungarisch und besteht seit
         Februar 2017 erfolgreich. Unsere Haupttätigkeit ist die
@@ -18,9 +18,7 @@ export const About = () => {
         und Szeged befinden. An diesen Standorten garantieren wir effiziente und
         präzise Werkstoffprüfdienstleistungen. Darüber hinaus sind wir stolz
         darauf, auch in Deutschland und Österreich Standorte entwickelt zu
-        haben, die wir im Jahr 2017 eröffnet haben. An diesen Standorten bieten
-        wir ebenfalls hochwertige Werkstoffprüfdienstleistungen an und sind
-        offen für Partnerschaften.
+        haben.
       </div>
     </section>
   );

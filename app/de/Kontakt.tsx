@@ -166,9 +166,6 @@ export const Kontakt = () => {
           },
         }
       );
-      console.log("Email sent successfully");
-      console.log(response);
-      // lottieRef.current?.play();
       setSubmitted(true);
     } catch (error) {
       console.error(error);
@@ -255,14 +252,6 @@ export const Kontakt = () => {
       <div className="flex w-full flex-col items-center justify-evenly gap-4 text-center text-2xl md:w-2/3">
         <div className="flex w-full flex-row items-center gap-4">
           <BsClipboardCheck className="hidden text-4xl text-white md:block" />
-          {/* <Select
-            className="w-full"
-            value={selectedOption}
-            onChange={handleOptionChange}
-            options={options}
-            isClearable
-            placeholder="Examination Procedure"
-          /> */}
           <Select
             aria-label="Prüfungsverfahren"
             className="w-full"
@@ -276,19 +265,6 @@ export const Kontakt = () => {
             placeholder="Prüfungsverfahren"
           />
         </div>
-        {/* {selectedOption && (
-          <div className="flex w-full flex-row items-center gap-4">
-            <AiOutlineSearch className="hidden text-4xl text-white md:block" />
-            <Select
-              className="w-full"
-              value={selectedSuboption}
-              onChange={handleSuboptionChange}
-              options={selectedOption.optionss || []}
-              isClearable
-              placeholder="Examination Standard"
-            />
-          </div>
-        )} */}
         <div className="flex w-full flex-row items-center gap-4">
           <AiOutlineSearch className="hidden text-4xl text-white md:block" />
           <Select

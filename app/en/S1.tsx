@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 
 export const S1 = () => {
   function onLinkClick(num: number) {
@@ -59,7 +58,6 @@ export const S1 = () => {
         className=" -z-2 opacity-45 absolute h-96 w-full object-contain
       "
       >
-        {/* <Image fill src="/images/green.webp" objectFit="cover" alt="bg" /> */}
         <img
           src="/images/green.webp"
           alt="bg"
@@ -80,7 +78,6 @@ export const S1 = () => {
           className=" bg-blur-xl items-center rounded-full border-4 border-solid border-black bg-black bg-opacity-25  p-5 text-center text-white hover:border-white hover:bg-white hover:text-black"
         >
           Contact
-          {/* <span className="rounded-full">Kontakt</span> */}
         </button>
       </div>
     </section>

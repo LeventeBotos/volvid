@@ -41,7 +41,7 @@ export default function Testimonials() {
 
   return (
     <div className=" flex h-96 w-full flex-col items-center justify-between text-center ">
-      <p className="h-1/4 w-full text-3xl font-bold">Vendégeink</p>
+      <p className="h-1/4 w-full text-3xl font-bold">Unsere Gäste</p>
       <div className="flex h-3/4 flex-col md:flex-row">
         <button
           className="bg-transparent text-4xl text-primary hover:text-white"

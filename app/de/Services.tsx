@@ -73,7 +73,7 @@ export const Services = () => {
           </p>
           <UHLightbox />
         </div>
-        <div className="card m-10 flex w-full flex-col items-center justify-between p-3 text-center md:w-1/3">
+        <div className="card m-10 flex w-full flex-col items-center justify-evenly p-3 text-center md:w-1/3">
           <p className="pb-3 text-2xl">visuelle Prüfung </p>
           <p className="pb-3">
             Die visuelle Prüfung (Visual Testing, VT) ist ein Verfahren der

@@ -8,15 +8,7 @@ export const Jogosultsag = () => {
           href="/tanusitvanyok/O-221201-1-1825-MK-25072325-a.pdf"
         >
           <p className="align-middle">Accreditation document</p>
-          {/* <br /> */}
         </a>
-
-        {/* <a
-          className="card w-full p-3 text-center  underline md:w-1/4"
-          href="/tanusitvanyok/SCC-Tanúsítvány-Volvid-H.pdf"
-        >
-          <p>SCC tanusitvány</p>
-        </a> */}
         <a
           className=" card h-20 w-full p-3 text-center align-middle underline md:w-1/4"
           href="/tanusitvanyok/SCC-Tanúsítvány-Volvid-H.pdf"

@@ -140,7 +140,7 @@ export const Footer: React.FC = () => {
           </a>
         </div>
       </div>
-      <p className="text-gray-400">Urheberrecht © Volvid 2023</p>
+      <p className="text-gray-400">Urheberrecht &copy; Volvid</p>
     </footer>
   );
 };

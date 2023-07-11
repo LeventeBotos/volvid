@@ -1,11 +1,11 @@
 export const People = () => {
   return (
     <section>
-      <p className="pb-3 text-center text-3xl font-bold">Leaders</p>
+      <p className="pb-3 text-center text-3xl font-bold">Führungskräfte</p>
       <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-4 md:gap-10">
         <div className="card flex w-full flex-col justify-between p-3 text-center md:w-1/4">
           <p className="text-xl">Gyula Kovács</p>
-          <p>CEO</p>
+          <p>Vorsitzender</p>
           <a
             href="tel:+36 20 374 0014"
             className="text-lg hover:underline md:text-base"

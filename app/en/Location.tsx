@@ -10,14 +10,17 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Headquarters, Office, Laboratory</p>
+          <p className="text-xl">Headquarters, Office</p>
           <p className="">Százhalombatta, MOL Dunai Refinery, 2440</p>
           <a
             href="https://www.google.com/maps/dir//Sz%C3%A1zhalombatta,+Volvid+Zrt.,+MOL+Dunai+Finom%C3%ADt%C3%B3,+2440/@47.4110456,18.7339619,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4741fb8c2e73e5cb:0x5455834cd2d74d95!2m2!1d18.8891525!2d47.2951707!3e0?hl=hu&entry=ttu"
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
+            <button
+              aria-label="direction"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
               <span className="rounded-full">Directions</span>
             </button>
           </a>
@@ -31,14 +34,17 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Location, Office, Laboratory</p>
+          <p className="text-xl">Location, Office</p>
           <p className="">Miskolc, Besenyői u. 8, 3527</p>
           <a
             href="https://www.google.com/maps/dir//Miskolc,+Beseny%C5%91i+u.+8,+3527/@48.1082399,20.7908248,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x473f5ffffd4d607f:0x4f80810c7dfec91!2m2!1d20.8011031!2d48.108226!3e0?entry=ttu"
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
+            <button
+              aria-label="direction"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
               <span className="rounded-full">Directions</span>
             </button>
           </a>
@@ -59,7 +65,10 @@ export const Location = () => {
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
+            <button
+              aria-label="direction"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
               <span className="rounded-full">Directions</span>
             </button>
           </a>
@@ -80,7 +89,10 @@ export const Location = () => {
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
+            <button
+              aria-label="direction"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
               <span className="rounded-full">Directions</span>
             </button>
           </a>

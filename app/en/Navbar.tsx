@@ -83,13 +83,6 @@ const Navbar = () => {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-30 flex h-20 items-center justify-between bg-[#f5f5f5] bg-opacity-50 p-3 backdrop-blur-lg backdrop-filter md:h-24">
-      {/* <Image
-        height={15}
-        width={150}
-        alt="logo"
-        src="/images/logo.webp"
-        className=" self-center p-3 opacity-100 "
-      /> */}
       <img
         src="/images/logo.webp"
         alt="logo"

@@ -1,7 +1,7 @@
 export const Location = () => {
   return (
     <section className="flex flex-col ">
-      <p className="pb-3 text-center text-3xl font-bold">Our Locations</p>
+      <p className="pb-3 text-center text-3xl font-bold">Unsere Standorte</p>
       <div className="flex flex-col py-3 md:flex-row">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.9598494888814!2d18.887752459549503!3d47.295584218475355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741fb8c2e73e5cb%3A0x5455834cd2d74d95!2sVolvid%20Zrt.!5e0!3m2!1shu!2shu!4v1685192169937!5m2!1shu!2shu"
@@ -10,15 +10,18 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Headquarters, Office, Laboratory</p>
-          <p className="">Százhalombatta, MOL Dunai Refinery, 2440</p>
+          <p className="text-xl">Hauptsitz, Büro</p>
+          <p className="">Százhalombatta, MOL Dunai Raffinerie, 2440, Ungarn</p>
           <a
             href="https://www.google.com/maps/dir//Sz%C3%A1zhalombatta,+Volvid+Zrt.,+MOL+Dunai+Finom%C3%ADt%C3%B3,+2440/@47.4110456,18.7339619,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4741fb8c2e73e5cb:0x5455834cd2d74d95!2m2!1d18.8891525!2d47.2951707!3e0?hl=hu&entry=ttu"
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
-              <span className="rounded-full">Directions</span>
+            <button
+              aria-label="Richtungen"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
+              <span className="rounded-full">Richtungen</span>
             </button>
           </a>
         </div>
@@ -31,15 +34,18 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Location, Office, Laboratory</p>
-          <p className="">Miskolc, Besenyői u. 8, 3527</p>
+          <p className="text-xl">Standort, Büro</p>
+          <p className="">Miskolc, Besenyői u. 8, 3527, Ungarn</p>
           <a
             href="https://www.google.com/maps/dir//Miskolc,+Beseny%C5%91i+u.+8,+3527/@48.1082399,20.7908248,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x473f5ffffd4d607f:0x4f80810c7dfec91!2m2!1d20.8011031!2d48.108226!3e0?entry=ttu"
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
-              <span className="rounded-full">Directions</span>
+            <button
+              aria-label="Richtungen"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
+              <span className="rounded-full">Richtungen</span>
             </button>
           </a>
         </div>
@@ -52,15 +58,20 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Branch Location</p>
-          <p className="">Frankfurter Str. 288, 38122 Braunschweig, Germany</p>
+          <p className="text-xl">Zweigstelle</p>
+          <p className="">
+            Frankfurter Str. 288, 38122 Braunschweig, Deutschland
+          </p>
           <a
             href="https://www.google.com/maps/dir//Frankfurter+Str.+288,+38122+Braunschweig,+N%C3%A9metorsz%C3%A1g/@52.2562035,10.5125365,17.25z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47aff67369a3f5af:0x24861c154ec3e3c2!2m2!1d10.5142941!2d52.2570527!3e0?entry=ttu"
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
-              <span className="rounded-full">Directions</span>
+            <button
+              aria-label="Richtungen"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
+              <span className="rounded-full">Richtungen</span>
             </button>
           </a>
         </div>
@@ -73,15 +84,18 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Branch Location</p>
-          <p className="">Schubertstraße 3, 2100 Korneuburg, Austria</p>
+          <p className="text-xl">Zweigstelle</p>
+          <p className="">Schubertstraße 3, 2100 Korneuburg, Össtereich</p>
           <a
             href="https://www.google.com/maps/dir//Schubertstra%C3%9Fe+3,+2100+Korneuburg,+Ausztria/@48.3419798,16.3254997,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x476d0e3417dae5a5:0xd010ca13392ad47c!2m2!1d16.335778!2d48.341966!3e0?hl=hu&entry=ttu"
             target="_blank"
             className="self-center"
           >
-            <button className="flex flex-row items-center rounded-full text-center md:m-3">
-              <span className="rounded-full">Directions</span>
+            <button
+              aria-label="Richtungen"
+              className="flex flex-row items-center rounded-full text-center md:m-3"
+            >
+              <span className="rounded-full">Richtungen</span>
             </button>
           </a>
         </div>

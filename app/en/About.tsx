@@ -12,13 +12,11 @@ export const About = () => {
         be proud of the many years of experience of the owners, both at home and
         abroad. This ensures a high level of expertise and be available to our
         customers with professionalism. There are currently three laboratories
-        in Hungary. One of them our laboratory is located next to the Danube
-        Refinery of MOL Nyrt Szazhalombatta, while the other two are located in
-        Miskolc and Szeged. At these locations, we guarantee efficient and
-        accurate material testing services. In addition, we are proud of Germany
-        and Austria also for our locations, which we developed in 2017. We offer
-        high-quality material testing services at theese sites as well we are
-        open for partners.
+        in Hungary. One of them is located next to the Danube Refinery of MOL
+        Nyrt Szazhalombatta, while the other two are located in Miskolc and
+        Szeged. At these locations, we guarantee efficient and accurate material
+        testing services. In addition, we are proud of Germany and Austria also
+        for our locations.
       </div>
     </section>
   );
