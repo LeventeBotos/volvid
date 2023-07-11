@@ -218,6 +218,7 @@ export const Navbar = () => {
                 className="h-full object-cover opacity-100"
                 alt="english"
                 src="/images/english.svg"
+                loading="lazy"
               />
             </a>
             <a
@@ -228,6 +229,7 @@ export const Navbar = () => {
                 className="h-full rounded-r-lg object-cover opacity-100"
                 alt="german"
                 src="/images/german.svg"
+                loading="lazy"
               />
             </a>
           </div>

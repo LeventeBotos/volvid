@@ -191,9 +191,6 @@ export const Kontakt = () => {
           },
         }
       );
-      console.log("Email sent successfully");
-      console.log(response);
-      // lottieRef.current?.play();
       setSubmitted(true);
     } catch (error) {
       console.error(error);
@@ -202,32 +199,22 @@ export const Kontakt = () => {
   const handleOptionChange = (selectedOptions: any) => {
     if (Array.isArray(selectedOptions)) {
       setSelectedOption(selectedOptions);
-      console.log(selectedOption);
     } else if (selectedOptions) {
       setSelectedOption([selectedOptions]);
-      console.log(selectedOption);
     } else {
       setSelectedOption([]);
-      console.log(selectedOption);
     }
   };
 
   const handleSuboptionChange = (selectedOptions: any) => {
     if (Array.isArray(selectedOptions)) {
       setSelectedSubOption(selectedOptions);
-      console.log(selectedOption);
     } else if (selectedOptions) {
       setSelectedSubOption([selectedOptions]);
-      console.log(selectedOption);
     } else {
       setSelectedSubOption([]);
-      console.log(selectedSubOption);
     }
   };
-  // const handleSuboptionChange = (selectedSuboption: any) => {
-  //   console.log(selectedSuboption); // Check the selectedSuboption value received
-  //   selectedSubOption.push(selectedSuboption);
-  // };
 
   return (
     <form

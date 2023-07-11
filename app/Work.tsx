@@ -4,7 +4,6 @@ export const Work = () => {
       <p className="text-2xl font-bold">Dolgozz velünk!</p>
       <div className=" flex w-full flex-col gap-3 p-5 text-xl md:w-1/2">
         <div className="flex justify-between">
-          <img />
           <p>
             Amennyiben az ország egyik legnagyobb anyagvizsgáló cégénél
             szeretnél dolgozni és kipróbálnád magad akár külföldön is akkor a
@@ -19,11 +18,9 @@ export const Work = () => {
               folyamatos továbbképzést biztosítunk.
             </p>
           </div>
-          <img />
         </div>
         <div className="flex justify-between">
           <p>Neked a jó hozzáállást és a tanulási kedvet kell hoznod.</p>
-          <img />
         </div>
         <div className="flex justify-between">
           <p>
@@ -31,7 +28,6 @@ export const Work = () => {
             akkor akár hosszú távú külföldi munkát is tudunk biztosítani
             számodra Németországban és Ausztriában.
           </p>
-          <img />
         </div>
       </div>
     </section>
