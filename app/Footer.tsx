@@ -18,6 +18,24 @@ function onLinkClick(num: number) {
     scrollToSmoothly(scrollDistance);
   }
 }
+function onFormClick(num: number) {
+  const sections = document.getElementsByTagName("form");
+  if (num >= 0 && num < sections.length) {
+    const section = sections[num];
+    const offset = 105; // Adjust this value to set the desired offset
+
+    const sectionTop = section.offsetTop;
+    const bodyScrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    const targetScrollTop = sectionTop - offset;
+
+    // Calculate the scroll distance
+    const scrollDistance = targetScrollTop - bodyScrollTop;
+
+    // Smooth scroll to the target position
+    scrollToSmoothly(scrollDistance);
+  }
+}
 
 function scrollToSmoothly(scrollDistance: number, duration = 300) {
   const start = document.documentElement.scrollTop || document.body.scrollTop;
@@ -79,11 +97,11 @@ export const Footer = () => {
         </button>
         <button
           onClick={() => {
-            onLinkClick(6);
+            onFormClick(0);
           }}
           className=" items-center rounded-full text-center"
         >
-          <span className="rounded-full">Telephelyeink</span>
+          <span className="rounded-full">Kontakt</span>
         </button>
       </div>
       <div className=" items-center self-center p-5 font-bold text-white ">
