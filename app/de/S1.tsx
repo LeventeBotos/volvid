@@ -61,7 +61,7 @@ export const S1 = () => {
       >
         {/* <Image fill src="/images/green.webp" objectFit="cover" alt="bg" /> */}
         <img
-          src="/images/green.webp"
+          src="/images/green.jpeg"
           alt="bg"
           className=" h-full w-full object-cover"
         />

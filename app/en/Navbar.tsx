@@ -90,7 +90,6 @@ const Navbar = () => {
       />
       <button
         aria-label="menu"
-        id="nav-toggle"
         className="menuu block h-12 w-auto items-center lg:hidden"
         onClick={togglePanel}
       >
@@ -150,7 +149,6 @@ const Navbar = () => {
         className={`fixed inset-y-0 left-0 z-30 flex w-64 flex-col justify-between bg-[#1f1f1f] lg:hidden ${
           isOpen ? "block" : "hidden"
         }`}
-        id="nav-panel"
       >
         <div className="flex flex-row flex-wrap content-around items-stretch justify-center gap-3 py-5">
           <button

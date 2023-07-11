@@ -59,7 +59,7 @@ export const S1 = () => {
       "
       >
         <img
-          src="/images/green.webp"
+          src="/images/green.jpeg"
           alt="bg"
           className=" h-full w-full object-cover"
         />
