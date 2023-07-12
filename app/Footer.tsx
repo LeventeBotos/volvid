@@ -86,14 +86,13 @@ export const Footer = () => {
         >
           <span className="rounded-full">Rólunk</span>
         </button>
-
         <button
           onClick={() => {
-            onLinkClick(5);
+            onLinkClick(4);
           }}
           className=" items-center rounded-full text-center"
         >
-          <span className="rounded-full">Vezetőink</span>
+          <span className="rounded-full">Vizsgálatok</span>
         </button>
         <button
           onClick={() => {
@@ -101,7 +100,15 @@ export const Footer = () => {
           }}
           className=" items-center rounded-full text-center"
         >
-          <span className="rounded-full">Kontakt</span>
+          <span className="rounded-full">Kapcsolat</span>
+        </button>
+        <button
+          onClick={() => {
+            onLinkClick(5);
+          }}
+          className=" items-center rounded-full text-center"
+        >
+          <span className="rounded-full">Vezetőink</span>
         </button>
       </div>
       <div className=" items-center self-center p-5 font-bold text-white ">

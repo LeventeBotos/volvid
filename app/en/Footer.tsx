@@ -88,7 +88,23 @@ export const Footer = () => {
         >
           <span className="rounded-full">About</span>
         </button>
-
+        <button
+          onClick={() => {
+            onLinkClick(3);
+          }}
+          className=" items-center rounded-full text-center"
+        >
+          <span className="rounded-full">Services</span>
+        </button>
+        <button
+          onClick={() => {
+            onFormClick(4);
+          }}
+          aria-label="contact"
+          className=" items-center rounded-full text-center"
+        >
+          <span className="rounded-full">Contact</span>
+        </button>
         <button
           onClick={() => {
             onLinkClick(5);
@@ -97,15 +113,6 @@ export const Footer = () => {
           className=" items-center rounded-full text-center"
         >
           <span className="rounded-full">Leaders</span>
-        </button>
-        <button
-          onClick={() => {
-            onFormClick(0);
-          }}
-          aria-label="contact"
-          className=" items-center rounded-full text-center"
-        >
-          <span className="rounded-full">Contact</span>
         </button>
       </div>
       <div className=" items-center self-center p-5 font-bold text-white ">

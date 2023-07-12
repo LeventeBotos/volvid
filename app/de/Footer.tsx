@@ -88,14 +88,13 @@ export const Footer: React.FC = () => {
         >
           <span className="rounded-full">Über uns</span>
         </button>
-
         <button
           onClick={() => {
-            onLinkClick(5);
+            onLinkClick(4);
           }}
           className="items-center rounded-full text-center"
         >
-          <span className="rounded-full">Führungskräfte</span>
+          <span className="rounded-full">Dienstleistungen</span>
         </button>
         <button
           onClick={() => {
@@ -106,25 +105,34 @@ export const Footer: React.FC = () => {
           <span className="rounded-full">Kontakt</span>
         </button>
       </div>
-      <div className="items-center self-center p-5 font-bold text-white">
+      <button
+        onClick={() => {
+          onLinkClick(5);
+        }}
+        className="items-center rounded-full text-center"
+      >
+        <span className="rounded-full">Führungskräfte</span>
+      </button>
+
+      <div className=" items-center self-center p-5 font-bold text-white ">
         <div className="flex w-full justify-evenly">
           <a
             href="/"
-            className="flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
+            className=" flex h-12 w-1/3 flex-col rounded-l-lg border-2 border-solid border-white text-center"
           >
             <img
-              className="h-full rounded-l-lg object-cover opacity-100"
-              alt="ungarisch"
+              className=" h-full rounded-l-lg object-cover opacity-100"
+              alt="hungarian"
               src="/images/hungarian.svg"
             />
           </a>
           <a
             href="/en"
-            className="flex h-12 w-1/3 flex-col border-2 border-solid border-white text-center"
+            className="flex h-12 w-1/3 flex-col  border-2 border-solid border-white text-center"
           >
             <img
               className="h-full object-cover opacity-100"
-              alt="englisch"
+              alt="english"
               src="/images/english.svg"
             />
           </a>
@@ -134,7 +142,7 @@ export const Footer: React.FC = () => {
           >
             <img
               className="h-full rounded-r-lg object-cover opacity-100"
-              alt="deutsch"
+              alt="german"
               src="/images/german.svg"
             />
           </a>
