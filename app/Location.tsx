@@ -58,7 +58,7 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Telephely</p>
+          <p className="text-xl">Fióktelep</p>
           <p className="">
             Frankfurter Str. 288, 38122 Braunschweig, Németország
           </p>
@@ -84,7 +84,7 @@ export const Location = () => {
           loading="lazy"
         />
         <div className="flex w-full flex-col justify-evenly text-center md:w-1/3">
-          <p className="text-xl">Telephely</p>
+          <p className="text-xl">Fióktelep</p>
           <p className="">Schubertstraße 3, 2100 Korneuburg, Ausztria</p>
           <a
             href="https://www.google.com/maps/dir//Schubertstra%C3%9Fe+3,+2100+Korneuburg,+Ausztria/@48.3419798,16.3254997,15z/"
