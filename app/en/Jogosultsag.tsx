@@ -11,7 +11,7 @@ export const Jogosultsag = () => {
         </a>
         <a
           className=" card h-20 w-full p-3 text-center align-middle underline md:w-1/4"
-          href="/tanusitvanyok/SCC-Tanúsítvány-Volvid-H.pdf"
+          href="/tanusitvanyok/Scc.pdf"
         >
           <p className=" m-auto">SCC certificate</p>
         </a>

@@ -158,14 +158,13 @@ button:active {
 
 .card {
   /* width: 66vw; */
-  border-radius: 20px;
+  border-radius: 10px;
   width:75vw;
   background-color: whitesmoke;
   /* box-shadow: 15px 15px 30px #bebebe,
              -15px -15px 30px #ffffff; */
   /* background: #121212; */
   /* padding: 20px; */
-  margin: 10px;
  transition: 0.2s ease-in-out;
   /* box-shadow: 15px 15px 30px var(--secondary); */
              /* -15px -15px 30px var(--secondary);  */
@@ -184,6 +183,26 @@ box-shadow: 10px 10px 22px -7px rgba(0,0,0,1);
 
 img {
   opacity: 65%;
+}
+
+.testimonial {
+  display: none;
+}
+
+.testimonial.active {
+  display: flex;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* .language-option {

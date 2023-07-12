@@ -1,10 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [intervals, setIntervals] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial();
+      setIntervals(intervals + 1);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [intervals]);
 
   function showTestimonial(index: number) {
     setActiveIndex(index);
