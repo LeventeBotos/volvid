@@ -13,7 +13,7 @@ export const Location = () => {
           <p className="text-xl">Hauptsitz, Büro</p>
           <p className="">Százhalombatta, MOL Dunai Raffinerie, 2440, Ungarn</p>
           <a
-            href="https://www.google.com/maps/dir//Sz%C3%A1zhalombatta,+Volvid+Zrt.,+MOL+Dunai+Finom%C3%ADt%C3%B3,+2440/@47.4110456,18.7339619,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4741fb8c2e73e5cb:0x5455834cd2d74d95!2m2!1d18.8891525!2d47.2951707!3e0?hl=hu&entry=ttu"
+            href="https://www.google.com/maps/dir//Sz%C3%A1zhalombatta,+Volvid+Zrt.,+MOL+Dunai+Finom%C3%ADt%C3%B3,+2440/@47.4110456,18.7339619,11z/"
             target="_blank"
             className="self-center"
           >
@@ -37,7 +37,7 @@ export const Location = () => {
           <p className="text-xl">Standort, Büro</p>
           <p className="">Miskolc, Besenyői u. 8, 3527, Ungarn</p>
           <a
-            href="https://www.google.com/maps/dir//Miskolc,+Beseny%C5%91i+u.+8,+3527/@48.1082399,20.7908248,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x473f5ffffd4d607f:0x4f80810c7dfec91!2m2!1d20.8011031!2d48.108226!3e0?entry=ttu"
+            href="https://www.google.com/maps/dir//Miskolc,+Beseny%C5%91i+u.+8,+3527/@48.1082399,20.7908248,15z/"
             target="_blank"
             className="self-center"
           >
@@ -63,7 +63,7 @@ export const Location = () => {
             Frankfurter Str. 288, 38122 Braunschweig, Deutschland
           </p>
           <a
-            href="https://www.google.com/maps/dir//Frankfurter+Str.+288,+38122+Braunschweig,+N%C3%A9metorsz%C3%A1g/@52.2562035,10.5125365,17.25z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47aff67369a3f5af:0x24861c154ec3e3c2!2m2!1d10.5142941!2d52.2570527!3e0?entry=ttu"
+            href="https://www.google.com/maps/dir//Frankfurter+Str.+288,+38122+Braunschweig,+N%C3%A9metorsz%C3%A1g/@52.2562035,10.5125365,17.25z/"
             target="_blank"
             className="self-center"
           >
@@ -87,7 +87,7 @@ export const Location = () => {
           <p className="text-xl">Zweigstelle</p>
           <p className="">Schubertstraße 3, 2100 Korneuburg, Össtereich</p>
           <a
-            href="https://www.google.com/maps/dir//Schubertstra%C3%9Fe+3,+2100+Korneuburg,+Ausztria/@48.3419798,16.3254997,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x476d0e3417dae5a5:0xd010ca13392ad47c!2m2!1d16.335778!2d48.341966!3e0?hl=hu&entry=ttu"
+            href="https://www.google.com/maps/dir//Schubertstra%C3%9Fe+3,+2100+Korneuburg,+Ausztria/@48.3419798,16.3254997,15z/"
             target="_blank"
             className="self-center"
           >
