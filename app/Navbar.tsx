@@ -91,7 +91,7 @@ export const Navbar = () => {
         <img
           src="/nah.svg"
           alt="nah logo"
-          className="h-16 p-1 opacity-100 md:h-20"
+          className="h-16 py-4 opacity-100 md:h-20 md:py-6"
         />
       </div>
       <button

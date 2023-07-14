@@ -332,6 +332,16 @@ export const Kontakt = () => {
           )}
         </span>
       </button>
+      <p className="text-center text-2xl text-white">
+        Vagy írj{" "}
+        <a
+          href="mailto:info@volvid.hu"
+          className="trnsition-all font-bold underline duration-300 hover:text-gray-300"
+        >
+          email
+        </a>
+        -en
+      </p>
     </form>
   );
 };

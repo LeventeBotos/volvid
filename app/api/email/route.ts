@@ -42,20 +42,21 @@ export async function POST(req: NextRequest) {
     from: "botos.levente2007@gmail.com",
     subject: "Köszönjük megrendelését",
     text: "Volvid",
-    html: `<div>Kedves ${params.name},
-    <br />
-    Megkaptuk a megrendelését.
-    Nemsokára felvesszük önnel a kapcsolatot az árajánlat kidolgozása érdekében.
-    Tisztázás érdekében ön:
-    Választotta: ${selectedOptionLabels}
-    <br />
-    Szabvány: ${selectedOption2Labels}
-    <br />
-   Köszönjük hogy minket választott!
-   <br />
-   Volvid Zrt.
+    html: `<div style="font-family: Arial, sans-serif; background-color: #f6f6f6; padding: 20px;">
+      <img src='https://volvid.vercel.app/images/logo.webp' alt="logo" style="display: block; margin: 0 auto; max-width: 200px;">
+      <p style="font-size: 18px; margin-top: 20px;">Kedves ${params.name},</p>
+      <p style="font-size: 16px;">Megkaptuk a megrendelését.</p>
+      <p style="font-size: 16px;">Nemsokára felvesszük önnel a kapcsolatot az árajánlat kidolgozása érdekében.</p>
+      <p style="font-size: 16px;">Tisztázás érdekében ön:</p>
+      <ul style="font-size: 16px; margin-top: 10px; padding-left: 20px;">
+        <li>Választotta: ${selectedOptionLabels}</li>
+        <li>Szabvány: ${selectedOption2Labels}</li>
+      </ul>
+      <p style="font-size: 16px;">Köszönjük hogy minket választott!</p>
+      <p style="font-size: 16px;">Volvid Zrt.</p>
     </div>`
   }
+  
 
   await sgMail.send(msg)
   await sgMail.send(msg2)
